@@ -347,6 +347,28 @@
     <Content Include="Views\Taxation\Concessions.cshtml" />
     <Content Include="Views\Taxation\GST_Return.cshtml" />
     <Content Include="Views\Taxation\GST_Registration.cshtml" />
+    <Content Include="Views\StartUpBusiness\Sole_Proprietorship.cshtml" />
+    <Content Include="Views\StartUpBusiness\Partnership_Firm.cshtml" />
+    <Content Include="Views\StartUpBusiness\Limited_Liability.cshtml" />
+    <Content Include="Views\StartUpBusiness\Partnership.cshtml" />
+    <Content Include="Views\StartUpBusiness\Private_Limited_Company.cshtml" />
+    <Content Include="Views\StartUpBusiness\Public_Limited_Company.cshtml" />
+    <Content Include="Views\StartUpBusiness\Non_Profit_Organization.cshtml" />
+    <Content Include="Views\StartUpBusiness\Society.cshtml" />
+    <Content Include="Views\StartUpBusiness\Trust.cshtml" />
+    <Content Include="Views\StartUpBusiness\Section8_Company_with_Nonprofit_objects.cshtml" />
+    <Content Include="Views\StartUpBusiness\Wholly_Owned_Foreign.cshtml" />
+    <Content Include="Views\StartUpBusiness\Subsidiary.cshtml" />
+    <Content Include="Views\StartUpBusiness\Liaison_Office.cshtml" />
+    <Content Include="Views\StartUpBusiness\Branch_Office.cshtml" />
+    <Content Include="Views\StartUpBusiness\Project_Office.cshtml" />
+    <Content Include="Views\Registration\PF_Registration.cshtml" />
+    <Content Include="Views\Registration\GST_Registration.cshtml" />
+    <Content Include="Views\Registration\TAN.cshtml" />
+    <Content Include="Views\Registration\PAN.cshtml" />
+    <Content Include="Views\Registration\Registration_Under.cshtml" />
+    <Content Include="Views\Registration\Shop_Establishment.cshtml" />
+    <Content Include="Views\Registration\Factories_Registration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

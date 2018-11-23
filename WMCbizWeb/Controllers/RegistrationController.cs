@@ -26,5 +26,34 @@ namespace WMCbizWeb.Controllers
             return View();
         }
 
+        public ActionResult PF_Registration()
+        {
+            return View();
+        }
+        public ActionResult GST_Registration()
+        {
+            return View();
+        }
+        public ActionResult TAN()
+        {
+            return View();
+        }
+        public ActionResult PAN()
+        {
+            return View();
+        }
+        public ActionResult Registration_Under()
+        {
+            return View();
+        }
+        public ActionResult Shop_Establishment()
+        {
+            return View();
+        }
+        public ActionResult Factories_Registration()
+        {
+            return View();
+        }
+
     }
 }
