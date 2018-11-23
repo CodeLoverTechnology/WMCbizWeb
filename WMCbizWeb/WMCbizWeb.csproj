@@ -189,6 +189,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PartnershipFirmController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\StartUpBusinessController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +208,31 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\1234r.jpg" />
+    <Content Include="Content\images\123r.jpg" />
+    <Content Include="Content\images\12r.jpeg" />
+    <Content Include="Content\images\1421562665-PF.jpg" />
+    <Content Include="Content\images\2.jpg" />
+    <Content Include="Content\images\ESI_WMC.jpg" />
+    <Content Include="Content\images\3.png" />
+    <Content Include="Content\images\4.jpg" />
+    <Content Include="Content\images\5.jpg" />
+    <Content Include="Content\images\6.jpg" />
+    <Content Include="Content\images\business-loan.jpg" />
+    <Content Include="Content\images\download_android.png" />
+    <Content Include="Content\images\download_ios.png" />
+    <Content Include="Content\images\Export.jpg" />
+    <Content Include="Content\images\f-subscribe-norton.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\Messages.png" />
+    <Content Include="Content\images\FASSI_WMC.jpg" />
+    <Content Include="Content\images\phone.png" />
+    <Content Include="Content\images\slider1.jpg" />
+    <Content Include="Content\images\slider2.jpg" />
+    <Content Include="Content\images\slider4.jpg" />
+    <Content Include="Content\images\slider5.jpg" />
+    <Content Include="Content\styleFssai.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -295,6 +323,14 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\_FooterView.cshtml" />
+    <Content Include="Views\Shared\_MenuView.cshtml" />
+    <Content Include="Views\PartnershipFirm\Partnership_Firm.cshtml" />
+    <Content Include="Views\StartUpBusiness\StartUpBusiness.cshtml" />
+    <Content Include="Views\Registration\ESI.cshtml" />
+    <Content Include="Views\Registration\FSSAI.cshtml" />
+    <Content Include="Views\Registration\IEC.cshtml" />
+    <Content Include="Views\Registration\MSME.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,25 @@
+
+form{
+    margin-top: 10%;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.4);
+} 
+
+section{
+    margin-top: 10%;
+
+}
+
+.card-header{
+    background-color: rgb(33, 73, 185);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.btn{
+    background-color: rgb(33, 73, 185);
+    color:white;
+
+}

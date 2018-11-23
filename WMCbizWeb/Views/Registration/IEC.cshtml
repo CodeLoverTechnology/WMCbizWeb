@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "IEC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/styleFssai.css" rel="stylesheet" />
+<style>
+    body {
+        background-image: url('../Content/images/Export.jpg');
+        position: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="offset-7 col-5">
+            <form>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name"><b></b></label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><B></B></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="num"><B></B></label>
+                            <div class="input-group">
+                                <span class="input-group-addon bg-light p-1">+91 </span>
+                                <input type="tel" class="form-control" id="num" placeholder="Please Enter Number.." required>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="jumbotron">
+        <div class="bg-light card">
+            <h3 class="card-header  text-center">
+                IEC Registration
+            </h3>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p style="font-size:20px;">
+                            IEC CODE Stands for IMPORT EXPORT CODE NUMBER.
+                            It is a Firm/Individual Pan number after approval.
+                            No export or import shall be made by any person or company without an Import-Export Code (IEC CODE) number unless specifically exempted.
+                            PAN Card is mandatory to issue Import Export Code number to the applicant for trade outside India.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <h2 class="text-center">Documents Required for Registration:</h2><br>
+
+        <div class="bg-light card">
+            <div class="card-header ">
+                <h2 class="text-left">  Documents List</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <div class="card-header"><h3> In Case Of Proprietorship Firm</h3></div>
+                            <div class="card-body bg-white">
+                                <ol start="1">
+                                    <li>Self-attested Copy of Pan Card</li>
+                                    <li>A Photograph</li>
+                                    <li>A cancelled cheque of Firm</li>
+                                    <li>Mobile Number and E-mail ID of proprietor</li>
+                                    <li>Self-attested Copy of Address Proof of Applicant (Adhaar Card/Electricity Bill/ Mobile Bill)</li>
+                                </ol>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <div class="card-header"><h3 class="text-left">In Case Of Partnership Firm</h3></div>
+                            <div class="card-body bg-white">
+                                <ol start="1">
+                                    <li>Pan Card of partnership firm</li>
+                                    <li>A cancelled cheque of Firm</li>
+                                    <li>Address Proof of the Applicant Firm (Electricity Bill/ Mobile Bill)</li>
+                                    <li>Partnership Deed</li>
+                                    <li>List of Partners</li>
+                                    <li>Mobile Number and E-mail ID of Partners</li>
+                                    <li>A Photograph of applicant</li>
+                                    <li>Self-attested Copy of Pan cards of Partners</li>
+                                    <li>Self-attested Copy of Address proofs of Partners</li>
+                                </ol>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <div class="card-header"><h3 class="text-left"> In Case Of Company:</h3></div>
+                            <div class="card-body bg-white">
+                                <ol start="1">
+                                    <li>Copy of Pan Card of Company</li>
+                                    <li>A cancelled cheque of Company</li>
+                                    <li>COI</li>
+                                    <li>MOA &amp; AOA</li>
+                                    <li>List of Directors</li>
+                                    <li>Mobile Number and E-mail ID of Directors</li>
+                                    <li>Self-attested Copy of Pan cards of Directors</li>
+                                    <li>Self-attested Copy of Address proofs of Directors</li>
+                                    <li>A Photograph of Applicant</li>
+
+                                </ol>
+                                <br />
+                                <br />
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+</section>
+
