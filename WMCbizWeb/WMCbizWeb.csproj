@@ -192,6 +192,8 @@
     <Compile Include="Controllers\PartnershipFirmController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\StartUpBusinessController.cs" />
+    <Compile Include="Controllers\TaxationController.cs" />
+    <Compile Include="Controllers\TrademarkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -331,6 +333,20 @@
     <Content Include="Views\Registration\FSSAI.cshtml" />
     <Content Include="Views\Registration\IEC.cshtml" />
     <Content Include="Views\Registration\MSME.cshtml" />
+    <Content Include="Views\Trademark\Trademark.cshtml" />
+    <Content Include="Views\Trademark\Registration.cshtml" />
+    <Content Include="Views\Trademark\TrademarkObjection.cshtml" />
+    <Content Include="Views\Trademark\TrademarkRenewal.cshtml" />
+    <Content Include="Views\Taxation\Computation.cshtml" />
+    <Content Include="Views\Taxation\FilingOf_ReturnsOf_Income.cshtml" />
+    <Content Include="Views\Taxation\FilingOfAppeals.cshtml" />
+    <Content Include="Views\Taxation\ClaimingRefunds.cshtml" />
+    <Content Include="Views\Taxation\TaxPlanning.cshtml" />
+    <Content Include="Views\Taxation\TaxManagement.cshtml" />
+    <Content Include="Views\Taxation\AvailingTax.cshtml" />
+    <Content Include="Views\Taxation\Concessions.cshtml" />
+    <Content Include="Views\Taxation\GST_Return.cshtml" />
+    <Content Include="Views\Taxation\GST_Registration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
