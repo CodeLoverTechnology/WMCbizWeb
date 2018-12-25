@@ -7,52 +7,55 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="row m-0">
+        <div class="navbar navbar-expand-lg navbar-dark thead-dark w-100  fixed-top text-white" style="height:25px;background-color:#00000f">
+            <div class="col-4">
+                <span>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    info@wmcbiz.com
+                </span>
+            </div>
+            <div class="col-4">
+                <span class="text-info">
+                    <i class="fa fa-registered" aria-hidden="true"></i>
+                    CIN : U74900DL2011PTC219663
+                </span>
+            </div>
+            <div class="col-4 text-right">
+                <span>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    +91-9313649750/7836807007
+                </span>
+                @*<a class="btn btn-outline-dark text-white" href="~/Account/Register"><i class="fa fa-user-circle" aria-hidden="true"></i>Sign Up</a>
+                    <a class="btn btn-outline-dark text-white" href="~/Account/Login"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a>*@
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="container">
             @Html.Partial("_MenuView")
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
         @RenderBody()
     </div>
-    <div class="container-fluid">
-        @*@Html.Partial("_FooterView")*@
-    </div>
-    <div>
-        @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("WMC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>*@
+    <div class="row">
+        @Html.Partial("_FooterView")
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @*@RenderSection("scripts", required: false)*@
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </body>
 </html>

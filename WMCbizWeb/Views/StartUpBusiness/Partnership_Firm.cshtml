@@ -3,6 +3,119 @@
     ViewBag.Title = "Partnership_Firm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    body {
+        background-image: url('../Content/images/partnership_2.jpg');
+        position: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+</style>
 
-<h2>Partnership_Firm</h2>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="offset-7 col-5 mt-5 mb-3">
+            <form>
+                <div class="card">
+                    <div class="card-header bg-info">
+                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name"><b></b></label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            @*<span id="message"></span><br>*@
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><B></B></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="num"><B></B></label>
+                            <div class="input-group">
+                                <span class="input-group-addon bg-light p-1">+91 </span>
+                                <input type="tel" class="form-control" id="num" placeholder="Please Enter Number.." required>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@*<section >*@
+<div class="jumbotron">
+    <div class="bg-light card">
+        <h3 class="card-header bg-info  text-white  text-center">
+            PARTNERSHIP FIRM
+        </h3>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-justify" style="font-size:20px;">
+                        Partnership is “the relation between persons who have agreed to share the profits of the business carried
+                        on by all or any one of them acting for all”. A partnership firm in India is governed by The Partnership Act,
+                        1932. Two or more people can form a Partnership subject to maximum of 20 partners.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="bg-light card">
+        <div class="card-header bg-info  text-white">
+            <h2 class="text-center">Process:</h2>
+        </div>
+        <div class="card-body">
+            A simple procedure is followed for getting a firm registered:
+            <ol type="i">
+                <li class="text-justify">
+                    Filing an Application: The first thing to be done is to file an application with the Registrar of Firms on a
+                    prescribed form. A small amount of registration fees is also deposited along-with the application.
+                    The application should contain the following information:
+                    <ol type="a">
+                        <li>The name of the firm.</li>
+                        <li>The principal place of business of the firm.</li>
+                        <li>The names and addresses of partners and the dates on which they joined the firm.</li>
+                        <li>If the firm is started for a particular period then that period should be mentioned.</li>
+                        <li>If the firm is started to achieve a specific object then it should also be given.</li>
+                    </ol>
+                    The application form should be signed and verified by each partner or by his duly authorized agent.
+                </li>
+                <li class="text-justify">
+                    Certificate:The particulars submitted to the Registrar are examined. It is also seen whether all legal formalities
+                    required have been observed or not. If everything is in order, then the Registrar shall record an entry in the
+                    register of firms. The firm is considered registered thereon
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <div class="bg-light card">
+        <div class="card-header bg-info text-white ">
+            <h2 class="text-left"> Documents (Required for Registration)</h2>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Application for registration of partnership</li>
+                <li>Affidavit</li>
+                <li>Partnership deed</li>
+                <li>Ownership proof of the principal business</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@*</section>*@
 
