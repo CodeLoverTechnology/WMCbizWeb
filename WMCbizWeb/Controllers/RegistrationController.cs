@@ -34,6 +34,10 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
+        public ActionResult GST_Return()
+        {
+            return View();
+        }
         public ActionResult TAN()
         {
             return View();
