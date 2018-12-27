@@ -410,6 +410,7 @@
     <Content Include="Views\Registration\Registration_Under.cshtml" />
     <Content Include="Views\Registration\Shop_Establishment.cshtml" />
     <Content Include="Views\Registration\Factories_Registration.cshtml" />
+    <Content Include="Views\Registration\GST_Return.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
