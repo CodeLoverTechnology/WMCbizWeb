@@ -187,6 +187,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Accounting_ServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnershipFirmController.cs" />
@@ -212,6 +213,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\full-slider.css" />
     <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\12.jpg" />
     <Content Include="Content\images\1234r.jpg" />
     <Content Include="Content\images\123r.jpg" />
     <Content Include="Content\images\12r.jpeg" />
@@ -222,6 +224,7 @@
     <Content Include="Content\images\accounting.jpg" />
     <Content Include="Content\images\bg03.jpg" />
     <Content Include="Content\images\BranchOfc.jpg" />
+    <Content Include="Content\images\567.jpg" />
     <Content Include="Content\images\cit.jpg" />
     <Content Include="Content\images\corporate-income-tax-in-vietnam-cit.jpg" />
     <Content Include="Content\images\employee-working-thinkstock-2.jpg" />
@@ -245,6 +248,7 @@
     <Content Include="Content\images\Liaison.jpg" />
     <Content Include="Content\images\llp.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\managing_startup_expenses.jpg" />
     <Content Include="Content\images\Manoj_Kr_Pandey.jpg" />
     <Content Include="Content\images\maxresdefault.jpg" />
     <Content Include="Content\images\Messages.png" />
@@ -275,6 +279,7 @@
     <Content Include="Content\images\solee.jpg" />
     <Content Include="Content\images\tax-1.jpg" />
     <Content Include="Content\images\tax2.jpg" />
+    <Content Include="Content\images\taxation.jpg" />
     <Content Include="Content\images\trademark.jpg" />
     <Content Include="Content\images\tsd.jpg" />
     <Content Include="Content\images\WHOLLY.jpg" />
@@ -385,8 +390,6 @@
     <Content Include="Views\Trademark\Registration.cshtml" />
     <Content Include="Views\Trademark\TrademarkObjection.cshtml" />
     <Content Include="Views\Trademark\TrademarkRenewal.cshtml" />
-    <Content Include="Views\Taxation\GST_Return.cshtml" />
-    <Content Include="Views\Taxation\GST_Registration.cshtml" />
     <Content Include="Views\StartUpBusiness\Sole_Proprietorship.cshtml" />
     <Content Include="Views\StartUpBusiness\Partnership_Firm.cshtml" />
     <Content Include="Views\StartUpBusiness\Limited_Liability.cshtml" />
@@ -410,9 +413,21 @@
     <Content Include="Views\Registration\Shop_Establishment.cshtml" />
     <Content Include="Views\Registration\Factories_Registration.cshtml" />
     <Content Include="Views\Registration\GST_Return.cshtml" />
+    <Content Include="Views\Taxation\INCOME_TAX.cshtml" />
+    <Content Include="Views\Taxation\Computation.cshtml" />
+    <Content Include="Views\Taxation\FilingOf_ReturnsOf_Income.cshtml" />
+    <Content Include="Views\Taxation\FilingOfAppeals.cshtml" />
+    <Content Include="Views\Taxation\ClaimingRefunds.cshtml" />
+    <Content Include="Views\Taxation\TaxManagement.cshtml" />
+    <Content Include="Views\Taxation\AvailingTax.cshtml" />
+    <Content Include="Views\Taxation\Concessions.cshtml" />
+    <Content Include="Views\Taxation\TaxPlanning.cshtml" />
+    <Content Include="Views\Accounting_Services\Registration.cshtml" />
+    <Content Include="Views\Accounting_Services\GST_Return.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\GST\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
