@@ -188,7 +188,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Accounting_ServicesController.cs" />
+    <Compile Include="Controllers\CompliancesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartnershipFirmController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
@@ -424,6 +426,11 @@
     <Content Include="Views\Taxation\TaxPlanning.cshtml" />
     <Content Include="Views\Accounting_Services\Registration.cshtml" />
     <Content Include="Views\Accounting_Services\GST_Return.cshtml" />
+    <Content Include="Views\Compliances\CorporatLawCompliance.cshtml" />
+    <Content Include="Views\Compliances\MERGERS_ACQUISITIONS.cshtml" />
+    <Content Include="Views\Compliances\FEMARBI_SERVICES.cshtml" />
+    <Content Include="Views\Compliances\CERTIFICATIONATTESTATIONSERVICES.cshtml" />
+    <Content Include="Views\Job\Job.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
