@@ -41,14 +41,12 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
-        public ActionResult GST_Registration()
-        {
-            return View();
-        }
-        public ActionResult GST_Return()
-        {
-            return View();
-        }
+       
         
+        public ActionResult INCOME_TAX()
+        {
+            return View();
+        }
+
     }
 }
