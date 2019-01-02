@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace WMCbizWeb.Controllers
 {
-    public class StartUpBusinessController : Controller
+    public class StartABusinessController : Controller
     {
         // GET: StartUpBusiness
-        public ActionResult StartUpBusiness()
+        public ActionResult StartABusiness()
         {
             return View();
         }
@@ -58,14 +58,11 @@ namespace WMCbizWeb.Controllers
 
         #region For foreign entity
         
-        public ActionResult Wholly_Owned_Foreign()
+        public ActionResult Wholly_Owned_Foreign_Subsidiary()
         {
             return View();
         }
-        public ActionResult Subsidiary()
-        {
-            return View();
-        }
+        
         public ActionResult Liaison_Office()
         {
             return View();

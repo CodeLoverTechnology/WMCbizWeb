@@ -9,7 +9,7 @@ namespace WMCbizWeb.Controllers
     public class CompliancesController : Controller
     {
         // GET: Compliances
-        public ActionResult CorporatLawCompliance()
+        public ActionResult Corporatelaw_Compliance()
         {
             return View();
         }

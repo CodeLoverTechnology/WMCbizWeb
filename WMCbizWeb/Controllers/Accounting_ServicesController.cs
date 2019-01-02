@@ -13,7 +13,7 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
-        public ActionResult Registration()
+        public ActionResult GST_Registration()
         {
             return View();
         }
