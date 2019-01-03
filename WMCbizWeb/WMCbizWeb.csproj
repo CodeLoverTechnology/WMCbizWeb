@@ -77,6 +77,8 @@
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -204,6 +206,24 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\WMCBizModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMCBizModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WMCBizModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMCBizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WMCBizModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMCBizModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WMCUser.cs">
+      <DependentUpon>WMCBizModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -242,8 +262,10 @@
     <Content Include="Content\images\Export.jpg" />
     <Content Include="Content\images\f-subscribe-norton.png" />
     <Content Include="Content\images\gettyimages-494146669.jpg" />
+    <Content Include="Content\images\GST-Registration.png" />
     <Content Include="Content\images\GST-Return.jpg" />
     <Content Include="Content\images\GST.jpg" />
+    <Content Include="Content\images\gstreturn.png" />
     <Content Include="Content\images\images.jpg" />
     <Content Include="Content\images\img.jpg" />
     <Content Include="Content\images\in.jpg" />
@@ -284,6 +306,9 @@
     <Content Include="Content\images\tax2.jpg" />
     <Content Include="Content\images\TDS.jpg" />
     <Content Include="Content\images\taxation.jpg" />
+    <Content Include="Content\images\TMrenewal.jpg" />
+    <Content Include="Content\images\trademark objection.png" />
+    <Content Include="Content\images\Trademark-Registration-Services.jpg" />
     <Content Include="Content\images\trademark.jpg" />
     <Content Include="Content\images\tsd.jpg" />
     <Content Include="Content\images\WHOLLY.jpg" />
@@ -296,6 +321,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Models\WMCBizModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMCBizModel.edmx</DependentUpon>
+      <LastGenOutput>WMCBizModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\WMCBizModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMCBizModel.edmx</DependentUpon>
+      <LastGenOutput>WMCBizModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -319,6 +354,13 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <EntityDeploy Include="Models\WMCBizModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WMCBizModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\WMCBizModel.edmx.diagram">
+      <DependentUpon>WMCBizModel.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -445,6 +487,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

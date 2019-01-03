@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row mt-5">
         <div class="offset-7 col-5 mt-5 mb-2">
-            <form>
+            <form class="form" action="/Home/Enquiry" method="post">
                 <div class="card">
                     <div class="card-header  bg-info text-white">
                         <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
@@ -22,18 +22,18 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
                             @*<span id="message"></span><br>*@
                         </div>
                         <div class="form-group">
                             <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
                             <label for="num"><B></B></label>
                             <div class="input-group">
                                 <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="num" placeholder="Please Enter Number.." required>
+                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
                             </div>
                         </div>
                         <div>
