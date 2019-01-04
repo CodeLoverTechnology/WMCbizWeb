@@ -234,6 +234,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\full-slider.css" />
     <Content Include="Content\images\1.jpg" />
     <Content Include="Content\images\12.jpg" />
@@ -252,6 +254,8 @@
     <Content Include="Content\images\cit.jpg" />
     <Content Include="Content\images\Claiming Refunds12.jpg" />
     <Content Include="Content\images\Computation12.jpg" />
+    <Content Include="Content\images\contact-us.jpg" />
+    <Content Include="Content\images\Contact-Us1.jpg" />
     <Content Include="Content\images\corporate-income-tax-in-vietnam-cit.jpg" />
     <Content Include="Content\images\employee-working-thinkstock-2.jpg" />
     <Content Include="Content\images\ESI Registration12.jpg" />
@@ -283,6 +287,7 @@
     <Content Include="Content\images\limited-liability12.jpg" />
     <Content Include="Content\images\llp.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\man12.jpg" />
     <Content Include="Content\images\managing_startup_expenses.jpg" />
     <Content Include="Content\images\Manoj_Kr_Pandey.jpg" />
     <Content Include="Content\images\maxresdefault.jpg" />
@@ -311,6 +316,7 @@
     <Content Include="Content\images\Public Limited Company12.jpg" />
     <Content Include="Content\images\Rakesh.jpg" />
     <Content Include="Content\images\remote-site-solutions-bg_ngo-sector.jpg" />
+    <Content Include="Content\images\renewal1.jpg" />
     <Content Include="Content\images\Saurabh_Awasthi.jpg" />
     <Content Include="Content\images\Section8 Company 12.jpg" />
     <Content Include="Content\images\slider1.jpg" />
@@ -385,6 +391,12 @@
     <Content Include="Models\WMCBizModel.edmx.diagram">
       <DependentUpon>WMCBizModel.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
