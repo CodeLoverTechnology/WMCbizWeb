@@ -48,8 +48,7 @@ namespace WMCbizWeb.Controllers
             dbModel.WMCUsers.Add(ObjNew);
             dbModel.SaveChanges();
 
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = string.Format("Hello {0}.\\nCurrent Date and Time: {1}", name, DateTime.Now.ToString());
             return View();
         }
 

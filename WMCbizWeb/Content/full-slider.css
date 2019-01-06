@@ -8,10 +8,10 @@
   height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .card:hover {
@@ -20,7 +20,7 @@
     box-shadow: -1px 9px 40px -12px #000;
 }
 
-.col-md-2 {
+/*.col-md-2 {
     width: 18rem;
-    border-right: 1px solid #808080;
-}
+    /*border-right: 1px solid #808080;*/
+}*/
