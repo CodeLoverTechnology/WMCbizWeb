@@ -11,6 +11,7 @@ namespace WMCbizWeb.Controllers
         // GET: Compliances
         public ActionResult Corporatelaw_Compliance()
         {
+
             return View();
         }
         public ActionResult MERGERS_ACQUISITIONS()
