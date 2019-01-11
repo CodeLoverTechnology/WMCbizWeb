@@ -53,7 +53,7 @@ namespace WMCbizWeb.Controllers
             dbModel.SaveChanges();
             if(SendUserInfo(ObjNew))
             {
-                TempData["qUERYmESSAGE"] = "Thank You for Enquiry on WMC Web Portal. Our Representative get back to you soon.";
+                TempData["qUERYmESSAGE"] = " Dear " + ObjNew.Name + ", Your Enquiry Application has been Submitted. Thank you for WISDOM MANAGEMENT CONSULTANCY Enquiry. We will get back to you soon!!!";
             }
             return RedirectToAction(Path[2], Path[1]);
         }
@@ -79,36 +79,45 @@ namespace WMCbizWeb.Controllers
                 MailMessage message = new MailMessage();
                 message.To.Add(ObjNew.Emailid);
                 message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-                message.From = new System.Net.Mail.MailAddress("info@nja.org.in", "National Journlist Association Member Details");
-                message.Bcc.Add("Indrajeetsingh9758@gmail.com");
-                message.Subject = "National Journlist Association Membership Details : " + ObjNew.Name;
+                message.From = new System.Net.Mail.MailAddress("info@wmcbiz.com", "WISDOM MANAGEMENT CONSULTANCY Enquiry Details");
+                message.Bcc.Add("csyogendrayadav@gmail.com");
+                message.Bcc.Add("wmckpo@gmail.com");
+                message.Bcc.Add("codelovertechnology@gmail.com");
+                message.Subject = "WISDOM MANAGEMENT CONSULTANCY Enquiry Details : " + ObjNew.Name;
                 message.Body = "Hi " + ObjNew.Name + ", " + System.Environment.NewLine + System.Environment.NewLine
                     + "======================================================================================== "
-                    + System.Environment.NewLine + "  Member Name : " + ObjNew.Name
+                    + System.Environment.NewLine + "  User Name : " + ObjNew.Name
                     + System.Environment.NewLine + "  Contact No : " + ObjNew.MobileNo
                     + System.Environment.NewLine + "  Email ID : " + ObjNew.Emailid
-                     + System.Environment.NewLine + " Dear Member, Your Membership Application has approved by Admin."
-                     + System.Environment.NewLine + " Feel free to Visit National Journlist Association Portal. To Download your Membership Card."
+                     + System.Environment.NewLine + " Dear " + ObjNew.Name + ", Your Enquiry Application has been Submitted. Thank you for WISDOM MANAGEMENT CONSULTANCY Enquiry. We will get back to you soon!!!"
+                     + System.Environment.NewLine + " Feel free to Visit WISDOM MANAGEMENT CONSULTANCY Web Portal."
                     + " ======================================================================================== "
                     + System.Environment.NewLine + System.Environment.NewLine
                     + System.Environment.NewLine
                     + System.Environment.NewLine
                     + "Thanks & Regards," + System.Environment.NewLine
-                   + "National Journlist Association," + System.Environment.NewLine
-                   + "बिष्णु कुमार अग्रहरि," + System.Environment.NewLine
-                   + " पिता-प्रह्लाद प्रसाद गुप्ता," + System.Environment.NewLine
-                   + "आगा हुसैन का चैराहा, हजीगंज," + System.Environment.NewLine
-                   + "पटना सिटी,नगला,पटना," + System.Environment.NewLine
+                   + "WISDOM MANAGEMENT CONSULTANCY," + System.Environment.NewLine
+                   + "CORPORATE OFFICE :-" + System.Environment.NewLine
+                   + "Office No-36, S-513," + System.Environment.NewLine
+                   + "Shakarpur, Delhi-110092," + System.Environment.NewLine
+                   + "Phone :- 011-42785910" + System.Environment.NewLine
+                   + "Email ID :- info@wmcbiz.com/wmckpo@gmail.com /csmanojpandey@gmail.com" + System.Environment.NewLine
                    + "Email ID : nationaljournlistassociation@gmail.com/info@nja.org.in" + System.Environment.NewLine
-                   + "Contact No : +91-8279556824" + System.Environment.NewLine;
+                   + "Contact No : +91-9313649750/7836807007" + System.Environment.NewLine
+                + System.Environment.NewLine
+                   + System.Environment.NewLine
+                   + "REGISTERED OFFICE :-" + System.Environment.NewLine
+                   + "B-116 Joshi Colony," + System.Environment.NewLine
+                   + "I.P.Extension New Delhi- 110092," + System.Environment.NewLine;
+            
                 //var contentType = new System.Net.Mime.ContentType(System.Net.Mime.MediaTypeNames.Application.Pdf);
                 message.IsBodyHtml = false;
                 SmtpClient client = new SmtpClient();
-                client.Host = "mail.nja.org.in";
+                client.Host = "mail.wmcbiz.com";
                 client.Port = 25;
-                client.Credentials = new System.Net.NetworkCredential("info@nja.org.in", "India$12345");
+                client.Credentials = new System.Net.NetworkCredential("info@wmcbiz.com", "tZvi6%85");
                 client.Send(message);
-                ViewBag.Status = "National Journlist Association Membership Details ";
+               // ViewBag.Status = "Thank you for WISDOM MANAGEMENT CONSULTANCY Enquiry. We will get back to you soon!!!";
                 //ModelState.Clear();
                 return true;
             }
