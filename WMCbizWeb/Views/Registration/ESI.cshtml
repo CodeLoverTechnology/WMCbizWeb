@@ -4,126 +4,127 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
-<link href="~/Content/styleFssai.css" rel="stylesheet" />
-@*<div class="image-responsive">*@
-    <style>
-        body {
-            background-image: url('../Content/images/ESI_WMC.jpg');
-            position: auto;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
-    </style>
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                ESI REGISTRATION
 
-    @*<div class="sem">*@
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/ESI Registration12.jpg" class="img-fluid img-thumbnail" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            EMPLOYEES STATE INSURANCE (ESI) is a social insurance and self-financing scheme that protects the interest of workers in eventuality such as sickness, maternity, temporary or permanent physical disablement, and death due to employment injury resulting in loss of wages or earning capacity. It is governed by Employees' State Insurance Act, 1948. This act provides need based care to workers and their dependents. It is managed by Employees’ State Insurance Corporation (ESIC) under the Ministry of Labour and Employment.
+                        </div>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="container-fluid">
-                 <div class="row mt-5">
-                    <div class="offset-7 col-5">
-                        <form class="form" action="/Home/Enquiry" method="post">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="name"><b></b></label>
-                                        <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                        @*<span id="message"></span><br>*@
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email"><B></B></label>
-                                        <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="num"><B></B></label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon bg-light p-1">+91 </span>
-                                            <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                                    </div>
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                @*<span id="message"></span><br>*@
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-        </div>
-    @*</div>*@
-        <section>
-            <div class="jumbotron">
-                <div class="bg-light card">
-                    <h3 class="card-header  text-center">
-                        ESI Registration
-                    </h3>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p style="font-size:20px;">
-                                    EMPLOYEES STATE INSURANCE (ESI) is a social insurance and self-financing scheme that protects the interest of workers in
-                                    eventuality such as sickness, maternity, temporary or permanent physical disablement, death due to employment injury
-                                    resulting in loss of wages or earning capacity. It is governed by Employees' State Insurance Act, 1948. This act provides
-                                    need based care to workers and their dependents.
-                                    It is managed by Employees’ State Insurance Corporation (ESIC) under the Ministry of Labour and Employment.
-                                </p>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-                <br>
-                <br>
-
-                <h2 class="text-center">Applicability of ESI:</h2><br>
-
-                <div class="bg-light card">
-                    <div class="card-header ">
-                        <h2 class="text-left">Following establishments employing 10 or more persons attracts ESI coverage:</h2>
-                    </div>
-                    <div class="card-body">
-
-
-                        <p style="font-size:20px; color:black;">
-                            1. Shop<br>
-                            2. Hotels or restaurants not having any manufacturing activity, but only engaged in sales<br>
-                            3. Cinemas including preview theatres<br>
-                            4. Road Motor Transport Establishments<br>
-                            5. Newspaper establishments (that is not covered as factory under Sec.2(12))<br>
-                            6. Private Educational Institutions
-                            <br>(those run by individuals, trustees,
-                            societies or other organizations and Medical Institutions)
-                            <br> (including Corporate, Joint Sector, trust, charitable, and private ownership hospitals, nursing homes,
-                            diagnostic centers, pathological labs)
-                        </p>
-
-
-                    </div>
-                </div>
-                <br>
-                <br>
-                <h2 class="text-center">Documents Required for Registration:</h2><br>
-
-                <div class="bg-light card">
-                    <div class="card-header ">
-                        <h2 class="text-left">Document List</h2>
-                    </div>
-                    <div class="card-body">
-                        <p style="font-size:20px; color:black;">
-                            1. A registration certificate or a license obtained under Shops and Establishment Act or Factories Act.<br>
-                            2. Memorandum and Articles of Association, or partnership deed or trust deed, based on the type of entity.<br>
-                            3. Certificate of registration for all entities and commencement of production for factories.<br>
-                            4. A list of employees with their monthly compensation, in detail.<br>
-                            5. A list of directors, partners and shareholders of the company.<br>
-                            6. The PAN card of the business and address proof of the establishment/firm.<br>
-                            7. Bank statements of the organization, with evidence of commencement of operation.<br>
-                        </p>
-                    </div>
-                </div>
-
-                <br>
-                <br>
+                </form>
             </div>
-        </section>
-        @*</div>*@
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+    <div class="col-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Applicability of ESI:-</h5>
+        </div>
+        <div class="card-body">
+            <ol>
+                <p>Following establishments employing 10 or more persons attracts ESI coverage:-</p>
+                <li>Shop</li>
+                <li> 2.	Hotels or restaurants not having any manufacturing activity, but only engaged in sales</li>
+                <li>3.	Cinemas including preview theatres</li>
+                <li>4.	Road Motor Transport Establishments</li>
+                <li>5.	Newspaper establishments (that is not covered as factory under Sec.2(12))</li>
+                <li>6.	Private Educational Institutions (those run by individuals, trustees, societies or other organizations and Medical Institutions (including Corporate, Joint Sector, trust, charitable, and private ownership hospitals, nursing homes, diagnostic centers, pathological labs </li>
+                
+            </ol>
+
+
+            
+            
+
+            
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="col-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Documents\ Information required for ESI:</h5>
+        </div>
+        <div class="card-body">
+            <ol>
+                <p>The following documents are required for registering under the ESI scheme:-</p>
+                <li>A registration certificate or a license obtained under Shops and Establishment Act or Factories Act.</li>
+                <li>Memorandum and Articles of Association, or partnership deed or trust deed, based on the type of entity</li>
+                <li>A list of employees with their monthly compensation, in detail</li>
+                <li>A list of directors, partners and shareholders of the company.</li>
+                <li>The PAN card of the business and address proof of the establishment/firm.</li>
+                <li>Bank statements of the organization, with evidence of commencement of operation. </li>
+                <li>Photo of Manufacturing Unit and List of Machine. </li>
+            </ol>
+
+
+            
+            
+
+            <div class="row bg-secondary text-white p-3 rounded">
+                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing.  </p>
+                <p class="text-justify">WMC can help you in registration under Employees State Insurance (ESI). The average time taken to draft and file registration documents under ESI is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation for ESI registration by scheduling an appointment with a WMC Advisor.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+</div>

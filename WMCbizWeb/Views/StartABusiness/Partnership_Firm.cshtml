@@ -3,119 +3,132 @@
     ViewBag.Title = "Partnership_Firm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-    body {
-        background-image: url('../Content/images/partnership_2.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
 
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-3">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                PARTNERSHIP FIRM
+            </h4>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/partnership_2.jpg" class="img-fluid img-thumbnail" />
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            Partnership is “the relation between persons who have agreed to share the profits of the business carried on by all or any one of them acting for all”. A partnership firm in India is governed by The Partnership Act, 1932. Two or more people can form a Partnership subject to maximum of 20 partners<br />
+                            &nbsp;&nbsp;
+
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="container-fluid">
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
                         </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                @*<span id="message"></span><br>*@
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-@*<section >*@
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header bg-info  text-white  text-center">
-            PARTNERSHIP FIRM
-        </h3>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-justify" style="font-size:20px;">
-                        Partnership is “the relation between persons who have agreed to share the profits of the business carried
-                        on by all or any one of them acting for all”. A partnership firm in India is governed by The Partnership Act,
-                        1932. Two or more people can form a Partnership subject to maximum of 20 partners.
-                    </p>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header bg-info  text-white">
-            <h2 class="text-center">Process:</h2>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+    <div class="col-12 bg-light card">
+        <div class="card-header bg-info text-white ">
+            <h5 class="text-left">Process</h5>
         </div>
         <div class="card-body">
-            A simple procedure is followed for getting a firm registered:
-            <ol type="i">
+            <div class="text-justify">
+                A simple procedure is followed for getting a firm registered.
+            </div>
+            <ol type="I">
                 <li class="text-justify">
-                    Filing an Application: The first thing to be done is to file an application with the Registrar of Firms on a
-                    prescribed form. A small amount of registration fees is also deposited along-with the application.
-                    The application should contain the following information:
+                    Filing an Application:-<br />The first thing to be done is to file an application with the Registrar of Firms on a prescribed form.
+                    A small amount of registration fees is also deposited along-with the application.The application should contain the following information.
+
                     <ol type="a">
-                        <li>The name of the firm.</li>
+
+                        <li>The name of the firm. </li>
                         <li>The principal place of business of the firm.</li>
                         <li>The names and addresses of partners and the dates on which they joined the firm.</li>
-                        <li>If the firm is started for a particular period then that period should be mentioned.</li>
-                        <li>If the firm is started to achieve a specific object then it should also be given.</li>
+                        <li>If the firm is started for a particular period then that period should be mentioned. </li>
+                        <li>If the firm is started to achieve a specific object then it should also be given. </li>
+                        The application form should be signed and verified by each partner or by his duly authorized agent
                     </ol>
-                    The application form should be signed and verified by each partner or by his duly authorized agent.
+
                 </li>
-                <li class="text-justify">
-                    Certificate:The particulars submitted to the Registrar are examined. It is also seen whether all legal formalities
-                    required have been observed or not. If everything is in order, then the Registrar shall record an entry in the
-                    register of firms. The firm is considered registered thereon
-                </li>
+                <li>Certificate:-</li>
+                <p class="text-justify">The particulars submitted to the Registrar are examined. It is also seen whether all legal formalities required have been observed or not. If everything is in order, then the Registrar shall record an entry in the register of firms. The firm is considered registered thereon</p>
+                @*<li>Shop act License</li>
+                <li>Business ITR</li>
+                <li>GST Registration Certificate</li>*@
             </ol>
+            
         </div>
     </div>
 
     <br>
     <br>
 
-
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white ">
-            <h2 class="text-left"> Documents (Required for Registration)</h2>
+    <div class="col-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Required Documents:</h5>
         </div>
         <div class="card-body">
-            <ul>
+            <ol>
                 <li>Application for registration of partnership</li>
                 <li>Affidavit</li>
                 <li>Partnership deed</li>
-                <li>Ownership proof of the principal business</li>
-            </ul>
+                <li>Ownership proof of the principal business </li>
+                
+            </ol>
+
+            <div class="row bg-secondary text-white p-3 rounded">
+                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+                <p class="text-justify">WMC can help you to register of Partnership Firm. The average time taken to draft and file registration documents of Proprietorship Firm is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation for registration of Partnership Firm by scheduling an appointment with a WMC Advisor.</p>
+            </div>
         </div>
     </div>
+
+    <br>
+    <br>
+
+
 </div>
 
-@*</section>*@
+
 

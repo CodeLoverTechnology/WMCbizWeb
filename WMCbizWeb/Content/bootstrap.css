@@ -4634,9 +4634,9 @@ input[type="button"].btn-block {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-}
+    .card-header:first-child {
+        border-radius: calc(4.25rem - 1px) calc(5.25rem - 1px) 0 0 !important;
+    }
 
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;

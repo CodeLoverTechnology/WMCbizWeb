@@ -3,98 +3,67 @@
     ViewBag.Title = "TrademarkRenewal";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
- body{
-                    background-image: url('../Content/images/trademark.jpg');
-                    position: auto;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                }
-        </style>
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                Trademark Renewal
 
-
-
-<div class="container-fluid mt-5">
-    <div class="row mt-5">
-        <div class="offset-7 col-5">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-primary">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/TMrenewal.jpg" class="img-fluid img-thumbnail" />
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            Once the trademark is registered, it is valid for a period of 10 years from the date of application. The registration can be renewed indefinitely as long as the renewal fees are paid every 10 years.
+                            WMC is the best consultancy services platform in India, offering a various kind of services like to start and manage business. We have best team of young group of Chartered Accountants and Company Secretaries, Advocates who are dedicated to provide services by their domain expertise in the field of setting up business, developing system of compliance, advisory on restructuring, collaboration, taxation etc. WMC can help you Renewal of existing trademark application. The average time taken to draft and file a trademark renewal is about 5 - 15 working days, subject to government processing time and client document submission. Get a free consultation on filing a trademark rectification by scheduling an appointment with a WMC Advisor.
+
+
+
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="container-fluid">
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
                         </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                <span id="message"></span><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
-
-
-<section>
-    <div class="jumbotron">
-        <div class="bg-light card">
-            <h3 class="card-header text-center  bg-primary text-white">
-                TRADEMARK REGISTRATION
-            </h3>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="text-justify" style="font-size:20px;">
-                            A trademark is a visual symbol, which may be a word, name, device, label or numerals used by a business to distinguish it goods
-                            or services from other similar goods or services originating from a different business. A registered trademark is an intellectual
-                            property for a business and is used to protect the company's investment in the brand or symbol. A trademark is registrable if
-                            it is distinctive for the goods and services you provide. Proposed trademarks that are similar or identical to an existing
-                            registered trademark cannot be registered. Also, trademarks are not registrable if it is offensive, generic, deceptive,
-                            not distinctive, contains specially protected emblems, etc.
-                            Trademarks in India are registered by the Controller General of Patents Designs and Trademarks, Ministry of Commerce and Industry,
-                            Government of India. Trademarks are registered under the Trademark Act, 1999 and provide the trademark owner with a right to sue
-                            for damages when infringements of trademarks occur. Once a trademark is registered, R symbol can be used and the registration will
-                            be valid for 10 years. Registered trademarks nearing expiry can be easily renewed by filing a trademark renewal application for a
-                            period of another 10 years.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <br>
-        <br>
-        <div class="bg-light card">
-            <div class="card-header bg-primary text-white">
-                <h2 class="text-left">Document List (Required for Registration)</h2>
-            </div>
-            <div class="card-body">
-                <div class="text-black-50" style="font-size:20px;">
-                    <ol start="1">
-                        <li>Aadhaar Card</li>
-                        <li> Pan Card</li>
-                        <li>Brand Name or Logo or Both</li>
-                        <li>Business activity ( List of Products and Services)</li>
-                        <li>Authorisation Letter</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

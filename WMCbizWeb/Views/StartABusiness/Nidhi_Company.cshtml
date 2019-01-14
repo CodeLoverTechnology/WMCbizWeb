@@ -1,0 +1,196 @@
+﻿
+@{
+    ViewBag.Title = "Nidhi_Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                Nidhi Company
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/WMC_Sole_Prop.jpg" class="img-fluid img-thumbnail" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            “Nidhi” means a company which with the object of cultivating the habit of thrift and savings amongst its members, receiving deposits from, and lending to, its members only, for their mutual benefit. In simple words, Nidhi will be a company registered under Companies Act, 2013 and which only accepts and lends to members and it does not deal with non-members.
+
+                            Nidhi companies are also called Mutual Benefits Company.
+
+                            Also, Nidhi Company is not required to register with the Reserve Bank of India (RBI). The Nidhi Company is registered as Public company. So the process of registering the Nidhi Company is more likely to be same as of Public companies except some additional steps.
+                        </div>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="container-fluid">
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                @*<span id="message"></span><br>*@
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white ">
+            <h5 class="text-left">Minimum requirements for registering a Nidhi Company in India</h5>
+        </div>
+        <div class="card-body">
+            @*<div class="text-justify">
+                    For registration of Firm require minimum Entity Proof for open a Current Bank Account.
+                    We have the following option to take entity proof:
+                </div>*@
+            <ol>
+                <li>Nidhi Company shall be incorporated as a Public Limited Company. It needs at least: i. Seven people ii. Three Directors (above people can be directors) iii. Minimum capital Rs.5 lakh.</li>
+                <li> Nidhi Company shall not issue preference shares</li>
+                <li>Nidhi Company shall not pursue any other objective</li>
+                <li>Every company incorporated as Nidhi shall have last word “Nidhi Limited” as part of its name</li>
+                <p>Additional requirements to be fulfilled within one year of commencement Every Nidhi Company shall within a period of one year from the commencement of these rules, ensure that it has</p>
+
+            </ol>
+            <ol type="1">
+                <li> Ratio of Net Owned Funds to deposits of not more than 1:20</li>
+                <li> Unencumbered term deposits of not less than ten per cent of the total deposits</li>
+                <li> Not less than 200 members</li>
+                <li>Net Owned Funds (excluding the proceeds of any preference share capital) of Rs. 10 lacs or more</li>
+            </ol>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Who can be a member</h5>
+        </div>
+        <p class="text-justify">A Nidhi Company cannot admit body corporate or trust as a member. Further a minor shall not be added as a member of Nidhi Company. However, deposits can be accepted in the name of minor, if they are made natural or legal guardian who is a member of Nidhi</p>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Rate of Interest</h5>
+        </div>
+        <p class="text-justify">The rate of interest to be charged on any loan given by a Nidhi shall not exceed seven and half per cent above the highest rate of interest offered on deposits by Nidhi. In other words, if you are offer 7%, your highest rate on deposits, then you can charge not more than 14.5% on deposits given.</p>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Share capital and allotment</h5>
+        </div>
+        <ol>
+            <li> Every Nidhi shall issue equity shares of the nominal value of not less than ten rupees each.Provided that this requirement shall not apply to a company referred to in sub-rules (a) and (b) of rule 2</li>
+
+            <li> No service charge shall be levied for issue of shares.</li>
+            <li>
+                Every Nidhi shall allot to each deposit holder at least a minimum of ten equity shares or shares equivalent to one hundred rupees:
+
+                Provided that a savings account holder and a recurring deposit account holder shall hold at least one equity share of rupees ten.
+            </li>
+
+        </ol>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Rules relating to Directors</h5>
+        </div>
+        <ol>
+            <li> The Director shall be a member of Nidhi.</li>
+
+            <li>The Director of a Nidhi shall hold office for a term up to ten consecutive years on the Board of Nidhi.</li>
+            <li>
+                The Director shall be eligible for re-appointment only after the expiration of two years of ceasing to be a Director.
+            </li>
+            <li>Where the tenure of any Director in any case had already been extended by the Central Government, it shall terminate on expiry of such extended tenure.</li>
+            <li>The person to be appointed as a Director shall comply with the requirements of sub-section (4) of section 152 of the Act and shall not have been disqualified from appointment as provided in section 164 of the Act.</li>
+
+        </ol>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Dividend</h5>
+            <p class="text-justify">A Nidhi shall not declare dividend exceeding twenty five per cent. or such higher amount as may be specifically approved by the Regional Director for reasons to be recorded in writing and further subject to the following conditions, namely</p>
+        </div>
+        <ol>
+            <li> An equal amount is transferred to General Reserve.</li>
+
+            <li>There has been no default in repayment of matured deposits and interest</li>
+            <li>
+                It has complied with all the rules as applicable to Nidhis.
+            </li>
+
+        </ol>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Auditor</h5>
+        </div>
+        <ol>
+            <li>No Nidhi shall appoint or re-appoint an individual as auditor for more than one term of five consecutive years</li>
+
+            <li>
+                No Nidhi shall appoint or re-appoint an audit firm as auditor for more than two terms of five consecutive years;
+
+                Provided that an auditor (whether an individual or an audit firm) shall be eligible for subsequent appointment after the expiration of two years from the completion of his or its term.
+            </li>
+
+
+        </ol>
+        <p class="text-justify">
+            Filing of half yearly return
+
+            Every company covered under rule 2 shall file half yearly return with the Registrar in Form NDH-3 along with such fee as provided in Companies (Registration Offices and Fees) Rules, 2014 within thirty days from the conclusion of each half year duly certified by a company secretary in practice in practice.
+        </p>
+        <p class="text-justify">
+            Auditor’s certificate
+
+            The Auditor of the company shall furnish a certificate every year to the effect that the company has complied with all the provisions contained in the rules and such certificate shall be annexed to the audit report and in case of non-compliance, he shall specifically state the rules which have not been complied with.
+        </p>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="row bg-secondary text-white p-3 rounded">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+        <p class="text-justify">WMC can help you to register Nidhi Company. The average time taken to draft and file registration documents of Nidhi Comapny is about 10 - 15 working days, subject to government processing time and client document submission. Get a free consultation for registration of Nidhi Company by scheduling an appointment with a WMC Advisor.</p>
+    </div>
+</div>
+

@@ -3,131 +3,150 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<link href="~/Content/styleFssai.css" rel="stylesheet" />
-<style>
-    body {
-        background-image: url('../Content/images/FASSI_WMC.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                FSSAI Registration
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/FSSAI Registration12.jpg" class="img-fluid img-thumbnail" />
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            Food safety standard authority of India (FSSAI) is a central government body started online application system name as Food Licensing Registration System (FLRS) to facilitate Food Business Operator (FBO) to apply for state fssai license certificate as per firm turnover above 12 Lakh and below 20 crores and to apply for central fssai license certificate as per firm turnover above 20 crores. FBO can track application on FLRS system with reference number provided by FSSAI during filing application. After approval of license, Department will send fssai license certificate copy to FBO on email, provided by FBO to FLRS System. FBO can file fssai application through fssai license consultant under system of FLRS for maximum 5 years .
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="container-fluid">
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
                         </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                @*<span id="message"></span><br>*@
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
+<div class="row">
+    <div class="col-12 bg-light card">
+        @*<div class="card-header bg-info text-white ">
+            <h5 class="text-left">Process</h5>
+        </div>*@
+        <div class="card-body">
+            @*<div class="text-justify">
+                For registration of Firm require minimum Entity Proof for open a Current Bank Account.
+                We have the following option to take entity proof:
+            </div>*@
+            <ol>
+                <li>Eligibility of Fssai - Food License.</li>
+                <li>Eligibility of FSSAI Registration: Turnover Upto 12 Lacs (Valid All India). </li>
+                <li>Fssai State License: Turnover 12 Lacs to 20 Crores (Valid All India)</li>
 
-<section>
-    <div class="jumbotron">
-        <div class="bg-light card">
-            <h3 class="card-header  text-center">
-                FSSAI Registration
-            </h3>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="text-justify">
-                            Food safety standard authority of India (FSSAI) is a central government body started online application system name
-                            as Food Licensing Registration System (FLRS)
-                            to facilitate Food Business Operator (FBO) to apply for state fssai license certificate as per firm turnover above 12
-                            Lakh and below 20 crores and to apply for central fssai license certificate as per firm turnover above 20 crores.
-                            FBO can track application on FLRS system with reference number provided by FSSAI during filing application.
-                            After approval of license, Department will send fssai license certificate copy to FBO on email,provided by  FBO
-                            to FLRS System. FBO can file fssai application through fssai license consultant under system of  FLRS  for maximum
-                            5 years.
-                        </p>
-                    </div>
+
+                <li>Fssai Central License: Turnover more than 20 Crores (Valid All India)</li>
+                <li>Fssai Import License: Food Import.</li>
+               
+
+            </ol>
+        </div>
+    </div>
+    
+
+    <br>
+    <br>
+
+    <div class="col-12 bg-light card">
+        <div class="card-header bg-info text-white">
+            <h5 class="text-left"> Documents (Required for Registration)</h5>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Self attested Copy of PAN Card of all the Partners/proprietor/Directors</li>
+                <li> Self attested Copy of ADDRESS PROOF of all the Partners/proprietor/Directors.</li>
+                <li>Passport Size Photographs of all the Partners/proprietor/Directors.</li>
+                <li>Copy of Firm Registration Proof.</li>
+                <li>Copy of Current Electricity Bill/Water Bill/House Tax Etc of the premises</li>
+                <li>If the Property is Rented, then Rent Agreement </li>
+                <li>Photo of Manufacturing Unit and List of Machine. </li>
+            </ol>
+
+            
+                <div class="card-header bg-info text-white ">
+                    <h5 class="text-left">Information required with regard to the company</h5>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul>
-                            <li>Eligibility of Fssai - Food License:</li>
-                            <li>Eligibility of Fssai registration : Turnover Upto 12 Lacs (Valid All India)</li>
-                            <li>Fssai State License : Turnover 12 Lacs to 20 Crores (Valid All India)</li>
-                            <li>Fssai Central License : Turnover more than 20 Crores (Valid All India)</li>
-                            <li>Fssai Import License : Food Import</li>
-                        </ul>
-                    </div>
+                <div class="card-body">
+                    @*<div class="text-justify">
+                        For registration of Firm require minimum Entity Proof for open a Current Bank Account.
+                        We have the following option to take entity proof:
+                    </div>*@
+                    <ol>
+                        <li>Kind of business</li>
+                        <li>Name of the Applicant/Company</li>
+                        <li>Designation</li>
+
+
+                        <li>Mobile Number</li>
+                        <li>Email</li>
+                        <li>Address of Premises</li>
+                        <li>Description of the food items proposed to be Manufactured or sold</li>
+                        <li>Total Annual turnover from the food business, if existing, alongwith any supporting document(s) showing proof of income</li>
+                        <li>In case of new business - intended date of start</li>
+                        <li>In case of seasonal business, state the opening and closing period of the year</li>
+                        <li>Source of water supply</li>
+                        <li>Whether any electric power is used in manufacture of the food items</li>
+
+                    </ol>
                 </div>
-            </div>
-
-        </div>
-        <br>
-        <br>
-
-        <h2 class="text-center">Documents Required for Registration:</h2><br>
-
-        <div class="bg-light card">
-            <div class="card-header ">
-                <h2 class="text-left">Document List</h2>
-            </div>
-            <div class="card-body">
-                <ol start="1">
-                    <li>Self attested Copy of PAN Card of all the Partners/proprietor/Directors.</li>
-                    <li>Self attested Copy of ADDRESS PROOF of all the Partners/proprietor/Directors.</li>
-                    <li>Passport Size Photographs of all the Partners/proprietor/Directors.</li>
-                    <li>Copy of Firm Registration Proof.</li>
-                    <li>Copy of Current Electricity Bill/Water Bill/House Tax Etc of the premises</li>
-                    <li>If the Property is Rented, then Rent Agreement.</li>
-                    <li>Photo of Manufacturing Unit and List of Machine.</li>
-                </ol>
+          
+            <div class="row bg-secondary text-white p-3 rounded">
+                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing.  </p>
+                <p class="text-justify">WMC can help you in registration of Food safety standard authority of India (FSSAI). The average time taken to draft and file registration documents of FSSAI is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation for registration under FSSAI by scheduling an appointment with a WMC Advisor.</p>
             </div>
         </div>
+    </div>
 
-        <br>
-        <br>
-        <h2 class="text-center">Information Required with regard to the company</h2>
 
-        <div class="bg-light card">
-            <div class="card-header ">
-                <h2 class="text-left"> About the Company</h2>
-            </div>
-            <div class="card-body">
 
-                <ol start="A">
-                    <li>Kind of business</li>
-                    <li>Name of the Applicant/Company</li>
-                    <li>Designation</li>
-                    <li>Mobile no</li>
-                    <li>email</li>
-                    <li>address of premises</li>
-                    <li>Description of the food items proposed to be Manufactured or sold</li>
-                    <li>Total Annual turnover from the food business, if existing, alongwith any supporting document(s) showing proof of income</li>
-                    <li>In case of new business - intended date of start</li>
-                    <li>In case of seasonal business, state the opening and closing period of the year</li>
-                    <li>Source of water supply</li>
-                    <li>Whether any electric power is used in manufacture of the food items</li>
-                </ol>
-            </div>
-        </div>
-</section>
+    <br>
+    <br>
+
+
+</div>
+
 

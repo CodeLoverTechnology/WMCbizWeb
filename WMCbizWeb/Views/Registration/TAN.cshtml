@@ -3,46 +3,64 @@
     ViewBag.Title = "TAN";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-    body {
-        background-image: url('../Content/images/partnership_2.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
+<div class="row mt-5">
+    <div class="col-lg-9 col-md-6 col-sm-12">
+        <div class="jumbotron-fluid bg-light card">
+            <h4 class="card-header  text-center bg-info text-white">
+                TAN (Tax Deduction and Collection Account Number)
 
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-3">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="~/Content/images/tan-reg.jpg" class="img-fluid img-thumbnail" />
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-justify">
+                            TAN registration is required for all the assessee required to deduct TDS (Tax deducted at source) on transaction.
+
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="container-fluid">
+            <div class="mb-2">
+                <form class="form" action="/Home/Enquiry" method="post">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
                         </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name"><b></b></label>
+                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
+                                @*<span id="message"></span><br>*@
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><B></B></label>
+                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num"><B></B></label>
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-light p-1">+91 </span>
+                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -79,11 +97,16 @@
                 (g)	Signature / Left thumb impression should only be within the box provided in the acknowledgment. In case of applicants other than 'Individuals', the authorised signatory shall sign the acknowledgment. Left hand Thumb impression, if used, should be attested by a Magistrate or a Notary Public or Gazetted Officer, under official seal and stamp<br />
                 (h)	Pay the fee for processing TAN application. the Payment can be made by: demand draft or cheque or  credit card / debit card or net banking or Demand draft / cheque shall be in favor of 'NSDL - TIN' payable at Mumbai<br />
             </p>
+
+        </div>
+        <div class="row bg-secondary text-white p-3 rounded">
+            <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing.  </p>
+            <p class="text-justify">WMC can help you to get TAN. The average time taken to draft and file registration documents of TAN is about 2-5 working days, subject to government processing time and client document submission. Get a free consultation to get TAN by scheduling an appointment with a WMC Advisor.</p>
         </div>
     </div>
     <br>
     <br>
-    <div class="bg-light card">
+    @*<div class="bg-light card">
         <div class="card-header text-white bg-info">
             <h2 class="text-left">Registration under Shop & Establishment</h2>
         </div>
@@ -93,8 +116,8 @@
                 The shops and commercial establishments regulate to the commercial establishment or premises wherein any trade, business or profession or any work in connection with, or incidental or ancillary thereto is carried on, such as hotels, restaurants, theaters, bakeries, societies, charitable trusts, educational institutions , eating houses, premises of business for brokerage, banking, insurance firms, public places of amusement and entertainment, etc.
             </p>
         </div>
-    </div>
-    <div class="bg-light card">
+    </div>*@
+    @*<div class="bg-light card">
         <div class="card-header text-white bg-info">
             <h2 class="text-left">Procedure of Registration </h2>
         </div>
@@ -107,8 +130,8 @@
 
             </p>
         </div>
-    </div>
-    <div class="bg-light card">
+    </div>*@
+    @*<div class="bg-light card">
         <div class="card-header text-white bg-info">
             <h2 class="text-left">Documents/ information are required for registration under Shop & Establishment:-</h2>
         </div>
@@ -129,8 +152,8 @@
 
             </p>
         </div>
-    </div>
-    <div class="bg-light card">
+    </div>*@
+    @*<div class="bg-light card">
         <div class="card-header text-white bg-info">
             <h2 class="text-left">
                 Renewal of Registration Certificate:-
@@ -142,7 +165,7 @@
 
             </p>
         </div>
-    </div>
+    </div>*@
 </div>
 
 

@@ -58,6 +58,10 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
+        public ActionResult Product_Registration()
+        {
+            return View();
+        }
 
     }
 }

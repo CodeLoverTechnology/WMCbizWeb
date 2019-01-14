@@ -76,6 +76,10 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
+        public ActionResult Nidhi_Company()
+        {
+            return View();
+        }
         #endregion
 
 

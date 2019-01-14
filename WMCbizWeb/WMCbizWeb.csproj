@@ -239,6 +239,7 @@
     <Content Include="Content\full-slider.css" />
     <Content Include="Content\images\1.jpg" />
     <Content Include="Content\images\12.jpg" />
+    <Content Include="Content\images\123.png" />
     <Content Include="Content\images\1234r.jpg" />
     <Content Include="Content\images\123r.jpg" />
     <Content Include="Content\images\12r.jpeg" />
@@ -309,6 +310,7 @@
     <Content Include="Content\images\Partnership firm1.jpg" />
     <Content Include="Content\images\partnership_2.jpg" />
     <Content Include="Content\images\patner.jpg" />
+    <Content Include="Content\images\permanent-account-number-in-india.jpg" />
     <Content Include="Content\images\PF Registration12.jpg" />
     <Content Include="Content\images\phone.png" />
     <Content Include="Content\images\pp.jpg" />
@@ -322,6 +324,7 @@
     <Content Include="Content\images\renewal1.jpg" />
     <Content Include="Content\images\Saurabh_Awasthi.jpg" />
     <Content Include="Content\images\Section8 Company 12.jpg" />
+    <Content Include="Content\images\shopandestablishment.jpg" />
     <Content Include="Content\images\slider1.jpg" />
     <Content Include="Content\images\slider2.jpg" />
     <Content Include="Content\images\slider4.jpg" />
@@ -331,6 +334,7 @@
     <Content Include="Content\images\sole-proprietorship12.jpg" />
     <Content Include="Content\images\sole.jpg" />
     <Content Include="Content\images\solee.jpg" />
+    <Content Include="Content\images\tan-reg.jpg" />
     <Content Include="Content\images\TAN12.jpg" />
     <Content Include="Content\images\Tax Planning12.jpg" />
     <Content Include="Content\images\tax-1.jpg" />
@@ -516,6 +520,8 @@
     <Content Include="Views\Compliances\CERTIFICATIONATTESTATIONSERVICES.cshtml" />
     <Content Include="Views\Job\Job.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Registration\Product_Registration.cshtml" />
+    <Content Include="Views\StartABusiness\Nidhi_Company.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
