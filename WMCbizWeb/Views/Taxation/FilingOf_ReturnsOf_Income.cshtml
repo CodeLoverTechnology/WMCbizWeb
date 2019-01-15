@@ -4,121 +4,127 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    body {
-        background-image: url('../Content/images/solee.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                  Filing of Returns of IncomeTax
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/Filing of Returns of income12.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                1.&nbsp; ITR-1(SAHAJ ): For Individuals having income from salary, one house property, other sources (Interest etc.) and having total income up to Rs.50 lakh<br />
+                                2. &nbsp;ITR-2: For Individuals and HUFs not carrying out business or profession under any proprietorship<br />
+                                3. &nbsp;ITR-3: For Individuals and HUFs having income from a proprietary business or profession<br />
+                                4. &nbsp;ITR-4: For Individual, HUF or Firm opting for presumptive taxation scheme<br />
+                                
 
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-2">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
-                        </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="text-justify">
+                            5. &nbsp;ITR-5: For Firm, Limited Liability Partnership (LLP), Association of Persons (AOP), Body of Individuals (BOI), Artificial juridical person, Private Discretionary Trust, Cooperative society, Registered societies, Local authority. However, a person who is required to file ITR-7 shall not use this form<br />
+                            6. &nbsp;ITR-4:ITR-6: For company, other than a company claiming exemption under section 11 (exemption under section 11 can be claimed by charitable/religious trust)<br />
+                            7. &nbsp;ITR-4: 7.	ITR-7: Persons including companies who are required to furnish return under section 139(4A) or 139(4B) or 139(4C) or 139(4D) or section 139(4E) or section 139(4F) of the Income-tax Act, 1961 (i.e., trusts, political parties, institutions, colleges, investment fund, etc.)<br />
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  
+        <div class="bg-light card">
+            <div class="card-header bg-info text-white ">
+                <h2 class="text-left" style="font-size:21px;">WHAT IS FORM 16 & WHY?</h2>
+            </div>
+            <div class="card-body">
+                <div class="text-justify" style="font-size:18px;">
+                    FORM 16 is issued by employer to employee. Form 16 includes salary bifurcation in details. it also indicates TDS amount deducted by employer from employee. Form 16 is issued to employees before 30th April of every year.
+                </div>
+                <p>
+                    <h6>INCOME TAX RETURN DUE DATE<br /></h6>
+                    The due date for income tax return filing is 31st July of every year for individual taxpayers. The due date for income tax return filing for companies and taxpayer requiring tax audit is 30th September.
+                    <h6> Tax Audit Requirement:</h6>
+                    Section 44AD of the Income Tax Act deals with tax audit under Income Tax Act
+                    <h6>  Business</h6>
+                    In case of a business, tax audit would be required if the total sales turnover or gross receipts in the business exceeds Rs.1 crore in any previous year.
+                    <h6>  Professional</h6>
+                    In case of a profession or professional, tax audit would be required if gross receipts in the profession exceeds Rs.50 lakhs in any of the previous year.
+                    <h6> Presumptive Taxation Scheme</h6>
+                    If a person is enrolled under the presumptive taxation scheme under section 44AD and total sales or turnover is more than Rs. 2 crores, then tax audit would be required.
 
+                </p>
+            </div>
+        </div>
 
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header  text-center bg-info text-white">
-            INCOME TAX RETURN VARIES AS PER THE CATEGORY OF ASSESSES
-        </h3>
-        <div class="card-body">
-            <div class="col-lg-12 text-justify">
-                1.	<strong>ITR-1(SAHAJ ): </strong>For Individuals having income from salary, one house property, other sources (Interest etc.) and having total income up to Rs.50 lakh<br />
-                2.	<strong>ITR-2:</strong> For Individuals and HUFs not carrying out business or profession under any proprietorship.<br />
-                3.	<strong>ITR-3:</strong> For Individuals and HUFs having income from a proprietary business or profession.<br />
-                4.	<strong>ITR-4:</strong> For Individual, HUF or Firm opting for presumptive taxation scheme.<br />
-                5.	<strong>ITR-5:</strong> For Firm, Limited Liability Partnership (LLP), Association of Persons (AOP), Body of Individuals (BOI), Artificial juridical person, Private Discretionary Trust, Cooperative society, Registered societies, Local authority. However, a person who is required to file ITR-7 shall not use this form.<br />
-                6.	<strong>ITR-6:</strong> For company, other than a company claiming exemption under section 11 (exemption under section 11 can be claimed by charitable/religious trust)<br />
-                7.	<strong>ITR-7:</strong> Persons including companies who are required to furnish return under section 139(4A) or 139(4B) or 139(4C) or 139(4D) or section 139(4E) or section 139(4F) of the Income-tax Act, 1961 (i.e., trusts, political parties, institutions, colleges, investment fund, etc.).<br />
+        <br>
+        <br>
 
-
+        <div class="bg-light card">
+            <div class="card-header bg-info text-white">
+                <h2 class="text-left" style="font-size:21px;">
+                    PENALTY FOR LATE FILING INCOME TAX RETURN
+                </h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    Taxpayers who do not file their income tax return on time are subject to penalty and charged an interest on the late payment of income tax. Also, the penalty for late filing income tax return on time has been increased recently. The penalty for late filing income tax return is now as follows:<br />
+                    •	Late Filing between 1st August and 31st December - Rs.5000<br />
+                    •	Late Filing After 31st December - Rs.10,000<br />
+                    •	Penalty if taxable income is less than Rs.5 lakhs - Rs.1000<br />
+                </p>
 
             </div>
-
-        </div>
-
-    </div>
-    <br>
-    <br>
-
-
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white ">
-            <h2 class="text-left">WHAT IS FORM 16 & WHY?</h2>
-        </div>
-        <div class="card-body">
-            <div class="text-justify">
-                FORM 16 is issued by employer to employee. Form 16 includes salary bifurcation in details. it also indicates TDS amount deducted by employer from employee. Form 16 is issued to employees before 30th April of every year.
-            </div>
-            <p>
-                <h6>INCOME TAX RETURN DUE DATE<br /></h6>
-                The due date for income tax return filing is 31st July of every year for individual taxpayers. The due date for income tax return filing for companies and taxpayer requiring tax audit is 30th September.
-                <h6> Tax Audit Requirement:</h6>
-                Section 44AD of the Income Tax Act deals with tax audit under Income Tax Act
-                <h6>  Business</h6>
-                In case of a business, tax audit would be required if the total sales turnover or gross receipts in the business exceeds Rs.1 crore in any previous year.
-                <h6>  Professional</h6>
-                In case of a profession or professional, tax audit would be required if gross receipts in the profession exceeds Rs.50 lakhs in any of the previous year.
-                <h6> Presumptive Taxation Scheme</h6>
-                If a person is enrolled under the presumptive taxation scheme under section 44AD and total sales or turnover is more than Rs. 2 crores, then tax audit would be required.
-
-            </p>
         </div>
     </div>
-
-    <br>
-    <br>
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white">
-            <h2 class="text-left">
-                PENALTY FOR LATE FILING INCOME TAX RETURN
-            </h2>
-        </div>
-        <div class="card-body">
-            <p>
-                Taxpayers who do not file their income tax return on time are subject to penalty and charged an interest on the late payment of income tax. Also, the penalty for late filing income tax return on time has been increased recently. The penalty for late filing income tax return is now as follows:<br />
-                •	Late Filing between 1st August and 31st December - Rs.5000<br />
-                •	Late Filing After 31st December - Rs.10,000<br />
-                •	Penalty if taxable income is less than Rs.5 lakhs - Rs.1000<br />
-            </p>
-
-        </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  card">
+    <div class="row bg-secondary text-white p-3 rounded w-100" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+        <p class="text-justify">WMC can help you in filing Income Tax Return. The average time taken to draft and file Income Tax Returns documents under respective authority is about 2-5 working days, subject to government processing time and client document submission. Get a free consultation to get Income Tax Returns by scheduling an appointment with a WMC Advisor.</p>
     </div>
 </div>
 

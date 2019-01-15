@@ -2,154 +2,126 @@
     ViewBag.Title = "IEC";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-
-                IEC CODE LICENCE
-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/IEC Code Licence12.jpg" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            IEC CODE Stands for IMPORT EXPORT CODE NUMBER. It is a Firm/Individual Pan number after approval. No export or import shall be made by any person or company without an Import-Export Code (IEC CODE) number unless specifically exempted. PAN Card is mandatory to issue Import Export Code number to the applicant for trade outside India.
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    IEC CODE LICENCE
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/IEC Code Licence12.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                IEC CODE Stands for IMPORT EXPORT CODE NUMBER. It is a Firm/Individual Pan number after approval. No export or import shall be made by any person or company without an Import-Export Code (IEC CODE) number unless specifically exempted. PAN Card is mandatory to issue Import Export Code number to the applicant for trade outside India
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                @*<div class="text-justify" style="font-size:18px;">
+                                    It's a simply firm which is
+                                    enabling doing business in India with Less Compliance and Less Costing. a Sole Proprietorship
+                                </div>*@
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="clearfix"></div>
-<div class="row">
-    @*<div class="col-12 bg-light card">
-        @*<div class="card-header bg-info text-white ">
-                <h5 class="text-left">Process</h5>
-            </div>*@
-        <div class="card-body">
-            @*<div class="text-justify">
-                    For registration of Firm require minimum Entity Proof for open a Current Bank Account.
-                    We have the following option to take entity proof:
-                </div>*@
-            @*<ol>
-                <li>Eligibility of Fssai - Food License.</li>
-                <li>Eligibility of FSSAI Registration: Turnover Upto 12 Lacs (Valid All India). </li>
-                <li>Fssai State License: Turnover 12 Lacs to 20 Crores (Valid All India)</li>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card-header bg-info text-white">
+        <h5 class="text-left" style="font-size:21px;"> Documents Required </h5>
+    </div>
+    <div class="card-body">
+        <ol style="font-size:18px;">
+            <p>In case of proprietorship firm</p>
+            <li>Self-attested Copy of Pan Card</li>
+            <li>A Photograph</li>
+            <li>A cancelled cheque of Firm</li>
+            <li>Mobile Number and E-mail ID of proprietor</li>
+            <li>Self-attested Copy of Address Proof of Applicant (Adhaar Card/Electricity Bill/ Mobile Bill)</li>
+
+        </ol>
+        <ol style="font-size:18px;">
+            <p>In case of partnership firm</p>
+            <li>Pan Card of partnership firm</li>
+            <li>A cancelled cheque of Firm</li>
+            <li>Address Proof of the Applicant Firm (Electricity Bill/ Mobile Bill)</li>
+            <li>Partnership Deed</li>
+            <li>List of Partners</li>
+            <li>Mobile Number and E-mail ID of Partners</li>
+            <li>A Photograph of applicant</li>
+            <li>Self-attested Copy of Pan cards of Partners</li>
+            <li>Self-attested Copy of Address proofs of Partners</li>
+
+        </ol>
+        <ol style="font-size:18px;">
+            <p>In case of company:</p>
+            <li>Copy of Pan Card of Company</li>
+            <li>A cancelled cheque of Company</li>
+            <li>COI</li>
+            <li>MOA & AOA</li>
+            <li>List of Directors</li>
+            <li>Mobile Number and E-mail ID of Directors</li>
+            <li>Self-attested Copy of Pan cards of Directors</li>
+            <li>Self-attested Copy of Address proofs of Directors</li>
+            <li>A Photograph of Applicant</li>
+
+        </ol>
 
 
-                <li>Fssai Central License: Turnover more than 20 Crores (Valid All India)</li>
-                <li>Fssai Import License: Food Import.</li>
 
 
-            </ol>*@
-        </div>
+
+        
     </div>
 
-
-    <br>
-    <br>
-
-    <div class="col-12 bg-light card">
-        <div class="card-header bg-info text-white">
-            <h5 class="text-left"> Documents\ Information required for IEC code </h5>
-        </div>
-        <div class="card-body">
-            <ol>
-                <p>In case of proprietorship firm</p>
-                <li>Self-attested Copy of Pan Card</li>
-                <li>A Photograph</li>
-                <li>A cancelled cheque of Firm</li>
-                <li>Mobile Number and E-mail ID of proprietor</li>
-                <li>Self-attested Copy of Address Proof of Applicant (Adhaar Card/Electricity Bill/ Mobile Bill)</li>
-
-            </ol>
-            <ol>
-                <p>In case of partnership firm</p>
-                <li>Pan Card of partnership firm</li>
-                <li>A cancelled cheque of Firm</li>
-                <li>Address Proof of the Applicant Firm (Electricity Bill/ Mobile Bill)</li>
-                <li>Partnership Deed</li>
-                <li>List of Partners</li>
-                <li>Mobile Number and E-mail ID of Partners</li>
-                <li>A Photograph of applicant</li>
-                <li>Self-attested Copy of Pan cards of Partners</li>
-                <li>Self-attested Copy of Address proofs of Partners</li>
-
-            </ol>
-            <ol>
-                <p>In case of company:</p>
-                <li>Copy of Pan Card of Company</li>
-                <li>A cancelled cheque of Company</li>
-                <li>COI</li>
-                <li>MOA & AOA</li>
-                <li>List of Directors</li>
-                <li>Mobile Number and E-mail ID of Directors</li>
-                <li>Self-attested Copy of Pan cards of Directors</li>
-                <li>Self-attested Copy of Address proofs of Directors</li>
-                <li>A Photograph of Applicant</li>
-
-            </ol>
-
-
-
-
-
-            <div class="row bg-secondary text-white p-3 rounded">
-                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
-                <p class="text-justify">WMC can help you in registration of IEC. The average time taken to draft and file registration documents for IEC Code is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation for IEC Code by scheduling an appointment with a WMC Advisor.</p>
-            </div>
-        </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+        <p class="text-justify">WMC can help you in registration of IEC. The average time taken to draft and file registration documents for IEC Code is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation for IEC Code by scheduling an appointment with a WMC Advisor.</p>
     </div>
-
-
-
-    <br>
-    <br>
-
-
+</div>
 
 

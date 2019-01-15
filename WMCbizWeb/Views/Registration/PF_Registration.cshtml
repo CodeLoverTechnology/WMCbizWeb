@@ -3,150 +3,158 @@
     ViewBag.Title = "PF_Registration";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-                PROVIDENT FUND
-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/PF Registration12.jpg" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            The Employee Provident Fund (EPF), popularly known as the Provident Fund (PF) is a retirement saving scheme available to all the salaried employees on which interest is paid as decided by the Government from time to time. EPF is administered by the Employees Provident Fund Organization (EPFO), a statutory body formed by the Government of India under the Ministry of Labor and Employment.
-
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    PROVIDENT FUND
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/PF Registration12.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                The Employee Provident Fund (EPF), popularly known as the Provident Fund (PF) is a retirement saving scheme available to all the salaried employees on which interest is paid as decided by the Government from time to time. EPF is administered by the Employees Provident Fund Organization (EPFO), a statutory body formed by the Government of India under the Ministry of Labor and Employment
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                @*<div class="text-justify" style="font-size:18px;">
+                                    It's a simply firm which is
+                                    enabling doing business in India with Less Compliance and Less Costing. a Sole Proprietorship
+                                </div>*@
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="jumbotron">
-    <div class="card-body">
-        <h3 class="card-header  bg-info text-white  text-center">
-            PROVIDENT FUND
-        </h3>
-        <div class="text-justify">
-            The Employee Provident Fund (EPF), popularly known as the Provident Fund (PF) is a retirement saving scheme available to all the salaried employees on which interest is paid as decided by the Government from time to time.<br /> EPF is administered by the Employees Provident Fund Organization (EPFO), a statutory body formed by the Government of India under the Ministry of Labor and Employment.
-        </div>
-
-    </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Types of EPF:</h2>
-        </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="jumbotron">
         <div class="card-body">
-            <p style="font-size:20px; color:black;">
-                1. <strong class="text-justify">Statutory PF:-</strong>It is set up under the provisions of the Provident Funds Act,1925 maintained by the Government and Semi-Government organizations, local authorities,railways, universities and educational institutions.<br />
-                2. <strong class="text-justify">Recognized PF- :-</strong>Any establishment which is recognized by the Commissioner of Income Tax is called as recognized provident fund. To be recognized, an organization of 20 or more members shall invest funds as per the guidelines of PF Act, 1952, and can get an approval from the PF Commissioner of Income-tax.<br />
-                3.<strong class="text-justify">Unrecognized PF:-</strong>The provident fund that is not recognized by Commissioner of Income Tax is known as an unrecognized provident fund.<br />
-                4.<strong class="text-justify">Public PF:-</strong>The Central Government has established the public provident fund where any member, either salaried employee or a business employed person shall participate by opening a PF account at the State Bank of India or other nationalized banks. Any amount subjected to a minimum of Rs.500 and maximum of Rs.1,50,000 per annum may be deposited under this PF account, on which a certain sum of interest is credited every year, which could be  repayable after 15 years.<br />
+            <h3 class="card-header  bg-info text-white  text-center" style="font-size:21px;">
+                PROVIDENT FUND
+            </h3>
+            <div class="text-justify" style="font-size:18px;">
+                The Employee Provident Fund (EPF), popularly known as the Provident Fund (PF) is a retirement saving scheme available to all the salaried employees on which interest is paid as decided by the Government from time to time.<br /> EPF is administered by the Employees Provident Fund Organization (EPFO), a statutory body formed by the Government of India under the Ministry of Labor and Employment.
+            </div>
 
-            </p>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Online EPF Registration Process for Employer</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                Online registration is important for employers as they deduct the TDS from employees’ salary. In order to register online, you will be required to create an account first. PF registration is obligatory for companies with more than 20 employees
-            </p>
-        </div>
-    </div>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Eligibility for EPF Registration</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                Employees’ drawing less than Rs 15,000 per month are compulsorily required to become member of the EPF. An employee who is drawing basis pay of more than Rs 15,000 can still become a member and make PF contributions, provided he has to take the consent of the Employer and Assistant PF Commissioner.
+        <br>
+        <br>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Types of EPF</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size:18px; color:black;">
+                    1. <strong class="text-justify">Statutory PF:-</strong>It is set up under the provisions of the Provident Funds Act,1925 maintained by the Government and Semi-Government organizations, local authorities,railways, universities and educational institutions.<br />
+                    2. <strong class="text-justify">Recognized PF- :-</strong>Any establishment which is recognized by the Commissioner of Income Tax is called as recognized provident fund. To be recognized, an organization of 20 or more members shall invest funds as per the guidelines of PF Act, 1952, and can get an approval from the PF Commissioner of Income-tax.<br />
+                    3.<strong class="text-justify">Unrecognized PF:-</strong>The provident fund that is not recognized by Commissioner of Income Tax is known as an unrecognized provident fund.<br />
+                    4.<strong class="text-justify">Public PF:-</strong>The Central Government has established the public provident fund where any member, either salaried employee or a business employed person shall participate by opening a PF account at the State Bank of India or other nationalized banks. Any amount subjected to a minimum of Rs.500 and maximum of Rs.1,50,000 per annum may be deposited under this PF account, on which a certain sum of interest is credited every year, which could be  repayable after 15 years.<br />
 
-                Companies employing 20 or more employees are compulsorily required to register themselves within one month from the time of attaining this strength.
-                Co-operative societies are expected to register if their employee strength is 50 or more, working with the aid of Power
-
-            </p>
-        </div>
-    </div>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">EPF Registration Procedure</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                For EPF Registration procedure, an employer can choose to register either offline or online, with the online option being the preferred mode for registration today. The registration form can be downloaded from the website of the Employees’ Provident Fund Organization. Employers need to provide the following details to successfully register themselves<br />
-                •	Name and address of company<br />
-                •	Head office and branch details<br />
-                •	Date of incorporation/registration of company<br />
-                •	Strength and Details of employees<br />
-                •	Activity the business/enterprise is involved in – i.e. manufacturing, production, service, etc.<br />
-                •	Legal details – This pertains to legal status of a company, i.e. whether it is a private firm/public company, partnership or society, etc.<br />
-                •	Owner details, including designation and address of Directors and partners<br />
-                •	Particulars related to wage component of employees, i.e. total wage disbursed during a month<br />
-                •	Details of bank with whom company has banking relationship<br />
-                •	PAN details<br />
-                •	Basic details of employee (name, date of joining, salary, etc.)<br />
-                •	In case the establishment is already covered under the -- ESIC, the ESIC Code.<br />
-                •	If the establishment is already on lease, the start date -- and the details of the lessee(s)<br />
-                •	Scanned copy of Consent letter of the majority of employees with their details and signatures. (Only in case of voluntary coverage)<br />
-                •	Date of agreement and any subsequent date -- mentioned in the said agreement for voluntary coverage. (Only in case of voluntary coverage)<br />
-                •	Specimen Signature of Authorised Signatory<br />
-
-
-            </p>
-            <div class="row bg-secondary text-white p-3 rounded">
-                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
-                <p class="text-justify">WMC can help you in registration under Employee Provident Fund (EPF). The average time taken to draft and file registration documents under EPF is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation for EPF registration by scheduling an appointment with a WMC Advisor.</p>
+                </p>
             </div>
         </div>
+        <br>
+        <br>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Online EPF Registration Process for Employer</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    Online registration is important for employers as they deduct the TDS from employees’ salary. In order to register online, you will be required to create an account first. PF registration is obligatory for companies with more than 20 employees
+                </p>
+            </div>
+        </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Eligibility for EPF Registration</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    Employees’ drawing less than Rs 15,000 per month are compulsorily required to become member of the EPF. An employee who is drawing basis pay of more than Rs 15,000 can still become a member and make PF contributions, provided he has to take the consent of the Employer and Assistant PF Commissioner.
+
+                    Companies employing 20 or more employees are compulsorily required to register themselves within one month from the time of attaining this strength.
+                    Co-operative societies are expected to register if their employee strength is 50 or more, working with the aid of Power
+
+                </p>
+            </div>
+        </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">EPF Registration Procedure</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    For EPF Registration procedure, an employer can choose to register either offline or online, with the online option being the preferred mode for registration today. The registration form can be downloaded from the website of the Employees’ Provident Fund Organization. Employers need to provide the following details to successfully register themselves<br />
+                    •	Name and address of company<br />
+                    •	Head office and branch details<br />
+                    •	Date of incorporation/registration of company<br />
+                    •	Strength and Details of employees<br />
+                    •	Activity the business/enterprise is involved in – i.e. manufacturing, production, service, etc.<br />
+                    •	Legal details – This pertains to legal status of a company, i.e. whether it is a private firm/public company, partnership or society, etc.<br />
+                    •	Owner details, including designation and address of Directors and partners<br />
+                    •	Particulars related to wage component of employees, i.e. total wage disbursed during a month<br />
+                    •	Details of bank with whom company has banking relationship<br />
+                    •	PAN details<br />
+                    •	Basic details of employee (name, date of joining, salary, etc.)<br />
+                    •	In case the establishment is already covered under the -- ESIC, the ESIC Code.<br />
+                    •	If the establishment is already on lease, the start date -- and the details of the lessee(s)<br />
+                    •	Scanned copy of Consent letter of the majority of employees with their details and signatures. (Only in case of voluntary coverage)<br />
+                    •	Date of agreement and any subsequent date -- mentioned in the said agreement for voluntary coverage. (Only in case of voluntary coverage)<br />
+                    •	Specimen Signature of Authorised Signatory<br />
+
+
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+        <p class="text-justify">WMC can help you in registration under Employee Provident Fund (EPF). The average time taken to draft and file registration documents under EPF is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation for EPF registration by scheduling an appointment with a WMC Advisor.</p>
     </div>
 </div>

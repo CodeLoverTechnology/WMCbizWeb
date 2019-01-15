@@ -4,125 +4,184 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    body {
-        background-image: url('../Content/images/solee.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
-
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-2">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    E-FILING OF APPEAL BEFORE THE CIT (APPEALS)
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/Filing of Appeals12.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                To digitise the Appeal function, the Income Tax Department/ CBDT has decided to make electronic filing (e-Filing) of appeals before CIT (Appeals) as mandatory for persons who are already required to file the return of income electronically. Electronic filing of appeal along with the supporting documents will remove human interface, reduce paperwork and decrease the cost for the taxpayer. Online filing will also facilitate fixation of hearing of appeals electronically.
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    The Central Board of Direct Taxes has made an announcement vide press release dated 30.12.2015 with respect to the Procedure for electronic filing of appeal before the CIT(Appeals) (Commissioner of Income Tax Appeals). Subsequently, vide notification no. 11/2016 dated 01/03/2016, the concerned rule (i.e., new rule 45 substituted for old rule 45) has been notified
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-            </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="jumbotron">
 
 
 
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header  text-center bg-info text-white">
-            E-FILING OF APPEAL BEFORE THE CIT (APPEALS)
-        </h3>
-        <div class="card-body">
-            <div class="col-lg-12 text-justify">
-                <p>
-                    To digitise the Appeal function, the Income Tax Department/ CBDT has decided to make electronic filing (e-Filing) of appeals before CIT (Appeals) as mandatory for persons who are already required to file the return of income electronically. Electronic filing of appeal along with the supporting documents will remove human interface, reduce paperwork and decrease the cost for the taxpayer. Online filing will also facilitate fixation of hearing of appeals electronically.
-                    The Central Board of Direct Taxes has made an announcement vide press release dated 30.12.2015 with respect to the Procedure for electronic filing of appeal before the CIT(Appeals) (Commissioner of Income Tax Appeals). Subsequently, vide notification no. 11/2016 dated 01/03/2016, the concerned rule (i.e., new rule 45 substituted for old rule 45) has been notified.
-                    <h6> Applicability of e-filing of appeals:</h6>
+        <div class="bg-light card">
+            <div class="card-header bg-info text-white ">
+                <h2 class="text-left" style="font-size:21px;">Applicability of e-filing of appeals</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
                     E-filing of appeals is made mandatory for the people who file their return of income electronically.
-                    <h6>Form to be filled for filing of Appeals before CIT(Appeals)?</h6>
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Form to be filled for filing of Appeals before CIT (Appeals)?</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
                     Form no. 35 is required to be filed. The old form has been replaced by the new Form No. 35.
+
 
                 </p>
             </div>
-
         </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Requisites for Filing of Appeal online before CIT (Appeals)</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    1.	New form no. 35 will be provided on the website<br />
+                    2.	The new Form No. 35 should be duly filled.<br />
+                    3.	The statement of facts and grounds of appeal are to be filled in the form no. 35 in the relevant columns itself.<br />
+                    4.	Each of the grounds of appeal must be less than 100 words.<br />
+                    5.	The statement of facts must be less than 1000 words.<br />
+                    6.	The scanned copies of the order appealed against, challan for appeal fees and<br />
+                    7.	Notice of demand is required to be attached.<br />
+                    8.	Requirement of Digital Signatures for filing Appeals<br />
+                    All of these attachments must be in pdf/zip format. The total attachments in must not exceed 50 mb in size.<br />
+
+
+                </p>
+            </div>
+        </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Procedure for e-filing of Appeal<p>The CBDT vide Notification No. 11/2016 dt 1st March 2016 has notified that Form No. 35 shall be furnished in the following manner, namely</p></h2>
+            </div>
+            <div class="card-body">
+                <ol type="1" style="font-size:18px;">
+                    <li>
+                        . (a) in the case of a person who is required to furnish return of income electronically under sub-rule(3) of rule 12
+                        <br />
+                    </li>
+                    <li>	(1) by furnishing the form electronically under digital signature, if the return of income is furnished under digital signature<br /></li>
+                    <li>	(ii) by furnishing the form electronically through electronic verification code in a case not covered under sub-clause .<br /> </li>
+                    <li>(b) in a case where the assessee has the option to furnish the return of income in paper form, by furnishing the form electronically in accordance with clause (a) of subrule(2) or in paper form<br /> </li>
+                    <li>  . The form of appeal referred to in sub-rule (1), shall be verified by the person who is authorised to verify the return of income under section 140 of the Act, as applicable to the assessee<br /></li>
+                    <li>	Any document accompanying Form No. 35 shall be furnished in the manner in which the said form is furnished.<br /></li>
+                    @*<li>ITR-7: Persons including companies who are required to furnish return under section 139(4A) or 139(4B) or 139(4C) or 139(4D) or section 139(4E) or section 139(4F) of the Income-tax Act, 1961 (i.e., trusts, political parties, institutions, colleges, investment fund, etc.)<br /> </li>*@
+
+
+                </ol>
+            </div>
+        </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Procedure for e Verification of e Filed Appeals</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    Procedure for verification of the identity of the person furnishing the e-filed form 35 for appeals to the CIT (Appeals), using EVC, has been notified by the CBDT/ IT Deptt., vide Notification No. 5/2016 DIT (S) dt 6th April, 2016, as under:
+
+                    <ol type="1">
+                        <li>The Electronic Verification Code (EVC) would verify the identity of the person furnishing the form (hereinafter called ’Verifier’) and would be generated on the e-Filing website or as otherwise indicated. As specified in sub-rule (3) of rule 45 the Verifier shall be the person who is authorized to verify the return of income under section 140 of the Act as applicable to the assessee. Where the Verifier represents an entity (i.e. HUF/ Firm/ AOP etc.) then the Verifier should be registered in the e-Filing website as a Principal Contact of the entity</li>
+                        <li>The EVC generation process may vary based on the risk category of the assessee (the term ‘assessee’ is as defined in clause (7) of section 2 of the Act), the method of accessing the e-Filing website or interface with third party authenticating entity. The EVC would be unique for an Assessee-PAN or Assessee-TAN and will not be valid for any other PAN or TAN, as the case may be, at the time of furnishing of the form. One EVC can be used to validate one form of the assessee irrespective of the assessment year. The EVC will be stored against the Assessee-PAN along with other verification details. The EVC will be valid for 72 hours or as otherwise specified. The Verifier may use more than one mode to obtain EVC and can generate the EVC multiple times.</li>
+                        <li>mode of generation of EVC, Validation of EVC and Data Structure of EVC shall be same as specified by the Notification No. 2/2015 dated 13th July, 2015 and the Notification No. 1/2016 dated 19th January, 2016 issued by the Principal Director General of Income-tax (Systems). </li>
+                        
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">CBDT Notification No. 5/2016 dated 6th April, 2016</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    It may be noted that the Income Tax Department has enabled EVC facility for online filing of appeal before Commissioner (Appeal) in Form 35 for taxpayers required to file appeals using Digital Signatures (DSC) on 4th April 2016 and for taxpayers not required to file appeals using Digital Signatures (DSC) on 24th May 2016.
+
+
+                </p>
+            </div>
+        </div>
+        
+        
+        
+        
 
     </div>
-    <br>
-    <br>
-
-
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white ">
-            <h2 class="text-left">Requisites for Filing of Appeal online before CIT (Appeals):</h2>
-        </div>
-        <div class="card-body">
-            <p>
-                1.	New form no. 35 will be provided on the website-<br />
-                2.	The new Form No. 35 should be duly filled.<br />
-                3.	The statement of facts and grounds of appeal are to be filled in the form no. 35 in the relevant columns itself.<br />
-                4.	Each of the grounds of appeal must be less than 100 words.<br />
-                5.	The statement of facts must be less than 1000 words.<br />
-                6.	The scanned copies of the order appealed against, challan for appeal fees and<br />
-                7.	Notice of demand is required to be attached.<br />
-                8.	Requirement of Digital Signatures for filing Appeals<br />
-                All of these attachments must be in pdf/zip format. The total attachments in must not exceed 50 mb in size.<br />
-            </p>
-            <p>
-                <h6>Procedure for e-filing of Appeal</h6>
-                The CBDT vide Notification No. 11/2016 dt 1st March 2016 has notified that Form No. 35 shall be furnished in the following manner, <br />
-                namely:-<br />
-                1. (a) in the case of a person who is required to furnish return of income electronically under sub-rule(3) of rule 12,-<br />
-                (i) by furnishing the form electronically under digital signature, if the return of income is furnished under digital signature<br />
-                (ii) by furnishing the form electronically through electronic verification code in a case not covered under sub-clause (i);<br />
-                (b) in a case where the assessee has the option to furnish the return of income in paper form, by furnishing the form electronically in accordance with clause (a) of subrule(2) or in paper form.<br />
-                2. The form of appeal referred to in sub-rule (1), shall be verified by the person who is authorised to verify the return of income under section 140 of the Act, as applicable to the assessee.<br />
-                3. Any document accompanying Form No. 35 shall be furnished in the manner in which the said form is furnished.<br />
-
-
-            </p>
-        </div>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white">
-            <h2 class="text-left"> Procedure for e Verification of e Filed Appeals</h2>
-        </div>
-        <div class="card-body">
-            <p>
-                Procedure for verification of the identity of the person furnishing the e-filed form 35 for appeals to the CIT (Appeals), using EVC, has been notified by the CBDT/ IT Deptt., vide Notification No. 5/2016 DIT (S) dt 6th April, 2016, as under:<br />
-                1. The Electronic Verification Code (EVC) would verify the identity of the person furnishing the form (hereinafter called ’Verifier’) and would be generated on the e-Filing website or as otherwise indicated. As specified in sub-rule (3) of rule 45 the Verifier shall be the person who is authorized to verify the return of income under section 140 of the Act as applicable to the assessee. Where the Verifier represents an entity (i.e. HUF/ Firm/ AOP etc.) then the Verifier should be registered in the e-Filing website as a Principal Contact of the entity.<br />
-                2. The EVC generation process may vary based on the risk category of the assessee (the term ‘assessee’ is as defined in clause (7) of section 2 of the Act), the method of accessing the e-Filing website or interface with third party authenticating entity. The EVC would be unique for an Assessee-PAN or Assessee-TAN and will not be valid for any other PAN or TAN, as the case may be, at the time of furnishing of the form. One EVC can be used to validate one form of the assessee irrespective of the assessment year. The EVC will be stored against the Assessee-PAN along with other verification details. The EVC will be valid for 72 hours or as otherwise specified.<br /> The Verifier may use more than one mode to obtain EVC and can generate the EVC multiple times.<br />
-                3.  The mode of generation of EVC, Validation of EVC and Data Structure of EVC shall be same as specified by the Notification No. 2/2015 dated 13th July, 2015 and the Notification No. 1/2016 dated 19th January, 2016 issued by the Principal Director General of Income-tax (Systems).<br />
-            </p>
-        </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  card">
+    <div class="row bg-secondary text-white p-3 rounded w-100" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing </p>
+        <p class="text-justify">WMC can help you in filing appeal to respective authority. The average time taken to draft and file appeal under respective authority is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation for filing appeal under Income Tax by scheduling an appointment with a WMC Advisor</p>
     </div>
 </div>
 

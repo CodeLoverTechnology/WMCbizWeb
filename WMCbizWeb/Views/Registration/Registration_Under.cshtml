@@ -4,136 +4,120 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-                Registration under Shop & Establishment
-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/123.png" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            The Delhi Shops and Establishments Act, 1954 was enforced with the view of regulating the working conditions of the employees working at such Shops and Establishments. Generally, the working conditions of many small shops and commercial establishments are prone to a lot of ill practices such as child exploitation, unreasonable working hours, unreasonably low wages and salary, lack of healthy working conditions etc. due to lack of government's supervision. The Act seeks to establish an Authority governing these establishments, improve working conditions for the employees and penalize employers who do not act in consonance with the Act.
-                            The shops and commercial establishments regulate to the commercial establishment or premises wherein any trade, business or profession or any work in connection with, or incidental or ancillary thereto is carried on, such as hotels, restaurants, theaters, bakeries, societies, charitable trusts, educational institutions , eating houses, premises of business for brokerage, banking, insurance firms, public places of amusement and entertainment, etc.
-
-
-
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Registration under Shop & Establishment
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/shopandestablishment.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                The Delhi Shops and Establishments Act, 1954 was enforced with the view of regulating the working conditions of the employees working at such Shops and Establishments. Generally, the working conditions of many small shops and commercial establishments are prone to a lot of ill practices such as child exploitation, unreasonable working hours, unreasonably low wages and salary, lack of healthy working conditions etc. due to lack of government's supervision. The Act seeks to establish an Authority governing these establishments, improve working conditions for the employees and penalize employers who do not act in consonance with the Act.
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    The shops and commercial establishments regulate to the commercial establishment or premises wherein any trade, business or profession or any work in connection with, or incidental or ancillary thereto is carried on, such as hotels, restaurants, theaters, bakeries, societies, charitable trusts, educational institutions , eating houses, premises of business for brokerage, banking, insurance firms, public places of amusement and entertainment, etc
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
                         </div>
+
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="jumbotron">
-    <div class="card-body">
-        <h3 class="card-header  bg-info text-white  text-center">
-            Registration under Shop & Establishment
-        </h3>
-        <div class="text-justify">
-            The Delhi Shops and Establishments Act, 1954 was enforced with the view of regulating the working conditions of the employees working at such Shops and Establishments. Generally, the working conditions of many small shops and commercial establishments are prone to a lot of ill practices such as child exploitation, unreasonable working hours, unreasonably low wages and salary, lack of healthy working conditions etc. due to lack of government's supervision. The Act seeks to establish an Authority governing these establishments, improve working conditions for the employees and penalize employers who do not act in consonance with the Act.
-            The shops and commercial establishments regulate to the commercial establishment or premises wherein any trade, business or profession or any work in connection with, or incidental or ancillary thereto is carried on, such as hotels, restaurants, theaters, bakeries, societies, charitable trusts, educational institutions , eating houses, premises of business for brokerage, banking, insurance firms, public places of amusement and entertainment, etc.
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Procedure of Registration</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size:18px;">
+                    1.	Fill the application form<br />
+                    2.	Application Form sends to the Chief Inspector within 90 days from the date of establishment with prescribed fee.<br />
+                    3.	The Chief Inspector shall, on being satisfied about the correctness of the statement, register the establishment<br />
+                </p>
+            </div>
         </div>
+        
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Documents/ information are required for registration under Shop & Establishment</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    1.	Name of the establishment, if any.<br />
+                    2.	Postal address of the establishment.<br />
+                    3.	Full name of the occupier or the employer [including his father's name].<br />
+                    4.	Full name of the Manager, if any [including his father's name] 1<br />
+                    5.	Category of the establishment, i.e., whether a shop, commercial establishment, residential hotel, restaurant, eating house, theatre or other place of public amusement or entertainment.<br />
+                    6.	Nature of business<br />
+                    7.	Names of members of employer's family, working in the establishment (state separately the names of young persons, if any).<br />
+                    8.	Names of other persons occupying position of management or employees engaged in confidential capacity.<br />
+                    9.	Total number of employees (state separately the number of men, women and/or young persons, if any).<br />
+                    10.	Date on which the establishment commenced its work<br />
 
-    </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Procedure of Registration:-</h2>
+                </p>
+            </div>
         </div>
-        <div class="card-body">
-            <p style="font-size:20px; color:black;">
-                1.	Fill the application form<br />
-                2.	Application Form sends to the Chief Inspector within 90 days from the date of establishment with prescribed fee.<br />
-                3.	The Chief Inspector shall, on being satisfied about the correctness of the statement, register the establishment<br />
-
-            </p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Documents/ information are required for registration under Shop & Establishment</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                1.	Name of the establishment, if any.<br />
-                2.	Postal address of the establishment.<br />
-                3.	Full name of the occupier or the employer [including his father's name].<br />
-                4.	Full name of the Manager, if any [including his father's name] 1<br />
-                5.	Category of the establishment, i.e., whether a shop, commercial establishment, residential hotel, restaurant, eating house, theatre or other place of public amusement or entertainment.<br />
-                6.	Nature of business<br />
-                7.	Names of members of employer's family, working in the establishment (state separately the names of young persons, if any).<br />
-                8.	Names of other persons occupying position of management or employees engaged in confidential capacity.<br />
-                9.	Total number of employees (state separately the number of men, women and/or young persons, if any).<br />
-                10.	Date on which the establishment commenced its work<br />
-
-            </p>
+        <div class="bg-light card">
+            <div class="card-header text-white bg-info">
+                <h2 class="text-left" style="font-size:21px;">Renewal of Registration Certificate:-</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-justify" style="font-size:18px;">
+                    •	The Registration Certificate shall be renewed at an interval of everyone year on payment of the prescribed fee.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Renewal of Registration Certificate:-</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                •	The Registration Certificate shall be renewed at an interval of everyone year on payment of the prescribed fee
-
-
-
-            </p>
-        </div>
-        <div class="row bg-secondary text-white p-3 rounded">
-            <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing </p>
-            <p class="text-justify">WMC can help you to get registration under Shops and Establishments. The average time taken to draft and file registration documents for registration under Shops and Establishments is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation to get registration under Shops and Establishments by scheduling an appointment with a WMC Advisor</p>
-        </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing </p>
+        <p class="text-justify">WMC can help you to get registration under Shops and Establishments. The average time taken to draft and file registration documents for registration under Shops and Establishments is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation to get registration under Shops and Establishments by scheduling an appointment with a WMC Advisor</p>
     </div>
-    
-
 </div>
+
 

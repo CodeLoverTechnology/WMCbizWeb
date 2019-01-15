@@ -4,121 +4,107 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-                MSME REGISTRATION
-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/IEC Code Licence12.jpg" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            MSME or Udyog Aadhar stands for micro, small and medium enterprises and any enterprise that falls under any of these three categories can apply for registration. These Enterprises are further categorized into two types of industries- manufacturing industry and service industry. The status of an enterprise under the MSMED Act is determined according to the investment slab under which an enterprise falls.
-                            Although the MSME Registration or Udyog Aadhar Registration is not statutory but as Central or State Government is providing various benefits through emerging schemes, subsidies, incentives and many more other supports; thus people are tend to avail those benefits. It also facilitates promotion and development of enterprises which will contribute enormously to the Socio-Economic Development of the Country.
-
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    MSME REGISTRATION
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/MSME Registration12.png" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                MSME or Udyog Aadhar stands for micro, small and medium enterprises and any enterprise that falls under any of these three categories can apply for registration. These Enterprises are further categorized into two types of industries- manufacturing industry and service industry. The status of an enterprise under the MSMED Act is determined according to the investment slab under which an enterprise falls
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    Although the MSME Registration or Udyog Aadhar Registration is not statutory but as Central or State Government is providing various benefits through emerging schemes, subsidies, incentives and many more other supports; thus people are tend to avail those benefits. It also facilitates promotion and development of enterprises which will contribute enormously to the Socio-Economic Development of the Country
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
                         </div>
+
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header  text-center">
-            MSME Registration
-        </h3>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p style="font-size:20px;">
-                        MSME or Udyog Aadhar stands for micro, small and medium enterprises and any enterprise that falls under any of these three categories can apply for registration.
-                        These Enterprises are further categorized into two types of industries- manufacturing industry and service industry.
-                        The status of an enterprise under the MSMED Act is determined according to the investment slab under which an enterprise falls.
-                        Although the MSME Registration or Udyog Aadhar Registration is not statutory but as Central or State Government is providing various benefits through emerging schemes,
-                        subsidies, incentives and many more other supports; thus people are tend to avail those benefits. It also facilitates promotion and development of enterprises which will
-                        contribute enormously to the Socio-Economic Development of the Country.
-                    </p>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+    
+
+
+       
+
+        
+            <div class="card-header  bg-info text-white">
+                <h2 class="text-left " style="font-size:21px;">  Documents List</h2>
+            </div>
+            <div class="card-body">
+                <div class="text-black-50" >
+                    <ol start="1"style="font-size:18px;">
+                        <li>Aadhaar Card of Applicant</li>
+                        <li>Social Category of Applicant</li>
+                        <li>One copy of (COI/VAT/MOA/TIN Certificate)</li>
+                        <li>Postal Address of Company</li>
+                        <li>Email Id and Mobile No. of Applicant</li>
+                        <li>Bank Details of Company</li>
+                        <li>Main Business Activity of Company</li>
+                        <li>Total Number of Employees</li>
+                        <li>Investment of Company(Plant and Machinery and All)</li>
+                    </ol>
+                    
                 </div>
+
+
             </div>
         </div>
-
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+        <p class="text-justify">WMC can help you in registration under MSME. The average time taken to draft and file registration documents under MSME is about 1 working day, subject to government processing time and client document submission. Get a free consultation for MSME registration by scheduling an appointment with a WMC Advisor.</p>
     </div>
-    <br>
-    <br>
-
-    <h2 class="text-center">Documents Required for Registration:</h2><br>
-
-    <div class="bg-light card">
-        <div class="card-header ">
-            <h2 class="text-left">  Documents List</h2>
-        </div>
-        <div class="card-body">
-            <div class="text-black-50" style="font-size:20px;">
-                <ol start="1">
-                    <li>Aadhaar Card of Applicant</li>
-                    <li>Social Category of Applicant</li>
-                    <li>One copy of (COI/VAT/MOA/TIN Certificate)</li>
-                    <li>Postal Address of Company</li>
-                    <li>Email Id and Mobile No. of Applicant</li>
-                    <li>Bank Details of Company</li>
-                    <li>Main Business Activity of Company</li>
-                    <li>Total Number of Employees</li>
-                    <li>Investment of Company(Plant and Machinery and All)</li>
-                </ol> 
-                <div class="row bg-secondary text-white p-3 rounded">
-                    <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
-                    <p class="text-justify">WMC can help you in registration under MSME. The average time taken to draft and file registration documents under MSME is about 1 working day, subject to government processing time and client document submission. Get a free consultation for MSME registration by scheduling an appointment with a WMC Advisor.</p>
-                </div>
-            </div>
+</div>
+       
 
 
-        </div>
-    </div>
-    @*</section>*@
-    </div>
 
 

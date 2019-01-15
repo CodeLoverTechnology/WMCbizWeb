@@ -3,115 +3,108 @@
     ViewBag.Title = "Project_Office";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-                body{
-                    background-image: url('../Content/images/office.jpg');
-                    position: auto;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                }
-        </style>
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-2 bg-info">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header  bg-info text-white">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    PROJECT OFFICE
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/the project office.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                Project Office means a place of business to represent the interests of the foreign company executing a specific project in India
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                @*<div class="text-justify" style="font-size:18px;">
+                                        It's a simply firm which is
+                                        enabling doing business in India with Less Compliance and Less Costing. a Sole Proprietorship
+                                    </div>*@
+                            </div>
                         </div>
+
                     </div>
                 </div>
-            </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-    </form>
-        
-        <section >
-            <div class="jumbotron">
-        <div class="bg-light card">
-           <h3 class="card-header  bg-info text-white  text-center">
-                PROJECT OFFICE
-            </h3>
-         <div class="card-body">
-            <div class="row">
-                <div class="col-lg-12">
-                   <p style="font-size:20px;">
-                        Project Office means a place of business to represent the interests of the foreign company executing a
-specific project in India.</p>
-                </div>
-            </div>  
-             
+<div class="container-fluid">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card">
+        <div class="card-header bg-info text-white ">
+            <h5 class="text-left" style="font-size:21px;">Process</h5>
         </div>
-        
+        <ol type="1" style="font-size:18px;">
+            <li class="text-justify">
+                Attestation or Legalisation of Documents
+            </li>
+            <li>Filing of Application with RBI through AD Bank</li>
+            <li>Verification of KYC from Banker of Parent Company</li>
+            <li>Approval of RBI for Liasion Office Registration in India</li>
+            <li>Registration of Liasion office of Foreign Company with the ROC</li>
+            <li>PAN Card, Tax Deduction Number & Bank A/c Opening</li>
+            <li>Other Registration and Licenses For example registration under shops and establishment act, Goods and Services Tax (GST), Professional Tax Act, Provident Funds Act, Employee State Insurance Act (ESIC), etc</li>
+        </ol>
+
+        <div class="card-header bg-info text-white ">
+            <h5 class="text-left" style="font-size:21px;">Required Documents</h5>
         </div>
-        <br>
-        <br>
-        
-        
-        
-            <div class="bg-light card">
-                <div class="card-header  bg-info text-white ">
-                     <h2 class="text-left">Process:</h2>
-                </div>
-        <div class="card-body">
-                <p style="font-size:20px; color:black;">
-                        1. Attestation or Legalisation of Documents<br>
-                        2. Filing of Application with RBI through AD Bank<br>
-                        3. Verification of KYC from Banker of Parent Company<br>
-                        4. Approval of RBI for Liasion Office Registration in India<br>
-                        5. Registration of Liasion office of Foreign Company with the ROC<br>
-                        6. PAN Card, Tax Deduction Number & Bank A/c Opening<br>
-                        7. Other Registration and Licenses For example registration under shops and establishment act, Goods
-                        and Services Tax (GST), Professional Tax Act, Provident Funds Act, Employee State Insurance Act
-                        (ESIC), etc.<br>
-               </p>
-            </div>
-        </div>
-        
-        <br>
-        <br>
-        
-        <h2 class="text-center">Documents Required for Registration:</h2><br>
-        
-        <div class="bg-light card">
-        <div class="card-header  bg-info text-white ">
-            <h2 class="text-left"> Documents</h2>
-        </div>
-        <div class="card-body">
-            
-        <p style="font-size:20px; color:black;">
-                1. Certificate of Incorporation / Charter issued to the foreign company by government & its MOA/ Rules.<br>
-                2. Audited financials of the foreign company seeking registration of project office in India.<br>
-                3. Copy of agreement entered with Indian party about a project to be undertaken in India.<br>
-                4. Documents evidencing arrangement of foreign funding or arrangements with Indian funding institutions.<br>
-                5. The identity and address proof of the responsible person to do compliance for the project office.<br>
-                6. Premises proof of the registered office of branch office and an NOC from the owner of such premises.<br>
-                7. In case the document is in the foreign language, then a certified translation thereof must be filed.<br>
-                   
-        </p>
-        </div>
-        </div>
-        
-        </section> 
+        <ol type="1" style="font-size:18px;">
+            <li class="text-justify">
+                Certificate of Incorporation / Charter issued to the foreign company by government & its MOA/ Rules
+            </li>
+            <li>Audited financials of the foreign company seeking registration of project office in India</li>
+            <li>Copy of agreement entered with Indian party about a project to be undertaken in India</li>
+            <li>Documents evidencing arrangement of foreign funding or arrangements with Indian funding institutions</li>
+            <li>The identity and address proof of the responsible person to do compliance for the project office.</li>
+            <li>Premises proof of the registered office of branch office and an NOC from the owner of such premises</li>
+            <li>In case the document is in the foreign language, then a certified translation thereof must be filed</li>
+        </ol>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing </p>
+        <p class="text-justify">WMC can help you to register of Project Office. The average time taken to draft and file registration of Project Office is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation to registration of Project Office by scheduling an appointment with a WMC Advisor.</p>
+    </div>
+</div>
 

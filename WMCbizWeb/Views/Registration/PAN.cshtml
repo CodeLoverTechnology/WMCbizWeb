@@ -3,89 +3,80 @@
     ViewBag.Title = "PAN";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-                Permanent Account Number or PAN
-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/permanent-account-number-in-india.jpg" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            Permanent Account Number or PAN Card is a nationalized identity card. Indian Income Tax Department has the authority to allocate this 10-digit alphanumeric and unique account number to a tax-paying person, company or HUF. It has lifetime validity. PAN card can be issued to association of persons, body of individuals, company, trust, limited liability partnership, firm, government, Hindu undivided family, artificial juridical person, or local authority.
-                            You’ll need it to file income tax returns, to make payments above Rs. 50,000, and even to open a bank account. A PAN card is a valid proof of identity in India and it can be issued to citizens of India (including minors), non-resident Indians (NRIs), and even foreign citizens
-
-
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Permanent Account Number or PAN
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/permanent-account-number-in-india.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                Permanent Account Number or PAN Card is a nationalized identity card. Indian Income Tax Department has the authority to allocate this 10-digit alphanumeric and unique account number to a tax-paying person, company or HUF. It has lifetime validity. PAN card can be issued to association of persons, body of individuals, company, trust, limited liability partnership, firm, government, Hindu undivided family, artificial juridical person, or local authority
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    You’ll need it to file income tax returns, to make payments above Rs. 50,000, and even to open a bank account. A PAN card is a valid proof of identity in India and it can be issued to citizens of India (including minors), non-resident Indians (NRIs), and even foreign citizens
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
                         </div>
+
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="jumbotron">
-    <div class="card-body">
-        <h3 class="card-header  bg-info text-white  text-center">
-            Permanent Account Number or PAN
-        </h3>
-        <div class="text-justify">
-            Permanent Account Number or PAN Card is a nationalized identity card. Indian Income Tax Department has the authority to allocate this 10-digit alphanumeric and unique account number to a tax-paying person, company or HUF. It has lifetime validity. PAN card can be issued to association of persons, body of individuals, company, trust, limited liability partnership, firm, government, Hindu undivided family, artificial juridical person, or local authority.
-            You’ll need it to file income tax returns, to make payments above Rs. 50,000, and even to open a bank account. A PAN card is a valid proof of identity in India and it can be issued to citizens of India (including minors), non-resident Indians (NRIs), and even foreign citizens.
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-        </div>
 
-    </div>
-    <br>
-    <br>
+
     <div class="bg-light card">
         <div class="card-header text-white bg-info">
-            <h2 class="text-left">Documents required applying for a PAN card online:-</h2>
+            <h2 class="text-left" style="font-size:21px;">Documents required applying for a PAN card online:-</h2>
         </div>
         <div class="card-body">
-            <p style="font-size:20px; color:black;">
+            <p style="font-size:18px;">
                 Indian citizens need three types of documents to apply for a PAN card. These are an identity proof, an age proof, and a proof of date of birth.<br />
                 1.	Identity proof documents (one of):<br />
                 •	Elector's photo identity card<br />
@@ -103,43 +94,41 @@
             </p>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="bg-light card">
-        <div class="card-header text-white bg-info">
-            <h2 class="text-left">Address proof document (one of)</h2>
-        </div>
-        <div class="card-body">
-            <p class="text-justify">
-                •	copy of the following documents of not more than three months old<br />
-                •	electricity bill<br />
-                •	landline telephone or broadband connection bill<br />
-                •	water bill<br />
-                •	consumer gas connection card or book or piped gas bill<br />
-                •	bank account statement<br />
-                •	depository account statement<br />
-                •	credit card statement<br />
-                •	copy of post office pass book having address of the applicant<br />
-                •	passport<br />
-                •	passport of the spouse<br />
-                •	voter ID card<br />
-                •	latest property tax assessment order<br />
-                •	driving licence<br />
-                •	domicile certificate issued by the Government<br />
-                •	Aadhaar card issued by the UIDAI<br />
-                •	allotment letter of accommodation issued by the Central Government or State Government of not more than three years old<br />
-                •	property registration document<br />
-                •	certificate of address signed by a Member of Parliament or Member of Legislative Assembly or Municipal Councilor or a Gazetted Officer<br />
-                •	employer’s certificate in original<br />
-            </p>
-        </div>
+
+    <div class="card-header text-white bg-info">
+        <h2 class="text-left" style="font-size:21px;">Address proof document (one of)</h2>
     </div>
+    <div class="card-body">
+        <p class="text-justify" style="font-size:18px;">
+            •	copy of the following documents of not more than three months old<br />
+            •	electricity bill<br />
+            •	landline telephone or broadband connection bill<br />
+            •	water bill<br />
+            •	consumer gas connection card or book or piped gas bill<br />
+            •	bank account statement<br />
+            •	depository account statement<br />
+            •	credit card statement<br />
+            •	copy of post office pass book having address of the applicant<br />
+            •	passport<br />
+            •	passport of the spouse<br />
+            •	voter ID card<br />
+            •	latest property tax assessment order<br />
+            •	driving licence<br />
+            •	domicile certificate issued by the Government<br />
+            •	Aadhaar card issued by the UIDAI<br />
+            •	allotment letter of accommodation issued by the Central Government or State Government of not more than three years old<br />
+            •	property registration document<br />
+            •	certificate of address signed by a Member of Parliament or Member of Legislative Assembly or Municipal Councilor or a Gazetted Officer<br />
+            •	employer’s certificate in original<br />
+        </p>
+    </div>
+
     <div class="bg-light card">
         <div class="card-header text-white bg-info">
-            <h2 class="text-left">Proof of date of birth (one of):</h2>
+            <h2 class="text-left" style="font-size:21px;">Proof of date of birth (one of):</h2>
         </div>
         <div class="card-body">
-            <p class="text-justify">
+            <p class="text-justify" style="font-size:18px;">
                 •	birth certificate issued by the Municipal Authority or any office authorised to issue Birth and Death Certificate by the Registrar of Birth and Deaths or the Indian Consulate as defined in clause (d) of sub section (1) of section 2 of the Citizenship Act, 1955 (57 of 1955)<br />
                 •	pension payment order<br />
                 •	marriage certificate issued by Registrar of Marriages<br />
@@ -156,20 +145,23 @@
     </div>
     <div class="bg-light card">
         <div class="card-header text-white bg-info">
-            <h2 class="text-left">How to apply for PAN Card online:-</h2>
+            <h2 class="text-left" style="font-size:21px;">How to apply for PAN Card online:-</h2>
         </div>
-        <div class="card-body">
-            <p class="text-justify">
-                You can apply for a PAN card online either via NSDL or UTITSL websites. Both have been authorised to issue PAN cards in India.<br /> For this tutorial, we will show you how to apply for a PAN card via the NSDL website.
+
+        <p class="text-justify" style="font-size:18px;">
+            You can apply for a PAN card online either via NSDL or UTITSL websites. Both have been authorised to issue PAN cards in India.<br /> For this tutorial, we will show you how to apply for a PAN card via the NSDL website.
 
 
 
-            </p>
-        </div>
-        <div class="row bg-secondary text-white p-3 rounded">
-            <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
-            <p class="text-justify">WMC can help you to get PAN. The average time taken to draft and file registration documents under EPF is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation to get PAN by scheduling an appointment with a WMC Advisor.</p>
-        </div>
+        </p>
     </div>
-
 </div>
+            
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing. </p>
+                <p class="text-justify">WMC can help you to get PAN. The average time taken to draft and file registration documents under EPF is about 5-10 working days, subject to government processing time and client document submission. Get a free consultation to get PAN by scheduling an appointment with a WMC Advisor.</p>
+            </div>
+        </div>
+  

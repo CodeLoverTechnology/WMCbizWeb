@@ -3,84 +3,87 @@
     ViewBag.Title = "Section8_Company_with_Nonprofit_objects";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="row mt-5">
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="jumbotron-fluid bg-light card">
-            <h4 class="card-header  text-center bg-info text-white">
-                Section-8 Company with Non Profit objects:-
-            </h4>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="~/Content/images/sole.jpg" class="img-fluid img-thumbnail" />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="text-justify">
-                            A Section 8 Company is similar to a Trust or Society; expect, a section 8 Company is registered under the Central Government's Ministry of Corporate Affairs. Trusts and Societies are registered under State Government regulations. A section 8 Company has various advantages when compared to Trust or Society like improved recognition and better legal standing. Section 8 company also has higher credibility amongst donors, Government departments and other stakeholders.
-                            Secrion 8 Company often known as NGO. The NGO can be registered for promoting art, science, commerce, Technology, sports, education, social research, social welfare, religion, charity and protection of environment or any such other object, provided the profits, if any, or other income is applied for promoting only the objects of the company and no dividend is paid to its members. Therefore, Section 8 Company or Section 25 Company is a company registered under the Companies Act, 2013 for charitable or not-for-profit purposes.
-
-
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Section-8 Company with Non Profit objects
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/non profile organation.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <br />
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="container-fluid">
-            <div class="mb-2">
-                <form class="form" action="/Home/Enquiry" method="post">
-                    <div class="card">
-                        <div class="card-header bg-info">
-                            <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                A Section 8 Company is similar to a Trust or Society; expect, a section 8 Company is registered under the Central Government's Ministry of Corporate Affairs. Trusts and Societies are registered under State Government regulations. A section 8 Company has various advantages when compared to Trust or Society like improved recognition and better legal standing. Section 8 company also has higher credibility amongst donors, Government departments and other stakeholders.
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label for="name"><b></b></label>
-                                <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                                @*<span id="message"></span><br>*@
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><B></B></label>
-                                <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num"><B></B></label>
-                                <div class="input-group">
-                                    <span class="input-group-addon bg-light p-1">+91 </span>
-                                    <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    Secrion 8 Company often known as NGO. The NGO can be registered for promoting art, science, commerce, Technology, sports, education, social research, social welfare, religion, charity and protection of environment or any such other object, provided the profits, if any, or other income is applied for promoting only the objects of the company and no dividend is paid to its members. Therefore, Section 8 Company or Section 25 Company is a company registered under the Companies Act, 2013 for charitable or not-for-profit purposes.
                                 </div>
                             </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
-                            </div>
                         </div>
+
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="clearfix"></div>
-<div class="row">
-   
-           
 
-       
-    </div>
-    <div class="col-12 bg-light card">
+
+
+
+
+
+<div class="container-fluid">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card-header bg-info text-white ">
-            <h5 class="text-left">Process</h5>
+            <h5 class="text-left" style="font-size:21px;">Process</h5>
         </div>
         <div class="card-body">
             @*<div class="text-justify">
                     A simple procedure is followed for getting a firm registered.
                 </div>*@
-            <ol type="1">
+            <ol type="1" style="font-size:18px;">
 
                 <li>Application for name approval</li>
                 <li>Obtain Digital Signature Certificate.</li>
@@ -93,37 +96,33 @@
             </ol>
 
         </div>
-    </div>
 
-    <br>
-    <br>
 
-    <div class="col-12 bg-light card">
+
+
         <div class="card-header bg-info text-white">
-            <h5 class="text-left"> Required Documents:</h5>
+            <h5 class="text-left" style="font-size:21px;"> Required Documents</h5>
         </div>
-        <div class="card-body">
-            <ol>
-                <li>Passport size color photograph of each subscribers</li>
-                <li>Copy of PAN card (Passport in case of NRI) of each subscriber </li>
-                <li>Copy of address proof of each subscriber ( Bank Statement, telephone bill, electricity bill, mobile bill not older 2 months)</li>
-                <li>Self attested copy of identity proof of each subscriber (Voters ID, Passport, Driving License, Adhar card)  </li>
-                <li>Address proof for Registered Office of the Company.(any utility bill, rent agreement, NOC from owner)  </li>
-                <li>Digital Signature Certificate (DSC)     </li>
-                <li>Main object of Company  </li>
-                <li>Minutes of the meeting  </li>
 
-            </ol>
+        <ol type="1" style="font-size:18px;">
+            <li>Passport size color photograph of each subscribers</li>
+            <li>Copy of PAN card (Passport in case of NRI) of each subscriber </li>
+            <li>Copy of address proof of each subscriber ( Bank Statement, telephone bill, electricity bill, mobile bill not older 2 months)</li>
+            <li>Self attested copy of identity proof of each subscriber (Voters ID, Passport, Driving License, Adhar card)  </li>
+            <li>Address proof for Registered Office of the Company.(any utility bill, rent agreement, NOC from owner)  </li>
+            <li>Digital Signature Certificate (DSC)     </li>
+            <li>Main object of Company  </li>
+            <li>Minutes of the meeting  </li>
 
-            <div class="row bg-secondary text-white p-3 rounded">
-                <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing  </p>
-                <p class="text-justify">WMC can help you to register or Incorporation of Non-Profit Organization (NPO\NGO). The average time taken to draft and file registration or Incorporation of NGO\NPO is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation to register or Incorporation of NGO\NPO by scheduling an appointment with a WMC Advisor.  </p>
-            </div>
-        </div>
+        </ol>
+
     </div>
-
-    <br>
-    <br>
+</div>
 
 
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <p class="text-justify">WMC is the best consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing  </p>
+        <p class="text-justify">WMC can help you to register or Incorporation of Non-Profit Organization (NPO\NGO). The average time taken to draft and file registration or Incorporation of NGO\NPO is about 5 - 10 working days, subject to government processing time and client document submission. Get a free consultation to register or Incorporation of NGO\NPO by scheduling an appointment with a WMC Advisor.  </p>
+    </div>
 </div>

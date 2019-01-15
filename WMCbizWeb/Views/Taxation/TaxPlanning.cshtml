@@ -4,112 +4,72 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    body {
-        background-image: url('../Content/images/solee.jpg');
-        position: auto;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-</style>
-
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-2">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Tax Planning
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/WMC_Sole_Prop.jpg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
                         </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                Sole proprietorship is a form of business entity where a single individual handles the entire business
+                                organization. He is the sole recipient of all profits and bearer of all loses. There is no separate law that
+                                governs sole proprietorship. This is the most easy business entity to establish in India.
+                                It doesn’t need its own Permanent Account Number (PAN) and the PAN of the owner (Proprietor) acts as the PAN for the Sole Proprietorship firm Main objective is Open Current Bank Account on the Name of Business
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify" style="font-size:18px;">
+                                    It's a simply firm which is
+                                    enabling doing business in India with Less Compliance and Less Costing. a Sole Proprietorship
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header  text-center bg-info text-white">
-            Corporate Taxation: Planning & Management
-        </h3>
-        <h6 class="text-center">Income Tax</h6>
-        <div class="card-body">
-            <p>
-                Income tax is levied on the income earned by business entities and Individuals, or by other forms of business entities. Provisions of Income tax in governed by Income Tax Act, 1961 and rules made thereunder. To run a business smoothly a business entity need to be tax compliant to avoid litigation. In this regard WMC helps in complying provisions of Income tax and provide customised tax solution. Following are the illustrative list of services provided by WMC:<br />
-
-                1.	Tax computation, planning and management<br />
-                2.	Computation of advance tax and TDS Compliances<br />
-                3.	Tax compliance reporting<br />
-                4.	Inbound and outbound tax advisory and support services<br />
-                5.	Withholding Tax<br />
-                6.	Advising on tax planning and tax management, availing tax concessions, incentives, reliefs and tax benefits<br />
-                7.	Transfer pricing services<br />
-            </p>
-
-        </div>
-
-    </div>
-    <br>
-    <br>
-
-
-
-    @*<div class="bg-light card">
-        <div class="card-header bg-info text-white ">
-            <h2 class="text-left">Process:</h2>
-        </div>
-        <div class="card-body">
-            <div class="text-justify">
-                For registration of Firm require minimum Entity Proof for open a Current Bank Account.
-                We have the following option to take entity proof:
             </div>
-            <ol>
-                <li>MSME Registration Certificate</li>
-                <li>Chartered Accountant Business Certification</li>
-                <li>Shop act License</li>
-                <li>Business ITR</li>
-                <li>GST Registration Certificate</li>
-            </ol>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                <div class="row">
+                    <div class="mb-2">
+                        <form class="form" action="/Home/Enquiry" method="post">
+                            <div class="card">
+                                <div class="card-header bg-info">
+                                    <div class="text-center" style="font-size:20px; color:aliceblue;">REQUEST A CALL BACK</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name"><b></b></label>
+                                        <input type="text" class="form-control" style="font-size:15px;" id="txtname" name="txtname" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><B></B></label>
+                                        <input type="email" class="form-control" style="font-size:15px;" id="txtemail" name="txtemail" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num"><B></B></label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon bg-light p-1">+91 </span>
+                                            <input type="tel" class="form-control " style="font-size:15px;" id="txtnumber" name="txtnumber" placeholder="Please Enter Number" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg float-right" style="font-size:18px;">Get Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <br>
-    <br>
-
-    <div class="bg-light card">
-        <div class="card-header bg-info text-white">
-            <h2 class="text-left"> Documents (Required for Registration)</h2>
-        </div>
-        <div class="card-body">
-            <ol>
-                <li>Address proof</li>
-                <li>Identity proof</li>
-                <li>Bank statement</li>
-            </ol>
-        </div>
-    </div>*@
 </div>
 
