@@ -92,7 +92,7 @@ namespace WMCbizWeb.Controllers
                     + System.Environment.NewLine + "  Email ID : " + ObjNew.Emailid
                      + System.Environment.NewLine + " Dear " + ObjNew.Name + ", Your Enquiry Application has been Submitted. Thank you for WISDOM MANAGEMENT CONSULTANCY Enquiry. We will get back to you soon!!!"
                      + System.Environment.NewLine + " Feel free to Visit WISDOM MANAGEMENT CONSULTANCY Web Portal."
-                     + System.Environment.NewLine + " Enquiry Requested From : "+ ObjNew.RequestedURL
+                     + System.Environment.NewLine + " Enquiry Requested From : "+ ObjNew.RequestedURL + System.Environment.NewLine
                     + " ======================================================================================== "
                     + System.Environment.NewLine + System.Environment.NewLine
                     + System.Environment.NewLine

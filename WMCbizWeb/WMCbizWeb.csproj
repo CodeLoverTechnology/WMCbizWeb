@@ -238,6 +238,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\full-slider.css" />
+    <Content Include="Content\images\11.jpg" />
     <Content Include="Content\images\12.jpg" />
     <Content Include="Content\images\122.jpg" />
     <Content Include="Content\images\123.png" />
@@ -251,9 +252,11 @@
     <Content Include="Content\images\change-company-name.jpeg" />
     <Content Include="Content\images\Compounding-of-offences.jpg" />
     <Content Include="Content\images\DIN.png" />
+    <Content Include="Content\images\ContactUs.jpg" />
     <Content Include="Content\images\FillingofAnnualReturn.jpg" />
     <Content Include="Content\images\Form-INC-22A.jpg" />
     <Content Include="Content\images\FTE.jpg" />
+    <Content Include="Content\images\Mergers_Acquisitions.jpg" />
     <Content Include="Content\images\objective-of-your-business.jpg" />
     <Content Include="Content\images\resignation-thinkstock.jpg" />
     <Content Include="Content\images\Transfer-of-Shares1.jpg" />
@@ -280,8 +283,6 @@
     <Content Include="Content\images\cit.jpg" />
     <Content Include="Content\images\Claiming Refunds12.jpg" />
     <Content Include="Content\images\Computation12.jpg" />
-    <Content Include="Content\images\contact-us.jpg" />
-    <Content Include="Content\images\Contact-Us1.jpg" />
     <Content Include="Content\images\corporate-income-tax-in-vietnam-cit.jpg" />
     <Content Include="Content\images\dd23.jpg" />
     <Content Include="Content\images\disqualification-of-directors.jpg" />
