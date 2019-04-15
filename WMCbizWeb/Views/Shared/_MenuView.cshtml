@@ -9,9 +9,9 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Start A business
                 </a>
-                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 500px; overflow:scroll;padding: 10px; position:absolute;">
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 700px;min-height:300px;max-height:400px; overflow:scroll;padding: 5px; position:absolute;">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12" style="text-align:left;">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align:left;">
                             <ul class="list-group">
                                 <li class="list-group-item">@Html.ActionLink("Partnership Firm", "Partnership_Firm", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("Sole Proprietorship", "Sole_Proprietorship", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
@@ -19,25 +19,68 @@
                                 <li class="list-group-item">@Html.ActionLink("Private Limited Company", "Private_Limited_Company", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("Public Limited Company", "Public_Limited_Company", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("Non Profit Organization", "Non_Profit_Organization", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Society", "Society", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("trust", "Trust", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
-                                @*<li class="list-group-item">@Html.ActionLink("Sole-proprietorship", "Sole_Proprietorship", "StartUpBusiness", null, new { @class = "list-group-item-action" })</li>*@
                             </ul>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12" style="text-align:left;">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align:left;">
+                            <ul class="list-group">
+                                <li class="list-group-item">@Html.ActionLink("Society", "Society", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("trust", "Trust", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Wholly Owned Foreign Subsidiary", "Wholly_Owned_Foreign_Subsidiary", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Nidhi Company", "Nidhi_Company", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Liaison Office", "Liaison_Office", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align:left;">
                             <ul class="list-group">
                                 <li class="list-group-item">@Html.ActionLink("Section 8 Company", "Section8_Company_with_Nonprofit_objects", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                             </ul>
                             <hr />
                             <ul class="list-group">
-                                <li class="list-group-item">@Html.ActionLink("Wholly Owned Foreign Subsidiary", "Wholly_Owned_Foreign_Subsidiary", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Nidhi Company", "Nidhi_Company", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
-                                @*<li class="list-group-item">@Html.ActionLink("Foreign WOS", "Wholly_Owned_Foreign", "StartUpBusiness", null, new { @class = "list-group-item-action" })</li>*@
-                                @*<li class="list-group-item">@Html.ActionLink("Joint Venture & Foreign", "Subsidiary", "StartUpBusiness", null, new { @class = "list-group-item-action" })</li>*@
-                                <li class="list-group-item">@Html.ActionLink("Liaison Office", "Liaison_Office", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("Branch Office", "Branch_Office", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("Project Office", "Project_Office", "StartABusiness", null, new { @class = "list-group-item-action" })</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Compliances
+                </a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 700px;min-height:300px;max-height:400px; overflow:scroll;padding: 5px; position:absolute;">
+                    <div class="row dropleft" style="margin-right:5px;">
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align:left;">
+                            <ul class="list-group border-0">
+                                <li class="list-group-item">@Html.ActionLink("Appointment Of Director", "AppointmentOfDirector", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Resignation Of Director", "ResignationOfDirector", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Removal Of Director", "RemovalOfdirector", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Appointment Of Auditor", "AppointmentOfAuditor", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Resignation Of Auditor", "ResignationOfAuditor", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Alteration Of Share Capital", "AlterationOfShareCapital", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align:left;">
+                            <ul class="list-group border-0">
+                                <li class="list-group-item">@Html.ActionLink("Name Change", "NameChange", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Change Of Registered Office", "ChangeOfregisteredOffice", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Object Change", "ObjectChange", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Alteration Of AOA", "AlterationOfAOA", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Compounding Of Offence", "CompoundingOfOffence", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("DIN Application", "DINApplication", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align:left;">
+                            <ul class="list-group border-0">
+                                <li class="list-group-item">@Html.ActionLink("INC22A", "INC22A", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Filling Of Annual Return", "FillingOfAnnualReturn", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Share Transfer", "ShareTransfer", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("FTE Company strike Off", "FTE_CompanystrikeOff", "CorporateCompliance", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Merger & Acquisition", "MERGERS_ACQUISITIONS", "Compliances", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("FEMA & RBI Services", "FEMARBI_SERVICES", "Compliances", null, new { @class = "list-group-item-action" })</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -92,6 +135,33 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Taxation
+                </a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width:500px;min-height:300px;max-height:400px; overflow: scroll;position:absolute;padding: 10px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:left;">
+                            <ul class="list-group border-0">
+                                <li class="list-group-item">@Html.ActionLink("Income Tax", "INCOME_TAX", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Computation", "Computation", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Filing of Return of income", "FilingOf_ReturnsOf_Income", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Filing of Appeals", "FilingOfAppeals", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Claiming Refunds", "ClaimingRefunds", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Tax Planning", "TaxPlanning", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:left;">
+                            <ul class="list-group border-0">
+                                <li class="list-group-item">@Html.ActionLink("Tax Management", "TaxManagement", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Availing Tax", "AvailingTax", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                                <li class="list-group-item">@Html.ActionLink("Concessions", "Concessions", "Taxation", null, new { @class = "list-group-item-action" })</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     GST
                 </a>
                 <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 300px; overflow: hidden;position:absolute;padding: 10px;">
@@ -101,82 +171,18 @@
                                 <li class="list-group-item">@Html.ActionLink("GST Registration", "GST_Registration", "Accounting_Services", null, new { @class = "list-group-item-action" })</li>
                                 <li class="list-group-item">@Html.ActionLink("GST Return ", "GST_Return", "Accounting_Services", null, new { @class = "list-group-item-action" })</li>
                                 @*<li class="list-group-item">@Html.ActionLink("Trademark Renewal", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>
-                                    <li class="list-group-item">@Html.ActionLink("Trademark Renewal", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>*@
+                            <li class="list-group-item">@Html.ActionLink("Trademark Renewal", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>*@
                             </ul>
                         </div>
                     </div>
 
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Taxation
-                </a>
-                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 300px; overflow: hidden;position:absolute;padding: 10px;">
-                    <div class="row">
-                        <div class="col-md-12" style="text-align:left;">
-                            <ul class="list-group border-0">
-                                <li class="list-group-item">@Html.ActionLink("Income Tax", "INCOME_TAX", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Computation", "Computation", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Filing of Return of income", "FilingOf_ReturnsOf_Income", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Filing of Appeals", "FilingOfAppeals", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Claiming Refunds", "ClaimingRefunds", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Tax Planning", "TaxPlanning", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Tax Management", "TaxManagement", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Availing Tax", "AvailingTax", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Concessions", "Concessions", "Taxation", null, new { @class = "list-group-item-action" })</li>
-                            </ul>
-                        </div>
-                        @*<div class="col-md-6">
-                                <h2>GST</h2>
-                                <ul class="list-group border-0">
-                                    <li class="list-group-item">@Html.ActionLink("Registration", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>
-                                    <li class="list-group-item">@Html.ActionLink("Return", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>
-                                </ul>
-                            </div>*@
-                    </div>
 
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Compliances
-                </a>
-                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown" style="width: 400px; overflow: hidden;position:absolute;padding: 5px;">
-                    <div class="row">
-                        <div class="col-md-12" style="text-align:left;">
-                            @*<h2>GST</h2>*@
-                            <ul class="list-group border-0">
-                                <li class="list-group-item">@Html.ActionLink("Corporate Law Compliance", "Corporatelaw_Compliance", "Compliances", null, new { @class = "list-group-item-action" })</li>
-                                @*<li class="list-group-item">@Html.ActionLink("", "FSSAI", "Registration", null, new { @class = "list-group-item-action" })</li>*@
-                                <li class="list-group-item">@Html.ActionLink("Merger & Acquisition", "MERGERS_ACQUISITIONS", "Compliances", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("FEMA & RBI Services", "FEMARBI_SERVICES", "Compliances", null, new { @class = "list-group-item-action" })</li>
-                                <li class="list-group-item">@Html.ActionLink("Certification/Attestation Services", "CERTIFICATIONATTESTATIONSERVICES", "Compliances", null, new { @class = "list-group-item-action" })</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </li>
-            <li class="nav-item">
-                @*<a class="nav-link" href="../Compliances/FEMARBI_SERVICES">Jobs</a>*@
-                <div class="row">
-                    <div class="col-md-12"style="text-align:left;">
-                        <ul class="list-group border-0">
-                            @*<li class="list-group-item">@Html.ActionLink("FEMARBI_SERVICES", "FEMARBI_SERVICES", "Jobs", null, new { @class = "list-group-item-action" })</li>*@
-                        </ul>
-                    </div>
-                </div>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="../Contact/Contact">Contact</a>
-                <div class="row">
-                    <div class="col-md-12" style="text-align:left;">
-                        <ul class="list-group border-0">
-                            @*<li class="list-group-item">@Html.ActionLink("Contact", "Contact", "Contact", null, new { @class = "list-group-item-action" })</li>*@
-                        </ul>
-                    </div>
-                </div>
             </li>
         </ul>
 

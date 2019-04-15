@@ -192,6 +192,7 @@
     <Compile Include="Controllers\Accounting_ServicesController.cs" />
     <Compile Include="Controllers\CompliancesController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CorporateComplianceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -246,6 +247,17 @@
     <Content Include="Content\images\1421562665-PF.jpg" />
     <Content Include="Content\images\144.png" />
     <Content Include="Content\images\145.jpg" />
+    <Content Include="Content\images\AlterationofAOA.jpg" />
+    <Content Include="Content\images\change-company-name.jpeg" />
+    <Content Include="Content\images\Compounding-of-offences.jpg" />
+    <Content Include="Content\images\DIN.png" />
+    <Content Include="Content\images\FillingofAnnualReturn.jpg" />
+    <Content Include="Content\images\Form-INC-22A.jpg" />
+    <Content Include="Content\images\FTE.jpg" />
+    <Content Include="Content\images\objective-of-your-business.jpg" />
+    <Content Include="Content\images\resignation-thinkstock.jpg" />
+    <Content Include="Content\images\Transfer-of-Shares1.jpg" />
+    <Content Include="Content\images\WMC_Change-Registered-Office-Address.jpg" />
     <Content Include="Content\images\2.jpg" />
     <Content Include="Content\images\2tex.jpg" />
     <Content Include="Content\images\3.jpg" />
@@ -253,7 +265,10 @@
     <Content Include="Content\images\4tex.jpg" />
     <Content Include="Content\images\accounting-kenna.jpg" />
     <Content Include="Content\images\accounting.jpg" />
+    <Content Include="Content\images\ADDITIONAL_DIRECTOR.jpeg" />
+    <Content Include="Content\images\Alteration-of-Share-Capital-meaning-and-Procedure-for-Alternation-of-Share-Capital-under-the-Companies-Act-2013-along-with-Case-Laws.jpg" />
     <Content Include="Content\images\APEDA Registration12.jpg" />
+    <Content Include="Content\images\appointmentofauditor.jpg" />
     <Content Include="Content\images\Available tax new.jpg" />
     <Content Include="Content\images\bg03.jpg" />
     <Content Include="Content\images\bgstart.jpg" />
@@ -261,6 +276,7 @@
     <Content Include="Content\images\BranchOfc.jpg" />
     <Content Include="Content\images\567.jpg" />
     <Content Include="Content\images\Business-Start-up-Packages-header-bg.jpg" />
+    <Content Include="Content\images\Change_Object_Clause_Of_Company_2013.jpg" />
     <Content Include="Content\images\cit.jpg" />
     <Content Include="Content\images\Claiming Refunds12.jpg" />
     <Content Include="Content\images\Computation12.jpg" />
@@ -268,6 +284,7 @@
     <Content Include="Content\images\Contact-Us1.jpg" />
     <Content Include="Content\images\corporate-income-tax-in-vietnam-cit.jpg" />
     <Content Include="Content\images\dd23.jpg" />
+    <Content Include="Content\images\disqualification-of-directors.jpg" />
     <Content Include="Content\images\employee-working-thinkstock-2.jpg" />
     <Content Include="Content\images\ESI Registration12.jpg" />
     <Content Include="Content\images\ESI_WMC.jpg" />
@@ -333,6 +350,7 @@
     <Content Include="Content\images\Rakesh.jpg" />
     <Content Include="Content\images\remote-site-solutions-bg_ngo-sector.jpg" />
     <Content Include="Content\images\renewal1.jpg" />
+    <Content Include="Content\images\Resignation-of-director.jpg" />
     <Content Include="Content\images\Saurabh_Awasthi.jpg" />
     <Content Include="Content\images\Section8 Company 12.jpg" />
     <Content Include="Content\images\shopandestablishment.jpg" />
@@ -543,6 +561,24 @@
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Registration\Product_Registration.cshtml" />
     <Content Include="Views\StartABusiness\Nidhi_Company.cshtml" />
+    <Content Include="Views\CorporateCompliance\AppointmentOfDirector.cshtml" />
+    <Content Include="Views\CorporateCompliance\AlterationOfAOA.cshtml" />
+    <Content Include="Views\CorporateCompliance\CompoundingOfOffence.cshtml" />
+    <Content Include="Views\CorporateCompliance\DINApplication.cshtml" />
+    <Content Include="Views\CorporateCompliance\ChangeinDINdata.cshtml" />
+    <Content Include="Views\CorporateCompliance\INC22A.cshtml" />
+    <Content Include="Views\CorporateCompliance\FillingOfAnnualReturn.cshtml" />
+    <Content Include="Views\CorporateCompliance\ShareTransfer.cshtml" />
+    <Content Include="Views\CorporateCompliance\FTE_CompanystrikeOff.cshtml" />
+    <Content Include="Views\CorporateCompliance\ResignationOfDirector.cshtml" />
+    <Content Include="Views\CorporateCompliance\RemovalOfdirector.cshtml" />
+    <Content Include="Views\CorporateCompliance\AppointmentOfAuditor.cshtml" />
+    <Content Include="Views\CorporateCompliance\ResignationOfAuditor.cshtml" />
+    <Content Include="Views\CorporateCompliance\AlterationOfShareCapital.cshtml" />
+    <Content Include="Views\CorporateCompliance\NameChange.cshtml" />
+    <Content Include="Views\CorporateCompliance\ChangeOfregisteredOffice.cshtml" />
+    <Content Include="Views\CorporateCompliance\ObjectChange.cshtml" />
+    <Content Include="Views\Shared\_EnquiryView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

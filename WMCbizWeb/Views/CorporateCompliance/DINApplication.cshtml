@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "DIRECTOR IDENTIFICATION NUMBER-DIN";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    DIRECTOR IDENTIFICATION NUMBER-DIN
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/DIN.png" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                DIN is a unique Director Identification number allotted by the Central Government to any person intending to be a Director or an existing director of a company.
+                            </div>
+                            <div class="text-justify" style="font-size:18px;">
+                                DIN is an 8-digit unique identification number which has lifetime validity subject to KYC every year. Through DIN, details of the directors are maintained in a database.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-justify" style="font-size:18px;">
+                        DIN is specific to a person, which means even if he is a director in 2 or more companies, he has to obtain only 1 DIN. And if he leaves a company and joins some other, the same DIN would work in the other company as well.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                @Html.Partial("_EnquiryView")
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="row bg-dark text-white p-5  w-100">
+    <div class="container-fluid shadow">
+        <h5 class="text-left bg-info p-3" style="font-size:21px;"> Basic Requirements</h5>
+        <div class="bg-secondary p-3">
+            <ol style="font-size:18px;">
+                <li>Digital Signature</li>
+                <li> Photo</li>
+                <li>ID and Address Proof</li>
+                <li>Educational qualification</li>
+                <li>Mobile Number </li>
+                <li>Email ID</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="row bg-dark text-white p-5  w-100">
+    <div class="container-fluid shadow">
+        <h2 class="text-left bg-info p-3">How to apply for DIN and relevant forms?</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 bg-secondary shadow">
+                <h4 class="text-left bg-info p-3">SPICe 32 Forms</h4>
+                <p class="text-justify p-3">Application for allotment of DINs to the proposed first Directors in respect of new companies shall be made in SPICe 32 form only.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 bg-secondary shadow">
+                <h4 class="text-left bg-info p-3">DIR-3 Form</h4>
+                <p class="text-justify p-3">Any person intending to become a director in an already existing company shall have to make an application in e-Form DIR-3 for allotment of DIN.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+<div class="row bg-white text-dark p-5  w-100">
+    <div class="container-fluid shadow">
+        <h2 class="text-left bg-info p-3">ATTACHMENTS OF FORM DIR-3</h2>
+        <ol>
+            <li>Photograph, Identity proof,</li>
+            <li>Residence proof, Verification (Name, father’s name, present address, date of birth, text of declaration and physical signature of the applicant)</li>
+            <li>In case of foreign nationals, they are required to submit their passport as an identity proof.</li>
+        </ol>
+        <p>These documents must be attested by a Chartered Accountant or a Company Secretary or a Cost Accountant, in whole time practice.</p>
+        <p>In case of foreign nationals, their documents can be attested by Consulate of the Indian Embassy and Foreign Public Notary.  </p>
+        <p>After uploading DIR-3 and the supporting documents, the applicant will pay the fee in the next window screen. It has to be paid through net banking, credit card or NEFT.</p>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row bg-dark text-white p-5">
+    <div class="container-fluid bg-secondary text-white p-3 rounded" style="font-size:18px;">
+        <h2 class="p-3 bg-info">Generation of DIN<br /> <small>Once the application fee is paid and the application is submitted, the system will generate DIN.</small></h2>
+        <h3  class="p-3 bg-info">Form DIR-6</h3>
+        <p class="text-justify">For changing any details mentioned in the DIR-3 form/ SPICe 32 with respect to Directors, then Form DIR-6 has to be submitted online. With the form, the attested supporting document is also required to be submitted. </p>
+        <h3  class="p-3 bg-info">SURRENDERING OR CANCELLING 
+        <small class="text-justify">The Central government may cancel the DIN due to the following reasons:</small></h3>
+        <ol>
+            <li class="text-justify">
+                If a duplicate DIN has been issued to the director;
+            </li>
+            <li class="text-justify">DIN was obtained by fraudulent means;</li>
+            <li class="text-justify">On the death of the concerned person;</li>
+            <li class="text-justify">The person has been declared unsound mind by the court;</li>
+            <li class="text-justify">The person has been adjudicated as insolvent;</li>
+            <li class="text-justify">The person has never used nor have any plan to use in future his/ her DIN.</li>
+        </ol>
+</div>
+    </div>
+        <div class="row bg-white p-5">
+            <div class="container-fluid bg-secondary text-white p-3 rounded" style="font-size:18px;">
+                <p class="text-justify">The director can also surrender the DIN in Form DIR-5. With the form, he has to submit a declaration that he has never been appointed as a director in the company and the said DIN has never been used for filing any document with any authority. Upon verifying the e-records, the central government will de-activate the DIN.</p>
+                <p class="text-justify">Note that, once a person is appointed as a director in any company as per the Companies Act 2013, he cannot relinquish his DIN in the future. Even if he doesn’t remain a director anymore in that company or in any other company, his DIN will exist as it is.</p>
+                <p class="text-justify">WMC can help you for obtaining DIN. The time taken to draft and file application of DIN is about one working day, subject to government processing time and client document submission. Get a free consultation for Obtaining DIN by scheduling an appointment with a WMC Advisor.</p>
+            </div>
+        </div>
+
+
+

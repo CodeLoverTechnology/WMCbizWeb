@@ -93,3 +93,13 @@ div {
     
 }
 
+
+.float {
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    background-color: #25d366;
+    text-align: center;
+    z-index: 100;
+}
+

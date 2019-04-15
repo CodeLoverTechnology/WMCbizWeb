@@ -1,0 +1,278 @@
+﻿
+@{
+    ViewBag.Title = "Appointment Of Auditor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Appointment Of Auditor
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                <b> Who is Auditors?</b>
+                            </div>
+                            <div class="text-justify" style="font-size:18px;">
+                                An auditor is a person or a firm appointed by a company to execute an audit and for evaluating the validity and reliability of a company or organization's financial statements. To act as an auditor, a person should be qualified the prescribed qualification by the regulatory authority.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/appointmentofauditor.jpg" class="img-fluid img-thumbnail" style="min-height:250px; max-height:300px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">                
+                @Html.Partial("_EnquiryView")
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid bg-dark p-5">
+    <div class="row" id="menu">
+        <div class="container-fluid">
+
+            <div class="text-justify  m-1" style="font-size:18px;">
+                <div class="h2 text-white text-center p-3"> Types of Audit in present scenario</div>
+                <div class="row  text-white text-center">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-danger p-4"><a href="#StatutoryAuditor" class="text-white">Statutory Auditor</a></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-info p-4"><a href="#InternalAuditor" class="text-white">Internal Auditor</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-primary p-4">
+                    <a href="#CostAuditor" class="text-white">Cost Auditor</a>
+                </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-warning p-4"><a href="#SecretarialAuditor" class="text-white">Secretarial Auditor</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <div class="clearfix"></div>
+        <div class="container-fluid bg-light pl-5 pr-5"  id="STATUTORYAUDITOR">
+            <h2 class="h3 p-3 bg-info text-white text-right">STATUTORY AUDITOR</h2>
+            <h3 class="h3 p-5 bg-secondary text-white text-center">First Auditor</h3>
+                      <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-warning p-4 shadow">
+                        <h3 class="h3 p-3 bg-info text-white">I. Non- Government Company:</h3>
+                        <p class="text-justify">The first auditor of a company, other than a Government company, shall be appointed by the Board of Directors at the board meeting within thirty days from the date of registration of the company.</p>
+                        <p class="text-justify">In the case of failure of the Board to appoint such auditor, it shall inform the members of the company, who shall within ninety days at an extraordinary general meeting appoint such auditor and such auditor shall hold office till the conclusion of the first annual general meeting.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-warning p-4 shadow">
+                        <h3 class="h3 p-3 bg-info text-white">II. Government Company:</h3>
+                        <p class="text-justify">The first auditor shall be appointed by the Comptroller and Auditor-General of India within sixty days from the date of incorporation of the company.</p>
+                        <p class="text-justify">In case the Comptroller and Auditor-General of India does not appoint such auditor within the said period, the Board of Directors of the company shall appoint such auditor within the next thirty days; and in the case of failure of the Board to appoint such auditor within the next thirty days, it shall inform the members of the company who shall appoint such auditor within the sixty days at an extraordinary general meeting, who shall hold office till the conclusion of the first annual general meeting.</p>
+                    </div>
+                        </div>
+            <br />
+                    <h3 class="h3 p-5 bg-secondary text-white text-center">Subsequent Auditor</h3>
+                    <p class="text-justify bg-warning p-4 shadow">Every company shall, at the first annual general meeting, appoint an individual or a firm of chartered accountants as a statutory auditor, who shall hold office from the conclusion of that meeting till the conclusion of its sixth annual general meeting.</p>
+                </div>
+     <div class="container-fluid">
+         <div class="row p-3">
+             <div class="container-fluid">
+                 <h3 class="h3 p-5 bg-secondary text-white text-center">Casual Vacancy in the office of an Auditor</h3>
+                 <div class="row">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-success p-4 shadow">
+                         <h3 class="h3 p-3 bg-info text-white shadow rounded">I. Non- Government Company</h3>
+                         <p class="text-justify">
+                             Any casual vacancy in the office of an auditor shall be filled by the Board of Directors within thirty days.
+                             But if such casual vacancy is as a result of the resignation of an auditor, such appointment shall also be approved by the company at a general meeting convened within three months of the recommendation of the Board and he shall hold the office till the conclusion of the next annual general meeting;
+                         </p>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-warning p-4 shadow">
+                         <h3 class="h3 p-3 bg-info text-white shadow rounded">II. Government Company:</h3>
+                         <p class="text-justify">In the case of a company whose accounts are subject to audit by an auditor appointed by the Comptroller and Auditor-General of India, be filled by the Comptroller and Auditor-General of India within thirty days and if CAG does not fill the vacancy within the said period, the Board of Directors shall fill the vacancy within next thirty days.</p>
+                     </div>
+                 </div>
+             </div>
+             <br />
+</div>
+         </div>
+    <div class="row p-4 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white text-center">Filing for appointment of Auditor <br /><span class="small">Company to file ADT-1 to ROC within 15 days from the date of Appointment of Statutory Auditor.</span></h3>
+                <div class="row">
+                    <h3 class="h3 p-5 bg-secondary text-white text-center w-100">Required documents</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-success p-4 shadow">
+                            <h4 class="h4 p-3 bg-info text-white shadow rounded">The following attachments are mandatory</h4>
+                            <ol type="a" style="font-size:18px;" class="text-white">
+                                <li>Copy of written consent given by auditor</li>
+                                <li>Copy of resolution passed by the board/company in case Nature of appointment is other than ‘Auditor appointed by the Tribunal’ or ‘Others’;</li>
+                                <li>Copy of the order of the Tribunal in case Nature of appointment is ‘Auditor appointed by the Tribunal’</li>
+                            </ol>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-warning p-4 shadow">
+                            <h4 class="h4 p-3 bg-info text-white shadow rounded">Following attachments are optional</h4>
+                            <ol type="a" style="font-size:18px;">
+                                <li>Copy of the intimation sent by company;</li>
+                                <li>Copy of the letter of appointment from C&AG</li>
+                                <li>Optional attachments, if any.</li>
+                            </ol>
+                        </div>
+                        <div class="bg-light text-success p-3 shadow text-justify">
+                            WMC can help you for appointment of Auditor in Company. The average time taken to draft and file documents of Name Change is about 0 - 2 working days, subject to government processing time and client document submission. Get a free consultation for appointment of Auditor by scheduling an appointment with a WMC Advisor.
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+<div class="rounded-circle mb-5 p-3 bg-success float" style="position:relative;"><a href="#menu" class="text-white">Top</a></div>
+<div class="container-fluid  bg-light mt-5"  id="InternalAuditor">
+    <div class="row p-3 rounded  mt-5" style="font-size:18px;">
+        <div class="container-fluid  mt-5">
+            <h3 class="h3 p-3 bg-info text-white text-right">INTERNAL AUDITOR</h3>
+            <p>Board of Director of the company shall appoint internal Auditor who shall either be a chartered accountant or a cost accountant, or such other professional as may be decided by the Board to conduct internal audit of the functions and activities of the company.The internal auditor may or may not be an employee of the company.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Companies Required to Appoint Internal Auditor</h3>
+            <p class="text-justify">The following class of companies shall be required to appoint an internal auditor which may be either an individual or a partnership firm or a body corporate, namely:-</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-success text-white shadow p-4 text-center"><h3>Every listed company</h3></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-warning text-white shadow p-4 text-justify">
+                    <h4>Every unlisted public company having</h4>
+                    <ol>
+                        <li>paid up share capital of fifty crore rupees or more during the preceding financial year; or</li>
+                        <li>turnover of two hundred crore rupees or more during the preceding financial year; or</li>
+                        <li>outstanding loans or borrowings from banks or public financial institutions exceeding one hundred crore rupees or more at any point of time during the preceding financial year; or</li>
+                        <li>outstanding deposits of twenty five crore rupees or more at any point of time during the preceding financial year; and</li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-danger text-white shadow p-4 text-justify">
+                    <h4>Every private company having</h4>
+                    <ol>
+                        <li>turnover of two hundred crore rupees or more during the preceding financial year; or</li>
+                        <li>outstanding loans or borrowings from banks or public financial institutions exceeding one hundred crore rupees or more at any point of time during the preceding financial year</li>
+                    </ol>
+                </div>
+            </div>
+            <p class="text-justify">WMC is leading consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, Corporate Compliances, tax registration, tax filing and GST registration and their filing. </pclass="text-justify">
+            <p class="text-justify">WMC can help you for resignation/appointment of Auditor. The average time taken to draft and file documents for resignation/appointment of Auditor is about 2 - 3 working days, subject to government processing time and client document submission. Get a free consultation for resignation/appointment of Auditor by scheduling an appointment with a WMC Advisor. </p>
+        </div>
+    </div>
+</div>
+<div class="rounded-circle mb-5 p-3 bg-success float" style="position:relative;"><a href="#menu" class="text-white">Top</a></div>
+<div class="container-fluid  bg-light p-5  mt-5"  id="CostAuditor">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-primary text-white text-right">COST AUDITOR</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-primary text-white shadow p-4 text-justify">
+                    The Cost audit shall be conducted by a Cost Accountant who shall be appointed by the Board on such remuneration as may be determined by the members of the company.
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-info text-white shadow p-4 text-justify">
+                    The Institute of Cost and Works Accountants of India, defined cost audit as an audit of efficiency, of minute details of expenditures while the work is in progress and not a post mortem examination.
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <h3 class="h3 p-3 bg-info text-white text-right">Scope of Cost Audit<br /><small>The cost audit extents to the verification and checking of the following areas</small></h3>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-primary text-white shadow p-4 text-justify">
+                    <h4>Services</h4>
+                    <p class="text-justify">Utilization of power, fuel, water, steam and electricity and that of material, labour and other costs like overheads allocated to the service department.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-info text-white shadow p-4 text-justify">
+                    <h4>Wages and Salaries</h4>
+                    <p class="text-justify">Maintenance of employment and attendance records, overtime and idle time records, allocation of wages and salaries among various departments and those connected with the capital work.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-danger text-white shadow p-4 text-justify">
+                    <h4>Overhead</h4>
+                    <p class="text-justify">The overheads like production, administration, selling and distribution should be allocated on a reasonable basis. The cost auditor ensures a fair and equitable distribution of overheads between various departments, reconciliation of the cost records with that of financial records, overhead recovery rates, and basis for allocation of cost between fixed and variable.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-warning shadow p-4 text-justify">
+                    <h4>Depreciation</h4>
+                    <p class="text-justify">Maintenance of fixed assets registers with quantitative details, situation, method of calculating depreciation, allocation of depreciation in respect of the common assets.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-light shadow p-4 text-justify">
+                    <h4>Production</h4>
+                    <p class="text-justify">Daily production reports, summaries from daily to monthly, monthly to yearly and comparison with past records and budgeted targets including abnormal losses, work in-progress, etc.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-success text-white shadow p-4 text-justify">
+                    <h4>Work-in-Progress</h4>
+                    <p class="text-justify">Maintenance of records viz., job cards, work order, cost ledger, etc. and their valuation method.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-secondary text-white shadow p-4 text-justify">
+                    <h4>Stock Verification</h4>
+                    <p class="text-justify">Inventory records for stock – both finished and unfinished products, spares and stores, tools, machinery spares, etc, their values, issue procedure and balances.</p>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 bg-info text-white shadow p-4 text-justify">
+                    <h4>Utilization of Capacity</h4>
+                    <p class="text-justify">Plant utilization and capacity utilization are not considered in detail in financial audit. Under this category the cost auditor’s examination covers the following aspects – total available hours, standards hours, planned hours, and actual hours worked. Practical capacity, standard capacity, expected capacity, and actual capacity utilized.</p>
+                    <p class="text-justify">Besides, the cost auditor’s examination covers various other aspects viz., royalty payments, company policies with regard to inventory management, productivity, internal control, internal audit, cost reduction, export performance, bottlenecks in the production process, inter-company transactions, etc.</p>
+                </div>               
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Applicability</h3>
+            <p class="text-justify">Section 148 of the Companies Act 2013, the Company engaged in the production of the goods or providing services, having an overall turnover from all its products and services of rupees thirty five crore or more during the immediately preceding financial year, shall include cost records for such products or services in their books of account.</p>
+            <h3 class="h3 p-3 bg-info text-white">Furnishing cost audit report to Central Government</h3>
+            <p class="text-justify">The Company shall within thirty days from the date of receipt of a copy of the cost audit report prepared in pursuance of a direction under sub-section (2) furnish the Central Government with such report along with full information and explanation on every reservation or qualification contained therein.</p>
+            <p class="text-justify">If, after considering the cost audit report and the information and explanation furnished by the company to the Central Government is of the opinion that any further information or explanation is necessary, it may call for such further information and explanation and the company shall furnish the same within such time as may be specified by that Government.</p>
+            <p class="text-justify">WMC is leading consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, Corporate Compliances, tax registration, tax filing and GST registration and their filing. </p>
+            <p class="text-justify">WMC can help you for resignation/appointment of Auditor. The average time taken to draft and file documents for resignation/appointment of Auditor is about 2 - 3 working days, subject to government processing time and client document submission. Get a free consultation for resignation/appointment of Auditor by scheduling an appointment with a WMC Advisor.</p>
+        </div>
+    </div>
+</div>
+<div class="rounded-circle mb-5 p-3 bg-success float" style="position:relative;"><a href="#menu" class="text-white">Top</a></div>
+<div class="container-fluid  bg-light p-5  mt-5"  id="SecretarialAuditor">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">SECRETARIAL AUDITOR</h3>
+            <div>The Companies Act, 2013 has introduced a new requirement of Secretarial Audit for bigger companies, which has been prescribed under Section 204 of the Act.</div>
+            <p>Companies required conducting secretarial audit</p>
+            <ol type="i">
+                <li>Every listed company and</li>
+                <li>Company belonging to other class of companies: The other class of companies are
+                    <ul>
+                        <li>Every public company having a paid-up share capital of fifty crore rupees or more; or</li>
+                        <li>Every public company having a turnover of two hundred fifty crore rupees or more.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>shall appoint secretarial Auditor for conducting secretarial Audit of the Company.</p>
+            <div>Qualifications for the secretarial auditor</div>
+            <p>A Secretarial Audit has to be conducted by a practising Company Secretary in respect of the secretarial and other records of the company.</p>
+            <div>Report of the secretarial audit</div>
+            <p>The Company shall annex secretarial audit report in the Form MR-3 with its Board’s report made in terms of sub-section (3) of section 134.</p>
+            <p>The Board of Directors, in their report made in terms of sub-section (3) of section 134, shall explain in full any qualification or observation or other remarks made by the company secretary in practice in his secretarial audit report.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <h3>Duty of the Company</h3>
+        <p>It shall be the duty of the company to give all assistance and facilities to the company secretary in practice, for auditing the secretarial and related records of the company.</p>
+        <p>Companies required conducting secretarial audit</p>
+        <ol type="i">
+            <li>Consent to act as secretarial auditor</li>
+            <li>Copy of Board resolution</li>
+            <li>Other documents (if any)</li>
+        </ol>
+        <div class="container-fluid">
+            <p>The Company shall file MGT-14 within 30 days to ROC from the passing of Board resolution.</p>
+            <p class="text-justify">WMC is leading consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, Corporate Compliances, tax registration, tax filing and GST registration and their filing.</p>
+            <p class="text-justify">WMC can help you for resignation/appointment of Auditor. The average time taken to draft and file documents for resignation/appointment of Auditor is about 2 - 3 working days, subject to government processing time and client document submission. Get a free consultation for resignation/appointment of Auditor by scheduling an appointment with a WMC Advisor. </p>
+        </div>
+    </div>
+</div>
+<div class="rounded-circle mb-5 p-3 bg-success float" style="position:relative;"><a href="#menu" class="text-white">Top</a></div>

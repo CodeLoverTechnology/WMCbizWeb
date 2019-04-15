@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "COMPANY NAME CHANGE";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    COMPANY NAME CHANGE
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/change-company-name.jpeg" class="img-fluid img-thumbnail" style="max-height:320px;min-height:300px;" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify p-2 shadow" style="font-size:18px;">
+                                The name of the company is regarded as the identity of the company irrespective of whether the company is a private company or a public company.
+                            </div>
+                            <div class="text-justify p-2 shadow" style="font-size:18px;">
+                                When you start the business that time you choose any name as brand or company name but on the later stage when your business is growing or have to change the business activity that time you are thinking about to change the company name.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify  p-2 shadow" style="font-size:18px;">
+                                    Changing Company name amounts to a significant alteration since Memorandum of Association and Articles of Association need to be altered.
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+               @Html.Partial("_EnquiryView")
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="row bg-dark w-100 p-3">
+    <div class="container-fluid shadow">
+        <div class="bg-info text-white">
+            <h5 class="text-left p-3" style="font-size:21px;"> PROCEDURE</h5>
+        </div>
+        <div class="text-justify text-white">
+            <p class="text-justify">As per Section 13 of the Companies Act 2013, a company may change its name by passing a special resolution in general meeting and receiving approval from the Central Government.</pclass="text-justify">
+            <p class="text-justify">The step-by-step process of changing name of a private limited company is outlined below:</p>
+            <ol type="1." style="font-size:18px;">
+
+                <li>Hold board meeting  and pass board resolution for name change;</li>
+                <li>Apply RUN for name availability;</li>
+                <li>Hold General meeting and pass Special Resolution;</li>
+                <li>After approval of name file respective forms to ROC;</li>
+                <li>Make changes in MOA and AOA.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="row bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadow bg-info text-white">
+                <h5 class="text-left  p-3" style="font-size:21px;">Passing board resolution when directors are mutually agreed</h5>
+                <p class="text-justify p-3">A board meeting should be called for passing a resolution to change the company name. In the meeting, the board of directors will discuss and approve the change in name, authorising a director or the company secretary of the company to check name availability with MCA, and calling Extra-Ordinary General Meeting for passing a special resolution.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadow bg-danger text-white">
+                <h5 class="text-left  p-3" style="font-size:21px;">Checking name availability</h5>
+                <p class="text-justify">The authorized person will apply in RUN form to MCA for name availability and approving the same with keep in mind Section 4(4) of the Companies Act, 2013 and Rule 8 & 9 of Companies (Incorporation) Rules, 2014. .Central Registration Centre (CRC)will send approval letterstating that the proposed name is available after considering application.</p>
+                <p class="text-justify  p-3">The proposed name shouldn’t be similar to another existing company name, and it shouldn’t include the word “state.” Other conditions existing at the time of initial name approval exists in this situation also.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadow bg-warning">
+                <h5 class="text-left  p-3" style="font-size:21px;">Passing Special Resolution</h5>
+                <p class="text-justify  p-3">Once the name is approved by MCA, the company should call for an extraordinary general meeting. A special resolution will be passed for changing name and make the change in Memorandum of Association and Articles of Association.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row bg-secondary w-100 p-3">
+    <div class="container-fluid shadow">
+        <div class="row p-3 text-white">
+            <div class="bg-info w-100">
+                <h3 class="text-left p-3" style="font-size:21px;"> Applying to Registrar</h3>
+            </div>
+            
+            <p class="text-justify">A special resolution will be filed with RoC within 30 days of passing the resolution. With it, Form MGT-14 will also be filed which contains the details about special resolution. Following documents are submitted with MGT-14</p>
+            <ul  class="text-justify">
+                <li>Certified copy of Special Resolution</li>
+                <li>Notice of EGM</li>
+                <li>Explanatory statement to EGM,</li>
+                <li>Altered Memorandum of Association,</li>
+                <li>Altered Articles of Association</li>
+            </ul>
+            <p class="text-justify">Once MGT-14 is filed, the company needs to file INC-24 with the RoC for taking approval of the central government for name change along with the prescribed fee.</p>
+            <p class="text-justify">INC-24 will be filed after MGT-14 is filed since INC-24 specifically asks for SRN of MGT-14 filed with RoC. SRN of RUN also needs to be mentioned in INC-24. Along with INC-24, a copy of the minutes of Extra-Ordinary General Meeting where the special resolution was passed also needs to be submitted.</p>
+            <p class="text-justify">In INC-24, reasons of the name change, details about the number of members who attended the EGM, number of members voting in favor/ against the resolution, and percentage of shareholding are also mentioned.</p>
+        </div>
+    </div>
+</div>
+<div class="row bg-light w-100 p-3">
+    <div class="container-fluid shadow">
+        <div class="row p-3">
+            <div class="bg-info w-100">
+                <h3 class="text-left p-3 text-white" style="font-size:21px;"> Incorporating company name in MOA and AOA</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadow bg-dark text-white  p-3">
+                    <p class="text-justify">Once the new certificate of incorporation is received from Central Government, the new name must be incorporated in all the copies of MOA and AOA.</p>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 shadow bg-danger text-white  p-3">
+                    <p class="text-justify">WMC can help you for name change of Company. The average time taken to draft and file documents of Name Changeis about 5 -15 working days, subject to government processing time and client document submission. Get a free consultation for Name Change by scheduling an appointment with a WMC Advisor.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>
+

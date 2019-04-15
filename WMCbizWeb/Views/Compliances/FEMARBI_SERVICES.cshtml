@@ -13,70 +13,45 @@
     }
 </style>
 
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="offset-7 col-5 mt-5 mb-3">
-            <form class="form" action="/Home/Enquiry" method="post">
-                <div class="card">
-                    <div class="card-header bg-info">
-                        <div class="text-center" style="font-size:25px; color:aliceblue;">REQUEST A CALL BACK</div>
+<div class="row mt-5">
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h3 class="text-center bg-info text-white p-3">
+                    FEMA RBI SERVICES : Foreign Exchange Management Services
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <img src="~/Content/images/AlterationofAOA.jpg" class="img-fluid" style="max-height:320px;min-height:300px;" />
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="name"><b></b></label>
-                            <input type="text" class="form-control" id="txtname" name="txtname" placeholder="Your Name" required>
-                            @*<span id="message"></span><br>*@
-                        </div>
-                        <div class="form-group">
-                            <label for="email"><B></B></label>
-                            <input type="email" class="form-control" id="txtemail" name="txtemail"   placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="num"><B></B></label>
-                            <div class="input-group">
-                                <span class="input-group-addon bg-light p-1">+91 </span>
-                                <input type="tel" class="form-control" id="txtnumber" name="txtnumber" placeholder="Please Enter Number.." required>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg float-right">Get Start</button>
+                    <div class="col-lg-6 col-md-6 col-sm-12 bg-light p-3 shadow">
+                        <div class="text-justify" style="font-size:18px;">
+                            <ol>
+                                <li>Entry in India: Advisory and support services</li>
+                                <li>Establishment of WOS, Liaison Office, Branch Office, Project Office.</li>
+                                <li>Advising on legal and procedural matters falling under FEMA.</li>
+                                <li>Advising Non-Resident Indians regarding investment in India and repatriation of such investments and returns thereon</li>
+                                <li>Obtaining RBI/FIPB approvals</li>
+                                <li>Forex Planning</li>
+                                <li>Direct Investment outside India</li>
+                                <li>FDI / ODI advisory and compliances</li>
+                                <li>NBFC registration & compliance</li>
+                                <li>Registration of Micro Finance Companies</li>
+                            </ol>                           
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-@*<section >*@
-<div class="jumbotron">
-    <div class="bg-light card">
-        <h3 class="card-header bg-info  text-white  text-center">
-            Foreign Exchange Management Services
-        </h3>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-justify" style="font-size:20px;">
-                        1.	Entry in India: Advisory and support services<br />
-                        2.	Establishment of WOS, Liaison Office, Branch Office, Project Office.<br />
-                        3.	Advising on legal and procedural matters falling under FEMA.<br />
-                        4.	Advising Non-Resident Indians regarding investment in India and repatriation of such investments and returns thereon
-                        5.	Obtaining RBI/FIPB approvals<br />
-                        6.	Forex Planning<br />
-                        7.	Direct Investment outside India<br />
-                        8.	FDI / ODI advisory and compliances<br />
-                        9.	NBFC registration & compliance<br />
-                        10.	Registration of Micro Finance Companies<br />
-
-                    </p>
-                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                @Html.Partial("_EnquiryView")
             </div>
         </div>
     </div>
-    <br>
-    <br>
+</div>
+<div class="clearfix"></div>
+
+<div class="jumbotron w-100">
+    
     <div class="bg-light card">
         <div class="card-header bg-info  text-white">
             <h2 class="text-center">Export Import & Forex Planning:</h2>

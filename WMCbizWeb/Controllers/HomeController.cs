@@ -44,6 +44,7 @@ namespace WMCbizWeb.Controllers
             ObjNew.Emailid = email;
             ObjNew.MobileNo = Mobilenumber;
             ObjNew.Name = name;
+            ObjNew.RequestedURL = Current_Url;
             ObjNew.CreatedBy = email;
             ObjNew.Createdate = DateTime.Now;
             ObjNew.modifiedBy = email;
@@ -91,6 +92,7 @@ namespace WMCbizWeb.Controllers
                     + System.Environment.NewLine + "  Email ID : " + ObjNew.Emailid
                      + System.Environment.NewLine + " Dear " + ObjNew.Name + ", Your Enquiry Application has been Submitted. Thank you for WISDOM MANAGEMENT CONSULTANCY Enquiry. We will get back to you soon!!!"
                      + System.Environment.NewLine + " Feel free to Visit WISDOM MANAGEMENT CONSULTANCY Web Portal."
+                     + System.Environment.NewLine + " Enquiry Requested From : "+ ObjNew.RequestedURL
                     + " ======================================================================================== "
                     + System.Environment.NewLine + System.Environment.NewLine
                     + System.Environment.NewLine
@@ -101,9 +103,8 @@ namespace WMCbizWeb.Controllers
                    + "Office No-36, S-513," + System.Environment.NewLine
                    + "Shakarpur, Delhi-110092," + System.Environment.NewLine
                    + "Phone :- 011-42785910" + System.Environment.NewLine
-                   + "Email ID :- info@wmcbiz.com/wmckpo@gmail.com /csmanojpandey@gmail.com" + System.Environment.NewLine
-                   + "Email ID : nationaljournlistassociation@gmail.com/info@nja.org.in" + System.Environment.NewLine
-                   + "Contact No : +91-9313649750/7836807007" + System.Environment.NewLine
+                   + "Email ID :- info@wmcbiz.com/wmckpo@gmail.com /csyogendrayadav@gmail.com" + System.Environment.NewLine                   
+                   + "Contact No : +91-7275278701" + System.Environment.NewLine
                 + System.Environment.NewLine
                    + System.Environment.NewLine
                    + "REGISTERED OFFICE :-" + System.Environment.NewLine

@@ -1,0 +1,205 @@
+﻿
+@{
+    ViewBag.Title = "Appointment Of Director";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid mt-5">
+    <div class="col-12 card mt-3">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+                <h4 class="card-header  text-center bg-info text-white" style="font-size:22px;">
+                    Appointment Of Director
+                </h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="text-justify" style="font-size:18px;">
+                                <b> ADDITIONAL DIRECTOR</b>
+                            </div>
+                            <div class="text-justify" style="font-size:18px;">
+                                According to Section 152(3) provides, no person shall be appointed as a director of a company unless he has been allotted the Director Identification Number under Section 154. Every individual intending to be appointed as director of a company shall make an application for allotment for Director Identification Number (DIN) to the Central government. (Section 153)
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="~/Content/images/ADDITIONAL_DIRECTOR.jpeg" class="img-fluid img-thumbnail" style="min-height:250px; max-height:300px;" />
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="text-justify m-1" style="font-size:18px;">
+                                    Director Identification Number (DIN) is a unique identification number allotted to an existing director or a person intending to become the director of a company. In the scenario of e-filing, DIN is a pre-requisite for filing of certain company related documents. Any individual who is a director or intends to be a director of a company should apply for DIN.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 float-right">
+                @Html.Partial("_EnquiryView")
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid bg-secondary text-white p-5">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="text-justify  m-1" style="font-size:18px;">
+                According to Section 161(1) of the Companies Act, 2013, Articles of a company may confer its Board of Director power to appoint Additional Director. A person failed to be appointed through general meeting shall not be appointed as Additional Director. An Additional Director may hold office only up to the date of next Annual General Meeting or the last day, on which the Annual General Meeting should have been held, whichever is earlier.
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Procedure of appointment of additional Director</h3>
+            <ol>
+                <li>Ensure that the Articles of the company authorise the Board to appoint an additional director and such appointment is within the maximum limit of directors mentioned in the Articles.</li>
+                <li>Ensure that individual proposed to be appointed as an additional director, does not suffer from any disqualification mentioned.</li>
+                <li>The Board shall appoint an additional director by passing a resolution either at a meeting or by circulation.</li>
+                <li>Before appointing a person as an additional director, his consent to act as director should be obtained.</li>
+                <li>Check whether the additional director to be appointed in the board meeting has obtained Director Identification Number (DIN). If not then ask such director to make application to Central Government for obtaining DIN and ensure that the Director has intimated his Directors Identification Number to the Company.</li>
+                <li>Ensure that the consent of the director as well as the declaration from the director has been obtained.</li>
+                <li>Send notice in writing to all directors of the company in accordance with Section 173 of the Companies.</li>
+                <li>Act, 2013 for holding Board meeting.</li>
+                <li>Hold the Board meeting and pass resolution for appointment of an additional director.</li>
+                <li>The company has to file particulars of director in Form DIR – 12 with the Registrar of Companies within thirty days of the appointment after paying the requisite fee electronically.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container-fluid  bg-light p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Documents (Required for Registration)</h3>
+            <br />
+            <ol style="font-size:18px;">
+                <li>Letter of Appointment</li>
+                <li>Consent Letter (DIR-2) of Appointee Director</li>
+                <li>Board Resolution</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row text-white p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Number of Directorship</h3>
+            <br />
+            <p class="text-justify">According to Section 165 of the Companies Act, 2013, no person shall hold office as a director, including any alternate directorship, in more than twenty companies at the same time. The maximum number of public companies in which a person can be appointed as a director shall not exceed ten. Such companies can be located in the jurisdiction in any of the Registrar of Companies. There is a need for individual identity of person(s) intending to be directors of companies to be established. This would also facilitate effective legal action against the directors of such companies under the law, keeping in view the possibility of fraud by companies under the phenomenon of companies that raise funds from the public and vanish thereafter.</p>
+        </div>
+
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Appointment of Directors to Fill Casual Vacancies</h3>
+            <p class="text-justify">A contingency may occur between two annual general meetings due to death, resignation, insolvency, disqualification etc. Vacancies arising out of these reasons are called casual vacancies.</p>
+            <p class="text-justify">According to Section 161(4) if the office of any director appointed by the company in general meeting is vacated before his term of office expires in the normal course, the resulting casual vacancy may, in default of and subject to any regulations in the articles of the company, be filled by the Board of Directors at a meeting of the Board which shall be subsequently approved by members in the immediate next general meeting.</p>
+            <p class="text-justify">Provided that any person so appointed shall hold office only up to the date up to which the director in whose place he is appointed would have held office if it had not been vacated.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-light p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Procedure of appointment of additional Director</h3>
+            <ol class="p-1">
+                <li class="text-justify">Where it is proposed by the Board to appoint a person to fill a casual vacancy, his written consent to act as a director has to be obtained before appointment.</li>
+                <li class="text-justify">Check whether the director to be appointed in the casual vacancy in the board meeting has obtained Director Identification Number (DIN). If not then ask such director to make application to Central Government for obtaining DIN and ensure that the Director has intimated his Directors Identification Number to the Company.</li>
+                <li class="text-justify">Convene a Board meeting after giving notice to all the directors of the company as per Section 173. At the Board meeting the matter will be discussed and appointment may be made by passing a resolution.</li>
+                <li class="text-justify">Ensure that the consent of the director as well as the declaration from the director has been obtained.</li>
+                <li class="text-justify">The company has to file particulars of director in Form DIR - 12 with the Registrar of Companies within thirty days of the appointment after paying the requisite fee electronically.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Required documents:</h3>
+            <p class="text-justify">For the purpose of filing Form DIR – 12, the following attachments are required:</p>
+            <ol>
+                <li>Letter of appointment</li>
+                <li>Consent letter in the form DIR-2 of appointee director</li>
+                <li>Board Resolution</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-light p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Appointment of Managing Director</h3>
+            <p class="text-justify">According to section 2(54) of the Companies Act, 2013 "Managing Director" means a director who, by virtue of the articles of a company or an agreement with the company or a resolution passed in its general meeting, or by its Board of Directors, is entrusted with substantial powers of management of the affairs of the company and includes a director occupying the position of managing director, by whatever name called.</p>
+            <p class="text-justify">According to section 196 of the Companies Act, 2013, No company shall appoint or employ at the same time a managing director and a manager. Appointment of Managing Director shall be for a term which must be less than five years. No re-appointment shall be made earlier than one year before the expiry of his term.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Procedure for Managing Director’s Appointment</h3>
+            <p class="text-justify">Appointment of Managing Director is to be made according to Section 196 and its remuneration should be in accordance with Section 197 and Schedule V of the Companies Act, 2013. Provisions relating to managerial remuneration are not applicable to a private company.</p>
+            <ol start="1">
+                <li>
+                    Convene and hold a Board meeting for transacting, inter alia, the following business:
+                    <ol type="a">
+                        <li>To take a decision on the person to be appointed as managing director after fully ensuring that he does not suffer from any disqualification in Sections 164, 196, 203, Schedule V and any other provision of the Companies Act;</li>
+                        <li>Fix time, date and venue for holding a general meeting of the company;</li>
+                        <li>Approve notice of the general meeting along with the explanatory statement as required by Sections101 and 102 of the Act after keeping in mind the requirements of Section 190 of the Act and</li>
+                        <li>To authorise company secretary to issue notice of the general meeting on behalf of the Board.</li>
+                    </ol>
+                </li>
+                <li>Hold the general meeting and get the resolution passed approving appointment of the managing director.</li>
+                <li>In case the appointment of the managing director is not in accordance with the provisions of Schedule V of the Act, the company is required to obtain approval of the Central Government as per Section 201 of the Act. The application should be filed electronically in MR – 2 of the Companies (Appointment and Remuneration of Managerial Personnel) Rules 2014 accompanied by the prescribed fees.</li>
+                <li>Execute the agreement, as approved by the Board, with the managing director.</li>
+                <li>Make necessary entries in the register of directors etc. and other records and registers of the company.</li>
+                <li>
+                    Make necessary entries in the register of directors etc. and other records and registers of the company:
+                    <ul>
+                        <li>The company should file with the ROC return of appointment of the managing director in Form MR -1, within sixty days as per Section 196(4) of the appointment.</li>
+                        <li>Form DIR – 12 for particular of appointment of key managerial personnel, within thirty days of the appointment.</li>
+                        <li>Form MGT – 14 for special resolution within thirty days of the appointment.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-light p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <h3 class="h3 p-3 bg-info text-white">Required Documents</h3>
+            <div>For Form MR -1:</div>
+            <ol type="i">
+                <li>Copy of Board Resolution,</li>
+                <li>Copy of Shareholders Resolution</li>
+                <li>Copy of letter of consent to act as managing director</li>
+                <li>Copy of Central Government Approval (if required)</li>
+                <li>Copy of certificate by nomination and remuneration committee (if required)</li>
+            </ol>
+            <div>For Form DIR-12:</div>
+            <ol type="i">
+                <li>Copy of Board Resolution,</li>
+                <li>Copy of Shareholders Resolution</li>
+                <li>Copy of letter of consent to act as managing director</li>
+            </ol>
+            <div>For Form MGT-14:</div>
+            <ol type="i">
+                <li>Copy of Shareholders Resolution</li>
+                <li>Copy of letter of consent to act as managing director</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  bg-dark text-white p-5">
+    <div class="row p-3 rounded" style="font-size:18px;">
+        <div class="container-fluid">
+            <p class="text-justify">WMC is the leading consultancy services platform in India, offering a various kind of services like to start a business and manage business such as Incorporation of Company, LLP, Registration of Partnership Firm etc. and trademark filing, tax registration, tax filing and GST registration and their filing.</p>
+            <p class="text-justify">WMC can help you to Appoint Director in a Company. The average time taken to draft and file documents for appointment of Director is about 3 - 5 working days, subject to government processing time and client document submission. Get a free consultation for appointment of Director by scheduling an appointment with a WMC Advisor.</p>
+        </div>
+    </div>
+</div>
