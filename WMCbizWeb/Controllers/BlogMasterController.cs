@@ -19,7 +19,7 @@ namespace WMCbizWeb.Controllers
         // GET: BlogMaster
         public async Task<ActionResult> Index()
         {
-            return View(await db.T_BlogMaster.ToListAsync());
+            return View(await db.T_BlogMaster.OrderByDescending(x=>x.BlogID).Take(20).ToListAsync());
         }
 
         // GET: BlogMaster/Details/5
