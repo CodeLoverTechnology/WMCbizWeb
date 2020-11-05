@@ -40,6 +40,23 @@ namespace WMCbizWeb.Controllers
             string email = frm["txtemail"].ToString();
             string Mobilenumber = frm["txtnumber"].ToString();
 
+            if(string.IsNullOrEmpty(name))
+            {
+                TempData["qUERYmESSAGE"] = "please fill the name";
+                return RedirectToAction(Path[2], Path[1]);
+            }
+            if (string.IsNullOrEmpty(email))
+            {
+                TempData["qUERYmESSAGE"] = "please fill the email";
+                return RedirectToAction(Path[2], Path[1]);
+            }
+            if (string.IsNullOrEmpty(Mobilenumber))
+            {
+                TempData["qUERYmESSAGE"] = "please fill the Mobile number";
+                return RedirectToAction(Path[2], Path[1]);
+            }
+
+
             WMCUser ObjNew = new WMCUser();
             ObjNew.Emailid = email;
             ObjNew.MobileNo = Mobilenumber;
@@ -130,6 +147,41 @@ namespace WMCbizWeb.Controllers
         }
 
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+       
+        [ActionName("Login")]
+        [HttpPost]
+        public ActionResult Login_post(FormCollection frm)
+        {
+            string userName = frm["txtusername"].ToString();
+            string userPwd = frm["txtpassword"].ToString();
 
+            if (!string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(userPwd))
+            {
+                if (userName == Resources.WMCBizResources.BlogerUser && userPwd == Resources.WMCBizResources.BlogPassword)
+                {
+                    Session["userName"] = userName;
+                    Session["userPwd"] = userPwd;
+                    return RedirectToAction("Dashboard");
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
     }
 }

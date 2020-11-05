@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WMCbizWeb.Models.T_BlogMaster>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row p-5">
+    <div class="container">
+
+
+        <h2>Index</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.BlogHeadLine)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShortDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Keywords)
+                </th>
+                @if (!string.IsNullOrEmpty(Session["userName"] as string))
+                {
+                    <th></th>
+                }
+                </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href='@(Resources.WMCBizResources.ShowBlogFilePath + item.FilePath)' target="_blank">
+                            @Html.DisplayFor(modelItem => item.BlogHeadLine)
+                        </a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShortDescription)
+                        <small> @Html.DisplayFor(modelItem => item.CreatedDate)</small>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Keywords)
+                    </td>
+                    @if(!string.IsNullOrEmpty(Session["userName"] as string))
+                    {
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BlogID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BlogID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BlogID })
+                    </td>
+                    }
+                    
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

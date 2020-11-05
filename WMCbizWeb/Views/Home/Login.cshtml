@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .login-area {
+        background: #F3F8FB;
+    }
+
+    .login-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 100vh;
+    }
+
+        .login-box form {
+            margin: auto;
+            width: 450px;
+            max-width: 100%;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+    .login-form-head {
+        text-align: center;
+        background: #8655FC;
+        padding: 50px;
+    }
+
+        .login-form-head h4 {
+            letter-spacing: 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 7px;
+            color: #fff;
+        }
+
+        .login-form-head p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+
+    .submit-btn-area {
+        text-align: center;
+    }
+
+        .submit-btn-area button {
+            width: 100%;
+            height: 50px;
+            /*border: none;*/
+            background: #fff;
+            /*border-color:blue 1px solid;*/
+            color: #585b5f;
+            border-radius: 40px;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            font-weight: 600;
+            font-size: 12px;
+            box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+            .submit-btn-area button:hover {
+                background: #2c71da;
+                color: #ffffff;
+            }
+
+            .submit-btn-area button i {
+                margin-left: 15px;
+                -webkit-transition: margin-left 0.3s ease 0s;
+                transition: margin-left 0.3s ease 0s;
+            }
+
+            .submit-btn-area button:hover i {
+                margin-left: 20px;
+            }
+</style>
+<div class="container-fluid">
+    <div class="login-area">
+        <div class="container">
+            <div class="login-box ptb-100">
+                @using (Html.BeginForm("login", "home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <div class="login-form-head">
+                        <h4>Sign In</h4>
+                        <p>Hello there, Sign in and start managing your website with Admin Panel</p>
+                    </div>
+                    <div class="login-form-body p-5 shadow">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" id="txtusername" class=" p-3 form-control" name="txtusername" aria-label="Please Enter UserID..." placeholder="Please Enter UserID..." required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" id="txtpassword" class=" p-3 form-control" aria-label="Please Enter UserID..." name="txtpassword" placeholder="Please Enter UserID..." required>
+                        </div>
+                        <div class="submit-btn-area">
+                            <button id="form_submit" class="form-control  p-3" type="submit">Login <i class="ti-arrow-right"></i></button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,14 +13,27 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Emailid" Type="nvarchar" MaxLength="50" />
           <Property Name="MobileNo" Type="nvarchar" MaxLength="10" />
+          <Property Name="RequestedURL" Type="nvarchar(max)" />
           <Property Name="modifieddate" Type="datetime" Nullable="false" />
           <Property Name="modifiedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Createdate" Type="datetime" Nullable="false" />
           <Property Name="Active" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="T_BlogMaster">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BlogHeadLine" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ShortDescription" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Keywords" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FilePath" Type="nvarchar(max)" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
         <EntityContainer Name="WMCModelStoreContainer">
           <EntitySet Name="WMCUser" EntityType="Self.WMCUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_BlogMaster" EntityType="Self.T_BlogMaster" Schema="WmcAdminProd" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -39,10 +52,23 @@
           <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Createdate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="RequestedURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="WMCEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="WMCUsers" EntityType="Self.WMCUser" />
+          <EntitySet Name="T_BlogMaster" EntityType="WMCModel.T_BlogMaster" />
         </EntityContainer>
+        <EntityType Name="T_BlogMaster">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BlogHeadLine" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ShortDescription" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Keywords" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -52,6 +78,7 @@
           <EntitySetMapping Name="WMCUsers">
             <EntityTypeMapping TypeName="WMCModel.WMCUser">
               <MappingFragment StoreEntitySet="WMCUser">
+                <ScalarProperty Name="RequestedURL" ColumnName="RequestedURL" />
                 <ScalarProperty Name="EnquieyId" ColumnName="EnquieyId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Emailid" ColumnName="Emailid" />
@@ -61,6 +88,18 @@
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="Createdate" ColumnName="Createdate" />
                 <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_BlogMaster">
+            <EntityTypeMapping TypeName="WMCModel.T_BlogMaster">
+              <MappingFragment StoreEntitySet="T_BlogMaster">
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+                <ScalarProperty Name="BlogHeadLine" ColumnName="BlogHeadLine" />
+                <ScalarProperty Name="BlogID" ColumnName="BlogID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

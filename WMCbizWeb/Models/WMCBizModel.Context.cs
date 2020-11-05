@@ -26,5 +26,6 @@ namespace WMCbizWeb.Models
         }
     
         public virtual DbSet<WMCUser> WMCUsers { get; set; }
+        public virtual DbSet<T_BlogMaster> T_BlogMaster { get; set; }
     }
 }

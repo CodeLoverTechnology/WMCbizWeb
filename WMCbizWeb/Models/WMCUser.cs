@@ -18,11 +18,11 @@ namespace WMCbizWeb.Models
         public string Name { get; set; }
         public string Emailid { get; set; }
         public string MobileNo { get; set; }
-        public string RequestedURL { get; set; }
         public System.DateTime modifieddate { get; set; }
         public string modifiedBy { get; set; }
         public string CreatedBy { get; set; }
         public System.DateTime Createdate { get; set; }
         public bool Active { get; set; }
+        public string RequestedURL { get; set; }
     }
 }
