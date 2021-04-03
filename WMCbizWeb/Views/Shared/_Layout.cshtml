@@ -4,74 +4,89 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - WISDOM MANAGEMENT CONSULTANCY</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>@ViewBag.Title -wmcadvisory</title>
+
+
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" />
+    <link href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row bg-primary text-white fixed-top">
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <span>
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    info@wmcbiz.com
-                </span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <i class="fa fa-registered text-white" aria-hidden="true"> CIN : U74900DL2011PTC219663</i>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <span>
-                    <i class="fa fa-mobile" aria-hidden="true"></i>
-                    +91-8178726022/7275278701
-                </span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <i class="fa fa-facebook btn btn-dark" aria-hidden="true"></i>
-                <i class="fa fa-twitter  btn btn-dark" aria-hidden="true"></i>
-                <i class="fa fa-google btn btn-dark" aria-hidden="true"></i>
-                <i class="fa fa-linkedin btn btn-dark" aria-hidden="true"></i>
-                <i class="fa fa-youtube btn btn-dark" aria-hidden="true"></i>
-            </div>
+    <!--######Top Menu icon section#######-->
+    <section class="top-menu-1">
+        <div class="mail"><a href="#">info@wmcbiz.com</a></div>
+        <div class="phone-number"><a href="#">+91-8178726022/7275278701</a></div>
+        <div class="cin">CIN: U74900DL2011PTC219663</div>
+        <div class="appointment">
+            <button type="button" class="btn btn-primary">
+                <span class="spinner-grow spinner-grow-sm"></span> + Make an Appointment
+            </button>
         </div>
-    </div>
-    <div class="row">
-        @Html.Partial("_MenuView")
-    </div>
+
+    </section>
+    <!--######Top Menu icon section#######-->
+
+    @Html.Partial("_MenuView")
+
     <div class="row mt-5">
         @RenderBody()
     </div>
     <div class="row">
         @Html.Partial("_FooterView")
     </div>
-
+    @Styles.Render("~/Content/fontawesome")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @*@RenderSection("scripts", required: false)*@
+
     <script src="~/Scripts/jquery-3.5.1.min.js"></script>
     <script src="~/Scripts/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 </html>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('col-4').hover(
-            function () {
-                $(this).animate({
-                    marginTop: "-=1%",
-                }, 200);
-            },
-            function () {
-                $(this).animate({
-                    marginTop: "0%"
-                }, 200);
-            }
-        );
-    });
-
-    if('@TempData["qUERYmESSAGE"]' != '')
+    $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4 ,
+  responsive: [
     {
-        alert('@TempData["qUERYmESSAGE"]')
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 </script>
+

@@ -18,7 +18,7 @@ namespace WMCbizWeb.App_Code
                 }
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return false;
             }
@@ -36,7 +36,7 @@ namespace WMCbizWeb.App_Code
                     return false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
