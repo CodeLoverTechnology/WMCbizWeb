@@ -253,6 +253,13 @@ footer {
 
 
 /*news section*/
+#newsId{
+    background-color:#fff;
+}
+#latestNews{
+    text-align:center;
+    background:#000038;
+}
 .snip1527 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     color: #ffffff;
@@ -411,7 +418,7 @@ img {
 }
 .details::before{
     content:"";
-    width:5px;
+    width:15px;
     height:100%;
     background-color:#ffbb38;
     position:absolute;
@@ -432,33 +439,248 @@ img {
     background-color:#000038;
 
 }
-.card-main-sec .card-head-sec .card-head h4{
-    font-size:3rem;
-    text-align:center;
-    text-transform:uppercase;
-}
+
 .card-main-sec {
     background-image: url(images/Start_Your_Business_Expert_Tips-770x360.jpg);
     width: 100vw;
-}
-    .card-main-sec .card-head-sec {
-        width: 100vw;
-        height: 5vw;
-        background-color:#000038;
-        padding-top:0.5rem;
-        color:#ffbb38;
+    padding-bottom:60px;
 
-    }
+}
+#cardHeadSec {
+    width: 100vw;
+    height: 5vw;
+    background-color: #000038;
+    padding-top: 0.5rem;
+    color: #ffbb38;
+}
 
 .slider .slick-next:before{
     color:#000038;
-    font-size:30px;
+    font-size:50px;
+    padding-right:1rem;
 }
 .slider .slick-prev:before{
     color:#000038;
-    font-size:30px;
+    font-size:50px;
+    padding-right:1rem;
+}
+
+/*##################Start A Business Style#########################*/
+
+/*####################Contact Us Style#######################################*/
+
+
+#contactId {
+    background-color: #ffbb38;
+    border-radius: 10px
+    
+}
+
+#cardId {
+    color: navy
+}
+
+.text-muted {
+    font-family: 'Ubuntu', sans-serif
+}
+
+.fa-map-marker,
+.fa-phone,
+.fa-envelope {
+    font-size: 25px;
+    font-weight: bold
+}
+
+.icon {
+    color: rgb(105, 27, 179)
+}
+
+.contact:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative
+}
+
+form .container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto
+}
+
+input,
+textarea,
+.form-control {
+    outline: none;
+    border: none
+}
+
+.input-field {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.input-field:hover {
+    border: 2px solid rgb(105, 27, 179);
+    color: rgb(105, 27, 179);
+    cursor: pointer
+}
+
+label {
+    font-weight: 500
+}
+
+.fa-mobile {
+    font-size: 20px
+}
+
+#msg {
+    height: 220px
+}
+
+#btn {
+    background-color: #000038;
+    color: #fff;
+    padding: 5px 10px;
+    width: 200px;
+    margin: 10px auto;
+    border-radius:20px;
+    border:1px solid #000038;
+    font-weight:bold;
+}
+#btn:hover{
+    background-color:#fff;
+    color:#ffbb38;
 }
 
 
+.mobile-info {
+    display: none
+}
 
-/*##################Start A Business Style#########################*/
+@media(min-width:992px) and (max-width:1199px) {
+    form {
+        width: 75%
+    }
+
+    .container {
+        margin-top: 50px
+    }
+}
+
+@media(max-width:767px) {
+    .mobile-info {
+        display: inline
+    }
+
+    .contact-info {
+        display: none
+    }
+
+    .contact {
+        margin: 10px 0;
+        border: 1px solid rgb(105, 27, 179);
+        border-radius: 5px
+    }
+}
+/*####################Contact Us Style#######################################*/
+/*#################################Compliances #######################################*/
+/* CSS Document */
+.gallery-block {
+    padding-bottom: 60px;
+    background: url(images/compliances-bg.jpg);
+    width: 100vw;
+}
+.gallery-block.card-img-top{
+    width:400px;
+    height:300px;
+}
+.gallery-block .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{font-weight: bold;font-size: 1.4rem; text-transform: uppercase;}
+
+.gallery-block.cards-gallery h6{font-size: 17px; font-weight: bold;}
+
+.gallery-block.cards-gallery .card{transition: 0.4s ease;}
+.gallery-block.cards-gallery .card img{box-shadow: 0px 2px 10px rgba(0,0,0,0.15);}
+.gallery-block.cards-gallery .card-body{text-align: center;}
+.gallery-block.cards-gallery .card-body p{font-size: 15px;}
+.gallery-block.cards-gallery a{color:#212529; }
+.gallery-block.cards-gallery a:hover{text-decoration: none;}
+.gallery-block.cards-gallery  .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
+
+/*#################################Compliances#######################################*/
+
+
+/*###############################OUR SERVICES###############################################################*/
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+/*###############################OUR SERVICES###############################################################*/

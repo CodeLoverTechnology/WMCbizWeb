@@ -276,6 +276,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\full-slider.css" />
+    <Content Include="Content\images\06-1494060921-name-change-prodedure-in-karnataka.jpg" />
     <Content Include="Content\images\11.jpg" />
     <Content Include="Content\images\12.jpg" />
     <Content Include="Content\images\122.jpg" />
@@ -287,18 +288,27 @@
     <Content Include="Content\images\144.png" />
     <Content Include="Content\images\145.jpg" />
     <Content Include="Content\images\AlterationofAOA.jpg" />
+    <Content Include="Content\images\appointment-of-auditor-filing-of-adt_1.png" />
+    <Content Include="Content\images\Appointment-of-Director-img.png" />
     <Content Include="Content\images\banner-1.jpg" />
     <Content Include="Content\images\banner-2w.jpg" />
     <Content Include="Content\images\bannere-2c.jpg" />
     <Content Include="Content\images\change-company-name.jpeg" />
+    <Content Include="Content\images\change-in-directors-bizindigo.png" />
+    <Content Include="Content\images\Change-of-Registered-Office-3-1024x576.png" />
+    <Content Include="Content\images\compliances-bg.jpg" />
     <Content Include="Content\images\Compounding-of-offences.jpg" />
     <Content Include="Content\images\DIN.png" />
     <Content Include="Content\images\ContactUs.jpg" />
     <Content Include="Content\images\FillingofAnnualReturn.jpg" />
     <Content Include="Content\images\Form-INC-22A.jpg" />
     <Content Include="Content\images\FTE.jpg" />
+    <Content Include="Content\images\Logo_Share-Capital.png" />
     <Content Include="Content\images\Mergers_Acquisitions.jpg" />
+    <Content Include="Content\images\Object-change-of-LLP.jpg" />
     <Content Include="Content\images\objective-of-your-business.jpg" />
+    <Content Include="Content\images\R425f960ee0405d369704377b83886336.jfif" />
+    <Content Include="Content\images\R995936041eb51aaff80a4707a2a673cc.jfif" />
     <Content Include="Content\images\resignation-thinkstock.jpg" />
     <Content Include="Content\images\Start_Your_Business_Expert_Tips-770x360.jpg" />
     <Content Include="Content\images\Transfer-of-Shares1.jpg" />
@@ -439,6 +449,10 @@
     <Content Include="Content\OwlCarousel\owl.carousel.css" />
     <Content Include="Content\OwlCarousel\owl.theme.css" />
     <Content Include="Content\OwlCarousel\owl.transitions.css" />
+    <Content Include="Content\Slick\ajax-loader.gif" />
+    <Content Include="Content\Slick\fonts\slick.svg" />
+    <Content Include="Content\Slick\slick-theme.css" />
+    <Content Include="Content\Slick\slick.css" />
     <Content Include="Content\styleFssai.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -475,6 +489,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\Slick\slick.scss" />
+    <Content Include="Content\Slick\slick-theme.scss" />
+    <Content Include="Content\Slick\fonts\slick.woff" />
+    <Content Include="Content\Slick\fonts\slick.ttf" />
+    <Content Include="Content\Slick\fonts\slick.eot" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -510,6 +529,8 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\Slick\slick.js" />
+    <Content Include="Scripts\Slick\slick.min.js" />
     <Content Include="Scripts\src\index.js" />
     <Content Include="Scripts\src\methods\defaults.js" />
     <Content Include="Scripts\src\methods\destroy.js" />
@@ -703,6 +724,7 @@
     <Content Include="Views\BlogMaster\Details.cshtml" />
     <Content Include="Views\BlogMaster\Edit.cshtml" />
     <Content Include="Views\BlogMaster\Index.cshtml" />
+    <Content Include="Views\Appointment\_Appointment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -765,6 +787,7 @@
     <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets'))" />
+    <Error Condition="!Exists('..\packages\BamButz.MSBuild.TailwindCSS.1.2.3\build\BamButz.MSBuild.TailwindCSS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BamButz.MSBuild.TailwindCSS.1.2.3\build\BamButz.MSBuild.TailwindCSS.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.15.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" />
@@ -772,6 +795,7 @@
   <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" />
   <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.15.0\build\Microsoft.ApplicationInsights.WindowsServer.targets')" />
   <Import Project="..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Web.2.15.0\build\Microsoft.ApplicationInsights.Web.targets')" />
+  <Import Project="..\packages\BamButz.MSBuild.TailwindCSS.1.2.3\build\BamButz.MSBuild.TailwindCSS.targets" Condition="Exists('..\packages\BamButz.MSBuild.TailwindCSS.1.2.3\build\BamButz.MSBuild.TailwindCSS.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
