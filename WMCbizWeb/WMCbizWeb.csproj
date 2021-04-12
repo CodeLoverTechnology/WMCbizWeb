@@ -444,6 +444,7 @@
     <Content Include="Content\images\wp2446286.jpg" />
     <Content Include="Content\images\Yogendra.jpg" />
     <Content Include="Content\images\yourstory_Wholly_Owned_Subsidiary_Company.jpg" />
+    <Content Include="Content\jquery.flipster.min.css" />
     <Content Include="Content\OwlCarousel\AjaxLoader.gif" />
     <Content Include="Content\OwlCarousel\grabbing.png" />
     <Content Include="Content\OwlCarousel\owl.carousel.css" />
@@ -518,6 +519,7 @@
     <Content Include="Scripts\jquery-3.5.1.slim.js" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.flipster.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
