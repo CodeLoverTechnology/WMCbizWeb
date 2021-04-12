@@ -127,21 +127,21 @@
 @*carousel jquery end*@
 
 @*popup jquery start*@
-@*<script type="text/javascript">
+<script type="text/javascript">
     $(window).on('load', function () {
         setTimeout(function () {
             $('#makeAppointment').modal('show')
         },3000);
     }); 
-</script>*@
-<script type="text/javascript">
+</script>
+@*<script type="text/javascript">
     $(document).ready(function () {
         if (sessionStorage.getItem('#makeAppointment') !== 'true') {
             $('#makeAppointment').modal('show');
             sessionStorage.setItem('makeAppointment', 'true');
         }
     },3000);
-</script>
+</script>*@
 
 @*popup jquery end*@
 
