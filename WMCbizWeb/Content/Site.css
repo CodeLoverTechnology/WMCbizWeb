@@ -13,7 +13,6 @@ body {
     background: #fff;
     color: black;
     min-height: 100vh;
-    background-color:red;
 }
 
 /*Top Menu-1 Styling*/
@@ -228,10 +227,6 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
-
-
-
 
 
 
@@ -802,7 +797,7 @@ ol.content{
 
 .product-card{
 width:100%;
-height:100vh;
+height:70vh;
 background:#fff;
 overflow:hidden;
 }
@@ -810,7 +805,4 @@ overflow:hidden;
     width:300px;
     margin:30px auto 0;
     overflow:visible;
-}
-.carousel img {
-    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
 }
