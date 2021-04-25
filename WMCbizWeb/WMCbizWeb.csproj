@@ -445,6 +445,15 @@
     <Content Include="Content\images\Yogendra.jpg" />
     <Content Include="Content\images\yourstory_Wholly_Owned_Subsidiary_Company.jpg" />
     <Content Include="Content\jquery.flipster.min.css" />
+    <Content Include="Content\NewImages\Compliance.jpg" />
+    <Content Include="Content\NewImages\GST.jpg" />
+    <Content Include="Content\NewImages\Registrer your business.png" />
+    <Content Include="Content\NewImages\Start new business.jpg" />
+    <Content Include="Content\NewImages\Tax.jpg" />
+    <Content Include="Content\NewImages\Taxation.jpg" />
+    <Content Include="Content\NewImages\TM.jpg" />
+    <Content Include="Content\NewImages\Trademark.jpg" />
+    <Content Include="Content\NewImages\wmcnew.png" />
     <Content Include="Content\OwlCarousel\AjaxLoader.gif" />
     <Content Include="Content\OwlCarousel\grabbing.png" />
     <Content Include="Content\OwlCarousel\owl.carousel.css" />
