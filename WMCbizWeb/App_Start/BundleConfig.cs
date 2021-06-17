@@ -27,7 +27,9 @@ namespace WMCbizWeb
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
-                      "~/Content/Slick/slick.css"
+                      "~/Content/Slick/slick.css",
+                      "~/Content/Site.css",
+                      "~/Content/font-awesome.min.css"
                       ));
           
         }

@@ -5,15 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title -wmcadvisory</title>
-
-    <link href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <link href="~/Content/bootstrap.min.css" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/Slick/slick-theme.css" rel="stylesheet" />
     <link href="~/Content/Slick/slick.css" rel="stylesheet" />
     <link href="~/Content/jquery.flipster.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+
 </head>
 <body>
     <!--######Top Menu icon section#######-->
@@ -55,13 +53,13 @@
                                     <div class="card-body">
                                         <h6 class="card-title text-center"><b>Contact Us Our Team</b></h6>
                                         <div class="row my-3">
-                                        <div class="col">
-                                            <div class="form-group mt-1 mb-1">
-                                                <label for="recipient-name" class="col-form-label"> <i class="fa fa-user "> Name:</i></label>
-                                                <input type="text" class="form-control" id="name" required>
+                                            <div class="col">
+                                                <div class="form-group mt-1 mb-1">
+                                                    <label for="recipient-name" class="col-form-label"> <i class="fa fa-user "> Name:</i></label>
+                                                    <input type="text" class="form-control" id="name" required>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                         <div class="row my-3">
                                             <div class="col">
                                                 <div class="form-group mt-1 mb-1">
@@ -103,13 +101,13 @@
 
     <!--########popup form#######################-->
 
-    <div class="row">
+    
         @Html.Partial("_FooterView")
-    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/fontawesome")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @*@RenderSection("scripts", required: false)*@
 
@@ -131,17 +129,17 @@
     $(window).on('load', function () {
         setTimeout(function () {
             $('#makeAppointment').modal('show')
-        },3000);
-    }); 
+        }, 3000);
+    });
 </script>
 @*<script type="text/javascript">
-    $(document).ready(function () {
-        if (sessionStorage.getItem('#makeAppointment') !== 'true') {
-            $('#makeAppointment').modal('show');
-            sessionStorage.setItem('makeAppointment', 'true');
-        }
-    },3000);
-</script>*@
+        $(document).ready(function () {
+            if (sessionStorage.getItem('#makeAppointment') !== 'true') {
+                $('#makeAppointment').modal('show');
+                sessionStorage.setItem('makeAppointment', 'true');
+            }
+        },3000);
+    </script>*@
 
 @*popup jquery end*@
 
@@ -149,29 +147,61 @@
 <script type="text/javascript">
 
 
-$(document).ready(function(){
-    $(".button").click(function(){
-        var name = $(this).attr('data-filter');
-        if(name == "all"){
-            $(".shot-thumbnail").show('2000');
-        }else{
-            $(".shot-thumbnail").not("."+name).hide('2000');
-            $(".shot-thumbnail").filter("."+name).show('2000');
-        }
+    $(document).ready(function () {
+        $(".button").click(function () {
+            var name = $(this).attr('data-filter');
+            if (name == "all") {
+                $(".shot-thumbnail").show('2000');
+            } else {
+                $(".shot-thumbnail").not("." + name).hide('2000');
+                $(".shot-thumbnail").filter("." + name).show('2000');
+            }
+        })
+
+        $(".navigation a").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
     })
 
-    $(".navigation a").click(function(){
-        $(this).addClass("active").siblings().removeClass("active");
-    })
-})
 
-        
 </script>
 @*gallery jquery end*@
-<script type="text/javascript"> 
+<script type="text/javascript">
     $('.carousel').flipster({
         style: 'carousel',
         spacing: -0.3,
+        autoplay: [true | 1000],
+        loop: [true|false],
         
     });
+</script>
+
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+        "use strict";
+        $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+        $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+        $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp;</a>");
+        $(".menu > ul > li").hover(function (e) {
+            if ($(window).width() > 943) {
+                $(this).children("ul").stop(true, false).fadeToggle(150);
+                e.preventDefault();
+            }
+        });
+        $(".menu > ul > li").click(function () {
+            if ($(window).width() <= 943) {
+                $(this).children("ul").fadeToggle(150);
+            }
+        });
+        $(".menu-mobile").click(function (e) {
+            $(".menu > ul").toggleClass('show-on-mobile');
+            e.preventDefault();
+        });
+    });
+    $(window).resize(function () {
+        $(".menu > ul > li").children("ul").hide();
+        $(".menu > ul").removeClass('show-on-mobile');
+    });
+
 </script>
