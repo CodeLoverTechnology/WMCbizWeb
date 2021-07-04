@@ -183,5 +183,9 @@ namespace WMCbizWeb.Controllers
         {
             return View();
         }
+        public ActionResult Blog()
+        {
+            return View();
+        }
     }
 }

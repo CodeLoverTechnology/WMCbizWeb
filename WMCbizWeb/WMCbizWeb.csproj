@@ -736,6 +736,7 @@
     <Content Include="Views\BlogMaster\Edit.cshtml" />
     <Content Include="Views\BlogMaster\Index.cshtml" />
     <Content Include="Views\Appointment\_Appointment.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
