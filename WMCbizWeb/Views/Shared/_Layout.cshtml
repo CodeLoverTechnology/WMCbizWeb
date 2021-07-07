@@ -62,7 +62,7 @@
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
                                                         <label for="recipient-name" class="col-form-label"> <i class="fa fa-user-o"></i> <i style="font-family:'Lucida Calligraphy';">User Name :</i></label>
-                                                        <input type="text" class="form-control" id="txtname" required="required">
+                                                        <input type="text" class="form-control" id="txtname" value="" required="required" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -70,7 +70,7 @@
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
                                                         <label for="recipient-name" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-envelope-o "></i> <i style="font-family:'Lucida Calligraphy';"> Email :</i></label>
-                                                        <input type="text" class="form-control" id="txtemail" required="required">
+                                                        <input type="text" class="form-control" id="txtemail" name="email" value="" required="required" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
                                                         <label for="recipient-name" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-mobile-phone "></i> <i style="font-family:'Lucida Calligraphy';"> Phone :</i></label>
-                                                        <input type="text" class="form-control" id="txtnumber" required="required">
+                                                        <input type="text" class="form-control" id="txtnumber" name="number" value="" required="required" />
 
                                                 </div>
                                             </div>
@@ -93,7 +93,9 @@
                                         </div>
 
                                             <div class="modal-footer justify-content-center">
-                                                <div class="col"><button type="button" id="Submit" class="btn btn-primary btn-block" data-dismiss="modal"><b>Submit</b></button></div>
+                                                <div class="col">
+                                                <input type="submit" name="btnSubmit" class="btnContact btn-primary " value="Send Message" style="align-items:center"/>
+                                                </div>
                                             </div>
                                         </div>
 </form>
