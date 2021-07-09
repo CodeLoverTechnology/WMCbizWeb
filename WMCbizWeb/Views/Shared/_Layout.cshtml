@@ -19,13 +19,13 @@
         <div class="mail ml-4"><a href="#">info@wmcadvisory.in</a></div>
         <div class="phone-number"><a href="#">+91-8178726022/7275278701</a></div>
         <div class="cin">CIN: U74900DL2011PTC219663</div>
-       <div class="appointment">
-           <ul>
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-           </ul>
+        <div class="appointment">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
         </div>
 
     </section>
@@ -61,44 +61,47 @@
                                             <div class="row my-3">
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
-                                                        <label for="recipient-name" class="col-form-label"> <i class="fa fa-user-o"></i> <i style="font-family:'Lucida Calligraphy';">User Name :</i></label>
-                                                        <input type="text" class="form-control" id="txtname" value="" required="required" />
+                                                        <label for="recipient-name" class="col-form-label">
+                                                            <i class="fa fa-user-o"></i>
+                                                            <i style="font-family:'Lucida Calligraphy';">User Name :</i>
+                                                        </label>
+                                                        <input type="text" class="form-control" id="txtname" required="required" placeholder="Please Enter Visitor Name." title="Please Enter Visitor Name." style="font-family:'Lucida Calligraphy';"/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row my-3">
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
-                                                        <label for="recipient-name" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-envelope-o "></i> <i style="font-family:'Lucida Calligraphy';"> Email :</i></label>
-                                                        <input type="text" class="form-control" id="txtemail" name="email" value="" required="required" />
+                                                        <label for="txtemail" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-envelope-o "></i> <i style="font-family:'Lucida Calligraphy';"> Email :</i></label>
+                                                        <input type="text" class="form-control" id="txtemail" name="txtemail" required="required" placeholder="Please Enter User Email Id." title="Please Enter User Email Id." style="font-family:'Lucida Calligraphy';"/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row my-3">
                                                 <div class="col">
                                                     <div class="form-group mt-1 mb-1">
-                                                        <label for="recipient-name" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-mobile-phone "></i> <i style="font-family:'Lucida Calligraphy';"> Phone :</i></label>
-                                                        <input type="text" class="form-control" id="txtnumber" name="number" value="" required="required" />
+                                                        <label for="txtnumber" class="col-form-label" style="font-family:'Lucida Calligraphy';"> <i class="fa fa-mobile-phone "></i> <i style="font-family:'Lucida Calligraphy';"> Phone :</i></label>
+                                                        <input type="text" class="form-control" id="txtnumber" name="txtnumber"  required="required" placeholder="Please Enter Contact No." style="font-family:'Lucida Calligraphy';" title="Please Enter Contact No." />
 
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row my-3">
-                                            <div class="col">   
-                                                <div class="form-group mt-0 mb-0">
-                                                    <label for="message-text" class="col-form-label" style="font-family:'Lucida Calligraphy';"><i class="fa fa-comment-o "></i> <i style="font-family:'Lucida Calligraphy';"> Message:</i></label>
-                                                    <textarea class="form-control" id="message-text"></textarea>
+                                            <div class="row my-3">
+                                                <div class="col">
+                                                    <div class="form-group mt-0 mb-0">
+                                                        <label for="txtmessage" class="col-form-label" style="font-family:'Lucida Calligraphy';"><i class="fa fa-comment-o "></i> <i style="font-family:'Lucida Calligraphy';"> Message:</i></label>
+                                                        <textarea class="form-control" id="txtmessage" name="txtmessage" style="font-family:'Lucida Calligraphy';" title="Please Enter Message" placeholder="Please Enter Message"></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
                                             <div class="modal-footer justify-content-center">
                                                 <div class="col">
-                                                <input type="submit" name="btnSubmit" class="btnContact btn-primary " value="Send Message" style="align-items:center"/>
+                                                    <input type="submit" name="btnSubmit" class="contact-form btnContact" value="Send Message" />
                                                 </div>
                                             </div>
                                         </div>
-</form>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -110,9 +113,9 @@
 
     <!--########popup form#######################-->
 
-    
-        @Html.Partial("_FooterView")
-    
+
+    @Html.Partial("_FooterView")
+
     @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/fontawesome")
     @Styles.Render("~/Content/css")
@@ -180,15 +183,15 @@
         style: 'carousel',
         spacing: -0.3,
         autoplay: [true | 2000],
-        loop: [true|false],
+        loop: [true | false],
         pauseOnHover: true,
         scrollwheel: true,
-        
+
     });
 </script>
 
 
-<script type="text/javascript" >
+<script type="text/javascript">
     $(document).ready(function () {
         "use strict";
         $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
