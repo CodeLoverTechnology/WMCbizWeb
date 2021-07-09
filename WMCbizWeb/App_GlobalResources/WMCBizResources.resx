@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ApplicationEmailID" xml:space="preserve">
+    <value>ENQUIRY@wmcadvisory.in</value>
+  </data>
   <data name="BlogerUser" xml:space="preserve">
     <value>WMCYogendra</value>
   </data>
   <data name="BlogPassword" xml:space="preserve">
     <value>WmcY@124</value>
+  </data>
+  <data name="EmailPwd" xml:space="preserve">
+    <value>hay12S~9iTrmnnsD</value>
   </data>
   <data name="InsertBlogFilePath" xml:space="preserve">
     <value>~/Blog</value>

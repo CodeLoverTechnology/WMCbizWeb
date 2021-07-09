@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ENQUIRY@wmcadvisory.in.
+        /// </summary>
+        internal static string ApplicationEmailID {
+            get {
+                return ResourceManager.GetString("ApplicationEmailID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WMCYogendra.
         /// </summary>
         internal static string BlogerUser {
@@ -75,6 +84,15 @@ namespace Resources {
         internal static string BlogPassword {
             get {
                 return ResourceManager.GetString("BlogPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hay12S~9iTrmnnsD.
+        /// </summary>
+        internal static string EmailPwd {
+            get {
+                return ResourceManager.GetString("EmailPwd", resourceCulture);
             }
         }
         

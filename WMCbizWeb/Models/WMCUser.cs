@@ -18,6 +18,7 @@ namespace WMCbizWeb.Models
         public string Name { get; set; }
         public string Emailid { get; set; }
         public string MobileNo { get; set; }
+        public string UserMessage { get; set; }
         public System.DateTime modifieddate { get; set; }
         public string modifiedBy { get; set; }
         public string CreatedBy { get; set; }
